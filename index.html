@@ -25,7 +25,7 @@
       <!-- формы -->
 
       <!-- Каталог -->
-      <section>
+      <section class="catalog">
         <h2>Каталог</h2>
         <a href="#">Новинки</a>
         <a href="catalog.html">Сливочное</a>
@@ -35,7 +35,7 @@
       </section>
 
       <!-- Поиск -->
-      <section>
+      <section class="search">
         <h2 class="visually-hidden">Поиск</h2>
         <form action="https://search_url.ru" method="post">
           <label for="search">Поиск</label>
@@ -44,25 +44,25 @@
       </section>
 
       <!-- Логин -->
-      <section class="modal_login">
+      <section class="login">
         <h2>Вход</h2>
         <form action="https://login_url.ru" method="post">
           <p>
             <label class="visually-hidden" for="login_email">email</label>
-            <input type="text" id="login_email" name="email" placeholder="Электронная почта">
+            <input type="text" id="login_email" name="login_email" placeholder="Электронная почта">
           </p>
           <p>
             <label class="visually-hidden" for="login_pass">Пароль</label>
             <input type="password" id="login_pass" name="password" placeholder="Пароль">
           </p>
-          <button type="submit">Войти</button>
+          <button class="button" type="submit">Войти</button>
           <a href="#">Забыли пароль?</a>
           <a href="#">Новая регистрация</a>
         </form>
       </section> 
 
       <!-- Обратная связь -->
-      <section>
+      <section class="feedback">
         <h2 class="visually-hidden">Обратная связь</h2>
         <form action="https://feedback_url.ru" method="post">
           <p>Мы обязательно вам ответим!</p>
@@ -70,13 +70,13 @@
             <input type="text" id="name_id" name="name" placeholder="как вас зовут?">
           </p>
           <p><label class="visually-hidden" for="email_2_id">Ваша почта для ответа?</label>
-            <input type="text" id="email_2_id" name="email_2" placeholder="Ваша почта для ответа?">
+            <input type="text" id="email_2_id" name="feedback_email" placeholder="Ваша почта для ответа?">
           </p>
           <p><label class="visually-hidden" for="text_id">Напишите что-нибудь</label>
             <input type="text" id="text_id" name="text_name" placeholder="Напишите что-нибудь...">
           </p>
 
-          <button type="submit">Отправить</button>
+          <button class="button" type="submit">Отправить</button>
         </form>
       </section>
 
@@ -86,18 +86,18 @@
       <div class="slider1">
         <img src="img/slider1_pic.png" width="1045" height="881" alt="два мороженых">
         <p>Крем-брюле и пломбир с малиновым джемом</p>
-        <button type="button">Давайте оба!"</button>
+        <button class="button" type="button">Давайте оба!"</button>
       </div>
       <ul class="offer">
         <li><img src="offer_01" width="470" height="195" alt="малина">
             <span>Малинка даром!</span>
             <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <button type="button">"Хочу варенье!"</button>
+            <button class="button" type="button">"Хочу варенье!"</button>
         </li>
         <li><img src="offer_02" width="470" height="195" alt="шоколад">
             <span>Шоколадки даром!</span>
             <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-            <button type="button">"Хочу шоколадки!"</button>
+            <button class="button" type="button">"Хочу шоколадки!"</button>
         </li>
       </ul>
       <section class="products">
@@ -137,9 +137,14 @@
       <section class="subscripe">
         <!-- <img src="img/mail_pic_01.svg" width="560" height="220" alt="">
         <img src="img/mail_pic_02.jpg" width="549" height="211" alt=""> -->
-        <p>Подпишитесь на нашу сладкую рассылку и будете всегода в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <button type="button">Электронная почта</button>
-        <button type="button">Отправить</button>
+        <form>
+          <p>Подпишитесь на нашу сладкую рассылку и будете всегода в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+          <p>
+            <label class="visually-hidden" for="email_3_id">Электронная почта</label>
+            <input type="text" id="email_3_id" name="subscripe_email" placeholder="Электронная почта">
+          </p>
+          <button class="button" type="button">Отправить</button>
+        </form>
       </section>
       <section class="contacts">
         <img src="img/map.jpg" width="1200" height="430" alt="карта">

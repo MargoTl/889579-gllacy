@@ -10,7 +10,7 @@
       <nav class="main_navigation">
         <a href="index.html"><img src="img/logo.svg" width="154" height="64" alt="логотип магазина Глейси"></a>
         <ul class="site_navigation">
-          <li><a href="catalog.html">Каталог</a></li>
+          <li><a>Каталог</a></li>
           <li><a href="payment.html">Доставка и оплата</a></li>
           <li><a href="about.html">О компании</a></li>
         </ul>
@@ -22,6 +22,33 @@
       </nav>
     </header>
     <main>
+
+      <!-- Поиск -->
+      <section class="search">
+        <h2 class="visually-hidden">Поиск</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label for="search">Поиск</label>
+          <input type="search" id="search" name="search" placeholder="Что ищем?">
+        </form>
+      </section>
+
+      <!-- Логин -->
+      <section class="login">
+        <h2>Вход</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label class="visually-hidden" for="login_email">email</label>
+            <input type="text" id="login_email" name="login_email" placeholder="Электронная почта">
+          </p>
+          <p>
+            <label class="visually-hidden" for="login_pass">Пароль</label>
+            <input type="password" id="login_pass" name="password" placeholder="Пароль">
+          </p>
+          <button class="button" type="submit">Войти</button>
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+        </form>
+      </section>
 
       <!-- Корзина -->
       <section class="basket">

@@ -37,7 +37,7 @@
         <h2>Вход</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
           <p>
-            <label class="visually-hidden" for="login_email">email</label>
+            <label class="visually-hidden" for="login_email">Электронная почта</label>
             <input type="text" id="login_email" name="login_email" placeholder="Электронная почта">
           </p>
           <p>
@@ -52,23 +52,33 @@
 
       <!-- Корзина -->
       <section class="basket">
-        <h2 class="visually-hidden">Корзина. 2 товара</h2>
-        <p>
-          <button>(X) Убрать из корзины</button>
-          <!-- (X) будет в CSS -->
-          <img src="img/ice_cream_mini_1.png" width="33" height="33" alt="">
-          Пломбир с апельсиновым джемом 1.5кг х 200 руб. 300 руб.
-        </p>
-        <p>
-          <button>(X) Убрать из корзины</button>
-          <img src="img/ice_cream_mini_2.png" width="33" height="33" alt="">
-          Клубничный пломбир с присыпкой из белого шоколада 1.5кг х 300 руб. 450 руб.
-        </p>
-        <hr>
-        <p>Итого: 750 руб.</p>
-        <button>Оформить заказ</button>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <h2 class="visually-hidden">Корзина. 2 товара</h2>
+          <table>
+            <tr>
+              <td><button>(X) Убрать из корзины</button></td> <!-- (X) будет в CSS -->
+              <td><img src="img/ice_cream_mini_1.png" width="33" height="33" alt=""></td>
+              <td>Пломбир с апельсиновым джемом</td>
+              <td>1,5 кг</td>
+              <td title="умножить">x</td>
+              <td>200 руб.</td>
+              <td>300 руб.</td>
+            </tr>
+            <tr>
+              <td><button>(X) Убрать из корзины</button></td> <!-- (X) будет в CSS -->
+              <td><img src="img/ice_cream_mini_2.png" width="33" height="33" alt=""></td>
+              <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+              <td>1,5 кг</td>
+              <td title="умножить">x</td>
+              <td>300 руб.</td>
+              <td>450 руб.</td>
+            </tr>
+          </table>
+          <hr> <!-- Разделитель -->
+          <p>Итого: 750 руб.</p>
+          <button class="button" type="submit">Оформить заказ</button>
+        </form>
       </section>
-      <!-- Корзина -->
 
       <ul class="breadcrumb">
         <li><a href="index.html">Главная</a></li>

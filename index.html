@@ -5,82 +5,23 @@
     <title>Магазин Gllacy Shop</title>
   </head>
   <body>
+    <h1 class="visually-hidden">Магазин Глейси</h1>
     <header class="main_header">
       <nav class="main_navigation">
         <img src="img/logo.svg" width="154" height="64" alt="логотип магазина Глейси">
         <ul class="site_navigation">
           <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="payment.html">Доставка и оплата</a></li>
-          <li><a href="about.html">О компании</a></li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">О компании</a></li>
         </ul>
         <div class="user_navigation">
-          <a href="search.html">Поиск</a>
-          <a href="login_link">Вход</a>
-          <a href="basket.html">Пусто</a>
+          <button class="user_nav_button" type="button">Поиск</button>
+          <button class="user_nav_button" type="button">Вход</button>
+          <button class="user_nav_button" type="button">Пусто</button>
         </div>
       </nav>
     </header>
     <main>
-      <h1 class="visually-hidden">Магазин Глейси</h1>
-      <!-- формы -->
-
-      <!-- Каталог -->
-      <section class="catalog">
-        <h2>Каталог</h2>
-        <a href="#">Новинки</a>
-        <a href="catalog.html">Сливочное</a>
-        <a href="#">Щербеты</a>
-        <a href="#">Фруктовый лед</a>
-        <a href="#">Мелорин</a>
-      </section>
-
-      <!-- Поиск -->
-      <section class="search">
-        <h2 class="visually-hidden">Поиск</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <label for="search">Поиск</label>
-          <input type="search" id="search" name="search" placeholder="Что ищем?">
-        </form>
-      </section>
-
-      <!-- Логин -->
-      <section class="login">
-        <h2>Вход</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label class="visually-hidden" for="login_email">email</label>
-            <input type="text" id="login_email" name="login_email" placeholder="Электронная почта">
-          </p>
-          <p>
-            <label class="visually-hidden" for="login_pass">Пароль</label>
-            <input type="password" id="login_pass" name="password" placeholder="Пароль">
-          </p>
-          <button class="button" type="submit">Войти</button>
-          <a href="#">Забыли пароль?</a>
-          <a href="#">Новая регистрация</a>
-        </form>
-      </section>
-
-      <!-- Обратная связь -->
-      <section class="feedback">
-        <h2 class="visually-hidden">Обратная связь</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p>Мы обязательно вам ответим!</p>
-          <p><label class="visually-hidden" for="name_id">Как вас зовут?</label>
-            <input type="text" id="name_id" name="name" placeholder="как вас зовут?">
-          </p>
-          <p><label class="visually-hidden" for="email_2_id">Ваша почта для ответа?</label>
-            <input type="text" id="email_2_id" name="feedback_email" placeholder="Ваша почта для ответа?">
-          </p>
-          <p><label class="visually-hidden" for="text_id">Напишите что-нибудь</label>
-            <input type="text" id="text_id" name="text_name" placeholder="Напишите что-нибудь...">
-          </p>
-
-          <button class="button" type="submit">Отправить</button>
-        </form>
-      </section>
-
-      <!-- формы -->
       <p>(с 10 до 20 ежедневно)</p>
       <p>8 812 450-25-25</p>
       <div class="slider1">
@@ -148,10 +89,8 @@
       </section>
       <section class="contacts">
         <img src="img/map.jpg" width="1200" height="430" alt="карта">
-        <p>Адрес главного офиса</p>
-        <p>и оф-лайн магазина:</p>
-        <p>ул. Большая Конюшенная</p>
-        <p>19/8, Санкт-Петербург</p>
+        <p>Адрес главного офиса и оф-лайн магазина:</p>
+        <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
         <p>Для заказов по телефону:</p>
         <p>8 812 450-25-25</p>
         <p>(с 10 до 20 ежедневно)</p>
@@ -176,5 +115,58 @@
       <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       <span>&copy; 2017</span>
     </footer>
+                            <!-- формы -->
+                    <!-- Каталог -->
+      <section class="catalog">
+        <h2>Каталог</h2>
+        <a href="#">Новинки</a>
+        <a href="catalog.html">Сливочное</a>
+        <a href="#">Щербеты</a>
+        <a href="#">Фруктовый лед</a>
+        <a href="#">Мелорин</a>
+      </section>
+                    <!-- Поиск -->
+      <section class="search">
+        <h2 class="visually-hidden">Поиск</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label for="search">Поиск</label>
+          <input type="search" id="search" name="search" placeholder="Что ищем?">
+        </form>
+      </section>
+                    <!-- Логин -->
+      <section class="login">
+        <h2>Вход</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label class="visually-hidden" for="login_email">email</label>
+            <input type="text" id="login_email" name="login_email" placeholder="Электронная почта">
+          </p>
+          <p>
+            <label class="visually-hidden" for="login_pass">Пароль</label>
+            <input type="password" id="login_pass" name="password" placeholder="Пароль">
+          </p>
+          <button class="button" type="submit">Войти</button>
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+        </form>
+      </section>
+                      <!-- Обратная связь -->
+      <section class="feedback">
+        <h2 class="visually-hidden">Обратная связь</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>Мы обязательно вам ответим!</p>
+          <p><label class="visually-hidden" for="name_id">Как вас зовут?</label>
+            <input type="text" id="name_id" name="name" placeholder="как вас зовут?">
+          </p>
+          <p><label class="visually-hidden" for="email_2_id">Ваша почта для ответа?</label>
+            <input type="text" id="email_2_id" name="feedback_email" placeholder="Ваша почта для ответа?">
+          </p>
+          <p><label class="visually-hidden" for="text_id">Напишите что-нибудь</label>
+            <input type="text" id="text_id" name="text_name" placeholder="Напишите что-нибудь...">
+          </p>
+
+          <button class="button" type="submit">Отправить</button>
+        </form>
+      </section>
   </body>
 </html>

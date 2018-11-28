@@ -5,7 +5,6 @@
     <title>Магазин Gllacy Shop</title>
   </head>
   <body>
-    <h1 class="visually-hidden">Каталог</h1>
     <header class="main_header">
       <nav class="main_navigation">
         <a href="index.html"><img src="img/logo.svg" width="154" height="64" alt="логотип магазина Глейси"></a>
@@ -22,6 +21,7 @@
       </nav>
     </header>
     <main>
+      <h1 class="visually-hidden">Каталог</h1>
       <ul class="breadcrumb">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог</a></li>
@@ -30,26 +30,37 @@
       <span>С 10 д 20, ежедневно</span>
       <span>8 812 450-25-25</span>
       <h2>Сливочное мороженное</h2>
-      Сортировка:
-      <span>По популярности</span>
-      Цена: 100 руб. - 500 руб.<br>
-      <!-- ползунок цены -->
-      Жирность:<br>
-      <ul>
-        <li>0%</li>
-        <li>до 10%</li>
-        <li>до 30%</li>
-        <li>выше 30%</li>
-      </ul>
-      Наполнители:
-      <ul class="filler">
-        <li>шоколадные</li>
-        <li>сахарные присыпки</li>
-        <li>фрукты</li>
-        <li>сиропы</li>
-        <li>джемы</li>
-      </ul>
-      <button type="button">Применить</button>
+
+      <section class="filler">
+        <form action="https://echo.htmlacademy.ru">
+          Сортировка:
+          <span>По популярности</span>
+          Цена: 100 руб. - 500 руб.<br>
+          <!-- ползунок цены -->
+          Жирность:<br>
+          <ul>
+            <li>0%</li>
+            <li>до 10%</li>
+            <li>до 30%</li>
+            <li>выше 30%</li>
+          </ul>
+          Наполнители:
+          <ul class="filler">
+            <li>
+              <label><input type="checkbox" name="chocolate" checked>шоколадные</label></li>
+            <li>
+              <label><input type="checkbox" name="sugar" checked>сахарные присыпки</label></li>
+            <li>
+              <label><input type="checkbox" name="fruit">фрукты</label></li>
+            <li>
+              <label><input type="checkbox" name="syrup">сиропы</label></li>
+            <li>
+              <label><input type="checkbox" name="jam">джемы</label></li>
+          </ul>
+          <button type="button">Применить</button>
+        </form>
+      </section>
+
       <section class="products">
         <ul>
           <li><img src="img/ice_cream_01.jpg" width="267" height="267" alt="изображение мороженого 1">

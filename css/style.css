@@ -1,15 +1,17 @@
-.search
-.login
-.feedback
-.basket {
+.search,
+.login,
+.feedback,
+.basket,
+.quick_btn,
+.catalog {
   display: none;
 }
 
 body {
-  margin: 0;
-
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
+  font-weight: 500px;
+  line-height: 16px;
 
   background-color: #849d8f;
 }
@@ -19,14 +21,23 @@ a {
 }
 
 .main_navigation {
-  font-family: Roboto;
+  font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
-  line-height: 18px;
 }
 
 .site_navigation,
-.user_navigation {
+.user_navigation,
+.pagination_list,
+.socials,
+.products_list,
+.fat_list,
+.filler,
+.breadcrumb,
+.products_list,
+.descr_list,
+.offer,
+.slide_list {
   list-style: none;
 }
 

@@ -1,3 +1,4 @@
+/*  откл.окна  */
 .search,
 .login,
 .feedback,
@@ -7,25 +8,7 @@
   display: none;
 }
 
-body {
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 500px;
-  line-height: 16px;
-
-  background-color: #849d8f;
-}
-
-a {
-  color: #ffffff;
-}
-
-.main_navigation {
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-}
-
+/*  откл. маркеры ul  */
 .site_navigation,
 .user_navigation,
 .pagination_list,
@@ -41,7 +24,53 @@ a {
   list-style: none;
 }
 
+body {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500px;
+  line-height: 16px;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+a {
+  color: #ffffff;
+}
+
+/* не работает */
 .site_navigation a: hover,
 .site_navigation a: focus {
   color: #ffbc9e;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.main_navigation {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* навигация */
+.site_navigation li {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  
+}
+.user_nav_button {
+  color: #ffffff;
+  background: #849d8f;
+}
+
+/*  каталог мороженого  */
+.products_list p {
+  text-align: center;
+}
+
+.products_lis span {
+  text-align: left;
 }

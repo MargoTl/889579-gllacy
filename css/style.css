@@ -2,17 +2,35 @@
 .login
 .feedback
 .basket {
-         display: none;
-        }
+  display: none;
+}
+
 body {
-      margin: 0;
+  margin: 0;
 
-      font-family: Roboto, Arial, sans-serif;
-      font-size: 16px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
 
-      background-color: : #849d8f;
-      
-      }
+  background-color: #849d8f;
+}
 
+a {
+  color: #ffffff;
+}
 
+.main_navigation {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+}
 
+.site_navigation,
+.user_navigation {
+  list-style: none;
+}
+
+.site_navigation a: hover,
+.site_navigation a: focus {
+  color: #ffbc9e;
+}

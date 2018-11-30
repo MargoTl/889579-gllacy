@@ -69,16 +69,14 @@ a {
   background-color: #e84d37;
 }
 
-/* не работает */
 .site_navigation a:hover,
 .site_navigation a:focus {
   color: #ffbc9e;
 }
 
-/* не работает */
 .button:hover,
 .button:focus {
-  background-color: #a13526;
+  background-color: #f28065;
 }
 
 /*  -- Главная --  */
@@ -178,8 +176,8 @@ footer span {
   line-height: 45px;
   text-decoration: none;
 }
-/* кг */
-.products_list span:second-child {
+/* кг !не работает*/
+.kg: {
   font-size: 30px;
 }
 

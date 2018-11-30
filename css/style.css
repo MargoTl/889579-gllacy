@@ -159,12 +159,27 @@ footer span {
 /*  -- Каталог --  */
 
 /*  каталог мороженого  */
+/* название */
 .products_list p {
   text-align: center;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
 }
-
-.products_lis span {
+/* цена */
+.products_list span {
   text-align: left;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+}
+/* кг */
+.products_list span:second-child {
+  font-size: 30px;
 }
 
 footer hr {

@@ -36,21 +36,13 @@ body {
 
 a {
   color: #ffffff;
+  text-decoration-color: #9CAFA4;
 }
 
 /* не работает */
 .site_navigation a: hover,
 .site_navigation a: focus {
   color: #ffbc9e;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 18px;
-}
-
-.main_navigation {
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 700;
 }
 
 /* навигация */
@@ -58,13 +50,92 @@ a {
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
-  line-height: 18px;
-  
+  line-height: 18px;  
 }
-.user_nav_button {
+.user_navigation {
   color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+
   background: #849d8f;
 }
+
+/*  -- Главная --  */
+.time {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.phone {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/*  Слайдер  */
+.slider1 p {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60.35px;
+}
+
+.description {
+  color: #323232;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.description p {
+  color: #323232;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.blog {
+  color: #323232;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.blog a {
+  color: #323232;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-decoration-color: #323232;
+}
+
+.subscripe {
+  color: #323232;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.footer_links {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.footer_links a:first-child {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.footer span {
+  color: #fefefe;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+/*  -- Каталог --  */
 
 /*  каталог мороженого  */
 .products_list p {

@@ -60,6 +60,27 @@ a {
   background: #849d8f;
 }
 
+.button {
+  font: inherit;
+
+  text-align: center;
+  vertical-align: middle;
+
+  color: #fefefe;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+
+  background-color: #e84d37;
+}
+
+/* не работает */
+.button: hover,
+.button: focus {
+  background-color: #a13526;
+}
+
 /*  -- Главная --  */
 .time {
   font-size: 14px;
@@ -128,7 +149,7 @@ a {
   line-height: 18px;
 }
 
-.footer span {
+footer span {
   color: #fefefe;
   font-size: 12px;
   font-weight: 400;
@@ -144,4 +165,11 @@ a {
 
 .products_lis span {
   text-align: left;
+}
+
+footer hr {
+  width: 1146px;
+  height: 1px;
+  background-color: #ffffff;
+  opacity: 0.3;
 }

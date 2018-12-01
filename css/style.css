@@ -1,4 +1,4 @@
-/*  откл.окна  */
+/*           откл.окна           */
 .search,
 .login,
 .feedback,
@@ -8,7 +8,7 @@
   display: none;
 }
 
-/*  откл. маркеры ul  */
+/*           откл. маркеры ul           */
 .site_navigation,
 .user_navigation,
 .pagination_list,
@@ -39,7 +39,7 @@ a {
   text-decoration-color: #9CAFA4;
 }
 
-/* навигация */
+/*          Навигация          */
 .site_navigation li {
   color: #ffffff;
   font-size: 16px;
@@ -55,6 +55,19 @@ a {
   background: #849d8f;
 }
 
+/*          Поиск / Вход / Корзина         */
+.user_nav_button {
+  color: #ffffff;
+  background-color: #a1b4a9;
+}
+
+.user_nav_button:hover,
+.user_nav_button:focus {
+  color: #323232;
+  background-color: #f7f6f3;
+}
+
+/*          Кнопки          */
 .button {
   font: inherit;
 
@@ -75,7 +88,7 @@ a {
   background-color: #f28065;
 }
 
-/*  -- Главная --  */
+/*         Главная          */
 .time {
   font-size: 14px;
   font-weight: 700;
@@ -86,7 +99,7 @@ a {
   font-weight: 700;
 }
 
-/*  Слайдер  */
+/*           Слайдер           */
 .slider1 p {
   font-size: 60px;
   font-weight: 700;
@@ -129,6 +142,7 @@ a {
   line-height: 22px;
 }
 
+/*         Футер         */
 .footer_links {
   color: #ffffff;
   font-size: 13px;
@@ -163,10 +177,17 @@ footer a:last-of-type:focus {
   color: #ffbc9e;
 }
 
-/*  -- Каталог --  */
+footer hr {
+  width: 1146px;
+  height: 1px;
+  background-color: #ffffff;
+  opacity: 0.3;
+}
 
-/*  каталог мороженого  */
-/* название */
+/*          Каталог           */
+
+/*    каталог мороженого    */
+/*   название   */
 .products_list p {
   text-align: center;
   color: #ffffff;
@@ -175,7 +196,7 @@ footer a:last-of-type:focus {
   font-weight: 500;
   line-height: 22px;
 }
-/* цена */
+/*   цена   */
 .products_list span {
   text-align: left;
   color: #ffffff;
@@ -185,14 +206,8 @@ footer a:last-of-type:focus {
   line-height: 45px;
   text-decoration: none;
 }
-/* кг */
+/*   кг   */
 .products_list .kg {
   font-size: 30px;
 }
 
-footer hr {
-  width: 1146px;
-  height: 1px;
-  background-color: #ffffff;
-  opacity: 0.3;
-}

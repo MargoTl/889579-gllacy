@@ -39,25 +39,27 @@ a {
   text-decoration-color: #9CAFA4;
 }
 
-/*          Навигация          */
-.site_navigation li {
+/*        Навигация (Каталог / Доставка / О компании)      */
+.site_navigation li a {
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
 }
 
-.user_navigation {
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 500;
+.site_navigation li a:hover,
+.site_navigation li a:focus {
+  color: #323232;
 
-  background: #849d8f;
+/*  background-color: #f7f6f3;  */
 }
 
 /*          Поиск / Вход / Корзина         */
 .user_nav_button {
   color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+
   background-color: #a1b4a9;
 }
 
@@ -135,6 +137,12 @@ a {
   text-decoration-color: #323232;
 }
 
+.blog h2 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
 .subscripe {
   color: #323232;
   font-size: 16px;
@@ -185,6 +193,9 @@ footer hr {
 }
 
 /*          Каталог           */
+.ice_cream_h2 {
+  font-size: 35px;
+}
 
 /*    каталог мороженого    */
 /*   название   */

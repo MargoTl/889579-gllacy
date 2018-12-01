@@ -27,7 +27,7 @@
 body {
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
-  font-weight: 500px;
+  font-weight: 500;
   line-height: 16px;
   color: #ffffff;
 
@@ -44,8 +44,9 @@ a {
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
-  line-height: 18px;  
+  line-height: 18px;
 }
+
 .user_navigation {
   color: #ffffff;
   font-size: 14px;
@@ -67,11 +68,6 @@ a {
   line-height: 24px;
 
   background-color: #e84d37;
-}
-
-.site_navigation a:hover,
-.site_navigation a:focus {
-  color: #ffbc9e;
 }
 
 .button:hover,
@@ -152,6 +148,19 @@ footer span {
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
+}
+
+.site_navigation a:hover,
+.site_navigation a:focus,
+.products a span:hover,
+.products a span:focus,
+.products a p:hover,
+.products a p:focus,
+.footer_links a:hover,
+.footer_links a:focus,
+footer a:last-of-type:hover,
+footer a:last-of-type:focus {
+  color: #ffbc9e;
 }
 
 /*  -- Каталог --  */

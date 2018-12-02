@@ -108,11 +108,17 @@ a {
   line-height: 60.35px;
 }
 
+/*    Магазин Глейси - Преимущества    */
 .description {
   color: #323232;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+
+  width: 1150px;
+  height: 350px;
+  background-color: #ede1ca;
+/*  background: url(img/waffle.png); */
 }
 
 .description p {
@@ -122,11 +128,17 @@ a {
   line-height: 30px;
 }
 
+/*    Блог      */
 .blog {
   color: #323232;
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
+
+  width: 560px;
+  height: 220px;
+  background-color: #ffffff;
+/*  background: url(img/blog_pic.png);  */
 }
 
 .blog a {
@@ -144,11 +156,16 @@ a {
   line-height: 22px;
 }
 
+/*    Подписка      */
 .subscripe {
   color: #323232;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
+
+  width: 549px;
+  height: 211px;
+  background-color: #f8f7f4;
 }
 
 /*         Футер         */

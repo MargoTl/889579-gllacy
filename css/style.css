@@ -34,24 +34,44 @@ body {
   background-color: #849d8f;
 }
 
+.catalog_body {
+  background-color: #849d8f;
+/*  background-color: #9cb0a5;  Градиент  */
+}
+
 a {
   color: #ffffff;
-  text-decoration-color: #9CAFA4;
+  text-decoration-color: #9CAFA4; /* цвет подчёркивания*/
 }
 
 /*        Навигация (Каталог / Доставка / О компании)      */
-.site_navigation li a {
+.site_navigation a {
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
 }
 
-.site_navigation li a:hover,
-.site_navigation li a:focus {
+.site_navigation a:hover,
+.site_navigation a:focus {
   color: #323232;
+  background-color: #f7f6f3;
+}
 
-/*  background-color: #f7f6f3;  */
+.site_navigation a:active {
+  background-color: #ededed;
+/*  background-color: #f8f7f4; */
+}
+
+.site_navigation .current { /*Каталог на стр. Каталог*/
+  color: #ffffff;
+  background-color: #d07058;
+}
+
+.site_navigation .current:hover,
+.site_navigation .current:focus {
+  color: #ffffff;
+  background-color: #d07058;
 }
 
 /*          Поиск / Вход / Корзина         */
@@ -60,13 +80,14 @@ a {
   font-size: 14px;
   font-weight: 500;
 
-  background-color: #a1b4a9;
+/*  background-color: #ffffff;
+  opacity: 0.2;                */
 }
 
 .user_nav_button:hover,
 .user_nav_button:focus {
   color: #323232;
-  background-color: #f7f6f3;
+  background-color: #f8f7f4;
 }
 
 /*          Кнопки          */
@@ -158,7 +179,7 @@ a {
 
 /*    Подписка      */
 .subscripe {
-  color: #323232;
+  color: #5a5a5a;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -190,12 +211,10 @@ footer span {
   line-height: 18px;
 }
 
-.site_navigation a:hover,
-.site_navigation a:focus,
-.products a span:hover,
-.products a span:focus,
-.products a p:hover,
-.products a p:focus,
+.products span:hover,
+.products span:focus,
+.products p:hover,
+.products p:focus,
 .footer_links a:hover,
 .footer_links a:focus,
 footer a:last-of-type:hover,

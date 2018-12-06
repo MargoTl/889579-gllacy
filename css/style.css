@@ -280,6 +280,7 @@ padding-right: 27px;
 padding-left: 27px
 }
 
+/* --  HEADER  -- */
 .main_header {
   display: flex; }
 
@@ -324,3 +325,15 @@ padding-left: 27px
 /*  min-width: 245px;*/
 }
 
+/* --  MAIN  -- */
+.blog_n_subscr {
+      background-color: rgba(0, 225, 255, 0.4); /* временно цвет */
+  display: flex;
+  justify-content: center;
+}
+
+.blog {
+  margin-right: 26px;
+}
+
+/* --  FOOTER  -- */

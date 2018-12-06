@@ -267,15 +267,19 @@ body {
 
 .main_header {
   display: flex;
+}
+
+.main_navigation {
+  display: flex;
   justify-content: center;
 
   width: 1146px;
   min-height: 100px;
 
-  margin: 0 auto;
-  padding: 0 27px;
+/*  margin: 0 auto;
+  padding: 0 27px;*/
 
-    background-color: rgba(255, 255, 0, 0.2); /* временно цвет */
+    background-color: rgba(255, 0, 0, 0.5); /* временно цвет */
 }
 
 .main_header_logo {
@@ -283,28 +287,34 @@ body {
   height: 64px;
   width: 154px;
 
-    background-color: rgba(105, 0, 255, 0.2); /* временно цвет */
+    background-color: rgba(255, 100, 0, 0.5); /* временно цвет */
 }
 
 
 .main_header_wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;*/
 
-  min-width: 969px;
+/*  min-width: 969px; */
 
-    background-color: rgba(155, 20, 205, 0.2); /* временно цвет */
+    background-color: rgba(255, 220, 0, 0.5); /* временно цвет */
 }
+
 .site_navigation {
   display: flex;
   justify-content: space-between;
-  
-  min-width: 349px;
+
+/*  min-width: 349px;*/
+
+    background-color: rgba(0, 255, 40, 0.5); /* временно цвет */
 }
 
 .user_navigation {
   display: flex;
   align-items: flex-start;
 
-  min-width: 245px;
+/*  min-width: 245px;*/
+
+    background-color: rgba(0, 225, 255, 0.5); /* временно цвет */
 }
+

@@ -197,6 +197,14 @@ a {
   background-color: #f8f7f4;
 }
 
+/*  исправить потом!  */
+.contacts p {
+  color: #323232;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
 /*         Футер         */
 .footer_links {
   color: #ffffff;
@@ -334,6 +342,20 @@ padding-left: 27px
 
 .blog {
   margin-right: 26px;
+}
+
+/*    page CATALOG     */
+
+.breadcrumb {
+      background-color: rgba(0, 225, 255, 0.4); /* временно цвет */
+  display: flex;
+  justify-content: space-around;
+
+  width: 220px;
+
+  padding: 0px;
+  margin-right: auto;
+  margin-left: 0px;
 }
 
 /* --  FOOTER  -- */

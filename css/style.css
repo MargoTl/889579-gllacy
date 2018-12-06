@@ -258,3 +258,39 @@ footer hr {
   font-size: 30px;
 }
 
+/*  ####   Сеточные стили   ####  */
+
+html,
+body {
+  min-width: 1200px;
+}
+
+.main_header {
+  display: flex;
+
+  width: 1146px;
+  min-height: 100px;
+
+  margin: 0 auto;
+  padding: 0 27px;
+}
+
+.main_header_logo {
+  padding-top: 9px;
+}
+
+
+.main_header_wrapper {
+  display: flex;
+
+  min-width: 969px;
+}
+.site_navigation {
+
+  min-width: 349px;
+}
+
+.user_navigation {
+
+  min-width: 245px;
+}

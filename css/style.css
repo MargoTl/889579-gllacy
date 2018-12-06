@@ -1,6 +1,7 @@
 /*           откл.окна           */
 .search,
 .login,
+.basket,
 .feedback,
 .quick_btn,
 .catalog {
@@ -8,8 +9,8 @@
 }
 
 /*           откл. маркеры ul           */
-.site_navigation,
-.user_navigation,
+.site_nav,
+.user_nav,
 .pagination_list,
 .socials,
 .products_list,
@@ -44,31 +45,31 @@ a {
 }
 
 /*        Навигация (Каталог / Доставка / О компании)      */
-.site_navigation a {
+.site_nav a {
   color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
 }
 
-.site_navigation a:hover,
-.site_navigation a:focus {
+.site_nav a:hover,
+.site_nav a:focus {
   color: #323232;
   background-color: #f7f6f3;
 }
 
-.site_navigation a:active {
+.site_nav a:active {
   background-color: #ededed;
 /*  background-color: #f8f7f4; */
 }
 
-.site_navigation .current { /*Каталог на стр. Каталог*/
+.site_nav .current { /*Каталог на стр. Каталог*/
   color: #ffffff;
   background-color: #d07058;
 }
 
-.site_navigation .current:hover,
-.site_navigation .current:focus {
+.site_nav .current:hover,
+.site_nav .current:focus {
   color: #ffffff;
   background-color: #d07058;
 }
@@ -262,59 +263,59 @@ footer hr {
 
 html,
 body {
-  min-width: 1200px;
+  min-width: 1200px; }
+
+.container {
+width: 1146px;
+margin: 0 auto;
+padding-right: 27px;
+padding-left: 27px
 }
 
 .main_header {
-  display: flex;
-}
+  display: flex; }
 
-.main_navigation {
+.main_nav {
+      background-color: rgba(255, 0, 0, 0.4); /* временно цвет */ 
   display: flex;
   justify-content: center;
-
   width: 1146px;
   min-height: 100px;
 
-/*  margin: 0 auto;
+/*  margin: 0 auto; 
   padding: 0 27px;*/
-
-    background-color: rgba(255, 0, 0, 0.5); /* временно цвет */
 }
 
 .main_header_logo {
+      background-color: rgba(255, 100, 0, 0.4); /* временно цвет */
   padding-top: 9px;
+  
   height: 64px;
   width: 154px;
-
-    background-color: rgba(255, 100, 0, 0.5); /* временно цвет */
 }
-
 
 .main_header_wrapper {
-  display: flex;
-  justify-content: space-between;*/
-
-/*  min-width: 969px; */
-
-    background-color: rgba(255, 220, 0, 0.5); /* временно цвет */
-}
-
-.site_navigation {
+      background-color: rgba(255, 220, 0, 0.4); /* временно цвет */
   display: flex;
   justify-content: space-between;
 
-/*  min-width: 349px;*/
-
-    background-color: rgba(0, 255, 40, 0.5); /* временно цвет */
+/*  min-width: 969px; */
 }
 
-.user_navigation {
+.site_nav {
+     background-color: rgba(0, 255, 40, 0.4); /* временно цвет */
+  display: flex;
+  justify-content: space-between;
+
+  min-width: 349px;
+}
+
+.user_nav {
+      background-color: rgba(0, 225, 255, 0.4); /* временно цвет */
   display: flex;
   align-items: flex-start;
 
+  padding-top: 14px;
 /*  min-width: 245px;*/
-
-    background-color: rgba(0, 225, 255, 0.5); /* временно цвет */
 }
 

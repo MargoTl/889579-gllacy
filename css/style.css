@@ -276,6 +276,10 @@ footer hr {
 .products_list .kg {
   font-size: 30px;
 }
+.price {  /*  цена на картинке  */
+  position: relative;
+  top: -50px;
+}
 
 /*  ####   Сеточные стили   ####  */
 
@@ -370,8 +374,10 @@ padding-left: 27px;
 }
 
 .products_list {
+      background-color: rgba(0, 25, 255, 0.3); /* временно цвет */
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   width: 1146px;
 
   margin: 0 auto;
@@ -380,10 +386,12 @@ padding-left: 27px;
 }
 
 .products_list > li {
+      background-color: rgba(0, 225, 55, 0.3); /* временно цвет */
   width: 268px;
   height: 322px;
-  margin: 20px 13px; /* 20+20=40 / 13+13=26 */
 }
+
+
 
 .pagination_list {
       background-color: rgba(255, 120, 10, 0.4); /* временно цвет */

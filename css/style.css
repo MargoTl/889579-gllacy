@@ -248,6 +248,8 @@ footer hr {
 /*          Каталог           */
 .ice_cream_h2 {
   font-size: 35px;
+  font-weight: 700;
+  line-height: 41px;
 }
 
 /*    каталог мороженого    */
@@ -285,7 +287,7 @@ body {
 width: 1146px;
 margin: 0 auto;
 padding-right: 27px;
-padding-left: 27px
+padding-left: 27px;
 }
 
 /* --  HEADER  -- */
@@ -349,13 +351,52 @@ padding-left: 27px
 .breadcrumb {
       background-color: rgba(0, 225, 255, 0.4); /* временно цвет */
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
 
-  width: 220px;
+  width: 1146px;
+/*  min-width: 220px; */
 
-  padding: 0px;
-  margin-right: auto;
-  margin-left: 0px;
+  margin: 0 auto;
+  padding-right: 27px;
+  padding-left: 27px;
 }
 
+.ice_cream_h2 {
+      background-color: rgba(0, 225, 255, 0.4); /* временно цвет */
+  width: 1146px;
+
+  margin: 0 auto;
+  padding-right: 27px;
+  padding-left: 27px;
+}
+
+.pagination_list {
+      background-color: rgba(255, 120, 10, 0.4); /* временно цвет */
+  display: flex;
+  justify-content: flex-end;
+
+  width: 1146px;
+
+  margin: 0 auto;
+  padding-right: 27px;
+  padding-left: 27px;
+}
 /* --  FOOTER  -- */
+
+.footer_container {
+      background-color: rgba(0, 225, 255, 0.4); /* временно цвет */
+  display: flex;
+  justify-content: flex-start;
+
+  width: 1146px;
+
+  margin: 0 auto;
+  padding-right: 27px;
+  padding-left: 27px;
+}
+
+.socials {
+      background-color: rgba(255, 220, 0, 0.4); /* временно цвет */
+  display: flex;
+  justify-content: flex-start;
+}

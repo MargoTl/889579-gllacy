@@ -347,7 +347,6 @@ padding-left: 27px;
 }
 
 /*    page CATALOG     */
-
 .breadcrumb {
       background-color: rgba(0, 225, 255, 0.4); /* временно цвет */
   display: flex;
@@ -368,6 +367,22 @@ padding-left: 27px;
   margin: 0 auto;
   padding-right: 27px;
   padding-left: 27px;
+}
+
+.products_list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1146px;
+
+  margin: 0 auto;
+  padding-right: 27px;
+  padding-left: 27px;
+}
+
+.products_list > li {
+  width: 268px;
+  height: 322px;
+  margin: 20px 13px; /* 20+20=40 / 13+13=26 */
 }
 
 .pagination_list {

@@ -94,7 +94,7 @@ a {
   color: #ffffff;
   font-size: 14px;
   font-weight: 500;
-  line-height: 16px;
+  line-height: 32px;
 
   background-color: rgba(255, 255, 255, 0.2);
 }
@@ -355,17 +355,23 @@ padding-left: 27px;
 }
 
 /* --  MAIN  -- */
-.time_phone {
-      background-color: rgba(0, 25, 255, 0.3); /* временно цвет */
-  position: absolute;
 
-  margin: 0px;
+.time_phone p {
+      background-color: rgba(0, 25, 255, 0.2); /* временно цвет */
+  margin: 0 0 8px 0;
   padding: 0px;
+  width: 220px;
+} 
 
-  top: 75px;
-  right: 26px;
+.catalog_bread_n_phone {
+      background-color: rgba(255, 100, 0, 0.3); /* временно цвет */
+  display: flex;
+  justify-content: space-between;
+  width: 1146px;
 
-  width: 170px;
+  margin: 0 auto;
+  padding-right: 27px;
+  padding-left: 27px;
 }
 
 .blog_n_subscr {

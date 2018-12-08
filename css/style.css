@@ -30,6 +30,8 @@
 .offer,
 .slide_list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -53,6 +55,11 @@ a {
 }
 
 /*        Навигация (Каталог / Доставка / О компании)      */
+.site_nav {
+  margin-left: 10px;
+  margin-top: 32px;
+}
+
 .site_nav a {
   color: #ffffff;
   font-size: 16px;
@@ -252,6 +259,10 @@ footer hr {
   line-height: 41px;
 }
 
+.breadcrumb a::after {
+  content: "»";
+}
+
 /*    каталог мороженого    */
 /*   название   */
 .products_list p {
@@ -299,7 +310,7 @@ padding-left: 27px;
   display: flex; }
 
 .main_nav {
-      background-color: rgba(255, 0, 0, 0.4); /* временно цвет */ 
+      background-color: rgba(255, 0, 0, 0.3); /* временно цвет */ 
   display: flex;
   justify-content: center;
   width: 1146px;
@@ -307,7 +318,8 @@ padding-left: 27px;
 }
 
 .main_header_logo {
-      background-color: rgba(255, 100, 0, 0.4); /* временно цвет */
+      background-color: rgba(255, 100, 0, 0.3); /* временно цвет */
+
   padding-top: 9px;
   
   height: 64px;
@@ -315,7 +327,7 @@ padding-left: 27px;
 }
 
 .main_header_wrapper {
-      background-color: rgba(255, 220, 0, 0.4); /* временно цвет */
+      background-color: rgba(255, 220, 0, 0.3); /* временно цвет */
   display: flex;
   justify-content: space-between;
 
@@ -323,7 +335,7 @@ padding-left: 27px;
 }
 
 .site_nav {
-     background-color: rgba(0, 255, 40, 0.4); /* временно цвет */
+     background-color: rgba(0, 255, 40, 0.3); /* временно цвет */
   display: flex;
   justify-content: space-between;
 
@@ -331,17 +343,33 @@ padding-left: 27px;
 }
 
 .user_nav {
-      background-color: rgba(0, 225, 255, 0.4); /* временно цвет */
+      background-color: rgba(0, 225, 255, 0.3); /* временно цвет */
   display: flex;
   align-items: flex-start;
 
-  padding-top: 14px;
-/*  min-width: 245px;*/
+/*  padding-top: 14px;
+  min-width: 245px;*/
+
+  margin-top: 23px;
+  margin-right: 28px;
 }
 
 /* --  MAIN  -- */
+.time_phone {
+      background-color: rgba(0, 25, 255, 0.3); /* временно цвет */
+  position: absolute;
+
+  margin: 0px;
+  padding: 0px;
+
+  top: 75px;
+  right: 26px;
+
+  width: 170px;
+}
+
 .blog_n_subscr {
-      background-color: rgba(0, 225, 255, 0.4); /* временно цвет */
+      background-color: rgba(0, 225, 255, 0.3); /* временно цвет */
   display: flex;
   justify-content: center;
 }
@@ -352,7 +380,7 @@ padding-left: 27px;
 
 /*    page CATALOG     */
 .breadcrumb {
-      background-color: rgba(0, 225, 255, 0.4); /* временно цвет */
+      background-color: rgba(0, 225, 255, 0.3); /* временно цвет */
   display: flex;
   justify-content: flex-start;
 
@@ -365,7 +393,7 @@ padding-left: 27px;
 }
 
 .ice_cream_h2 {
-      background-color: rgba(0, 225, 255, 0.4); /* временно цвет */
+      background-color: rgba(0, 225, 255, 0.3); /* временно цвет */
   width: 1146px;
 
   margin: 0 auto;
@@ -390,8 +418,6 @@ padding-left: 27px;
   width: 268px;
   height: 322px;
 }
-
-
 
 .pagination_list {
       background-color: rgba(255, 120, 10, 0.4); /* временно цвет */

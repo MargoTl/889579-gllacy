@@ -369,13 +369,34 @@ body {
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
-  
+
   margin: 0;
 
 /*  text-align: left; */
 }
 
 /* ====================  MAIN  ========================== */
+
+.slider1,
+.slider2,
+.slader3 {
+  position: relative;
+}
+
+.slide_pic {
+  position: absolute;
+  top: -100px;
+  right: 78px;
+}
+
+.slider1 p {
+    position: absolute;
+  top: 232px;
+  left: 264px;
+
+  width: 673px;
+  text-align: center;
+}
 
 .blog_n_subscr {
       background-color: rgba(0, 225, 255, 0.3); /* временно цвет */

@@ -56,7 +56,6 @@ a {
 
 /*        Навигация (Каталог / Доставка / О компании)      */
 .site_nav {
-  margin-left: 10px;
   margin-top: 32px;
 }
 
@@ -306,7 +305,7 @@ body {
   padding-left: 27px;
 }
 
-/* --  HEADER  -- */
+/* =====================  HEADER  ============================ */
 .main_header {
   display: flex;
 }
@@ -320,7 +319,7 @@ body {
 
   min-height: 100px;
 }
-
+/*             главный логотип       */
 .main_header_logo {
       background-color: rgba(255, 100, 0, 0.3); /* временно цвет */
   height: 64px;
@@ -333,8 +332,6 @@ body {
       background-color: rgba(255, 220, 0, 0.3); /* временно цвет */
   display: flex;
   justify-content: space-between;
-
-/*  min-width: 969px; */
 }
 
 .site_nav {
@@ -343,6 +340,8 @@ body {
   justify-content: space-between;
 
   min-width: 349px;
+
+  margin-left: -4px;
 }
 
 .user_nav {
@@ -350,34 +349,33 @@ body {
   display: flex;
   align-items: flex-start;
 
-/*  padding-top: 14px;
-  min-width: 245px;*/
-
-  margin-top: 23px;
-  margin-right: 28px;
+  margin-top: 24px;
+  margin-right: 21px;
 }
 
-/* --  MAIN  -- */
+.nav_phone {
+  position: relative;
+}
+
+.time_phone {
+      background-color: rgba(0, 25, 255, 0.2); /* временно цвет */
+  position: absolute;
+  top: 50px;
+  left: 85px;
+  width: 220px;
+}
 
 .time_phone p {
-      background-color: rgba(0, 25, 255, 0.2); /* временно цвет */
-  width: 220px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  
+  margin: 0;
 
-  margin: 0 0 8px 0;
-  padding: 0px;
-} 
-
-.catalog_bread_n_phone {
-      background-color: rgba(255, 100, 0, 0.3); /* временно цвет */
-  display: flex;
-  justify-content: space-between;
-
-  width: 1146px;
-
-  margin: 0 auto;
-  padding-right: 27px;
-  padding-left: 27px;
+/*  text-align: left; */
 }
+
+/* ====================  MAIN  ========================== */
 
 .blog_n_subscr {
       background-color: rgba(0, 225, 255, 0.3); /* временно цвет */
@@ -389,7 +387,7 @@ body {
   margin-right: 26px;
 }
 
-/*    page CATALOG     */
+/* =================== page CATALOG ===================== */
 .breadcrumb {
       background-color: rgba(0, 225, 255, 0.3); /* временно цвет */
   display: flex;
@@ -442,7 +440,7 @@ body {
   padding-right: 27px;
   padding-left: 27px;
 }
-/* --  FOOTER  -- */
+/* ===================  FOOTER  ===================== */
 
 .footer {
     background: pink;
@@ -481,10 +479,10 @@ body {
   padding: 0;
 }
 
-/*.footer_logo { не сдвигается вбок 
+.footer_logo {
   position: relative;
   left: 2px;
-} */
+}
 
 .socials {
   background-color: rgba(255, 220, 0, 0.3);
@@ -519,7 +517,7 @@ body {
 .hart::before {
   content: "";
   position: absolute;
-  left: -21px;
+  left: -22px;
   top: 3px;
 
   width: 15px;

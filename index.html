@@ -10,43 +10,46 @@
   <body>
     <header class="main_header container">
       <nav class="main_nav">
-        <a class="main_header_logo"><img src="img/logo.svg" width="154" height="64" alt="логотип магазина Глейси"></a>
+        <a class="main_header_logo">
+          <img src="img/logo.svg" width="154" height="64" alt="логотип магазина Глейси"></a>
         <div class="main_header_wrapper container">
           <ul class="site_nav">
+            <li>
+              <a href="catalog.html">Каталог</a>
+              <ul class="catalog">
+                <li>
+                  <a href="#">Новинки</a></li>
+                <li>
+                  <a href="catalog.html">Сливочное</a></li>
+                <li>
+                  <a href="#">Щербеты</a></li>
+                <li>
+                  <a href="#">Фруктовый лед</a></li>
+                <li>
+                  <a href="#">Мелорин</a></li>
+              </ul>
+            </li>
            <li>
-             <a href="catalog.html">Каталог</a>
-               <ul class="catalog">
-                 <li>
-                   <a href="#">Новинки</a></li>
-                 <li>
-                   <a href="catalog.html">Сливочное</a></li>
-                 <li>
-                   <a href="#">Щербеты</a></li>
-                 <li>
-                   <a href="#">Фруктовый лед</a></li>
-                 <li>
-                   <a href="#">Мелорин</a></li>
-               </ul>
-             </li>
-           <li><a href="#">Доставка и оплата</a></li>
-           <li><a href="#">О компании</a></li>
+            <a href="#">Доставка и оплата</a></li>
+           <li>
+            <a href="#">О компании</a></li>
           </ul>
-          <div class="user_nav">
+          <div class="user_nav nav_phone">
             <button class="user_nav_button" type="button">Поиск</button>
             <button class="user_nav_button" type="button">Вход</button>
             <button class="user_nav_button" type="button">Пусто</button>
+            <div class="time_phone">
+              <p class="time">С 10 до 20, ежедневно</p>
+              <p class="phone">8 812 450-25-25</p>
+            </div>
           </div>
         </div>
       </nav>
     </header>
     <main>
     <h1 class="visually_hidden">Магазин Глейси</h1>
-    <div class="time_phone">
-      <p class="time">С 10 до 20, ежедневно</p>
-      <p class="phone">8 812 450-25-25</p>
-    </div>
 
-           <!-- Слайдер -->
+           <!---------- Слайдер ------------->
       <div class="slider1 container">
         <img src="img/slider1_pic.png" width="1045" height="881" alt="два мороженых">
         <p>Крем-брюле и пломбир с малиновым джемом</p>
@@ -184,7 +187,7 @@
       </div>
       <div class="footer_copyright_column">
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="логотип html academy"></a>
+          <img class="footer_logo" src="img/logo-htmlacademy.svg" width="108" height="39" alt="логотип html academy"></a>
         <p>Сделано в
         <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
         &copy; 2017</p>

@@ -311,7 +311,7 @@ body {
 }
 
 .main_nav {
-      background-color: rgba(255, 0, 0, 0.3); /* временно цвет */
+      background-color: rgba(255, 0, 0, 0.1); /* временно цвет */
   display: flex;
   justify-content: center;
 
@@ -321,7 +321,7 @@ body {
 }
 /*             главный логотип       */
 .main_header_logo {
-      background-color: rgba(255, 100, 0, 0.3); /* временно цвет */
+      background-color: rgba(255, 100, 0, 0.1); /* временно цвет */
   height: 64px;
   width: 154px;
 
@@ -329,13 +329,13 @@ body {
 }
 
 .main_header_wrapper {
-      background-color: rgba(255, 220, 0, 0.3); /* временно цвет */
+      background-color: rgba(255, 220, 0, 0.1); /* временно цвет */
   display: flex;
   justify-content: space-between;
 }
 
 .site_nav {
-     background-color: rgba(0, 255, 40, 0.3); /* временно цвет */
+     background-color: rgba(0, 255, 40, 0.2); /* временно цвет */
   display: flex;
   justify-content: space-between;
 
@@ -345,7 +345,7 @@ body {
 }
 
 .user_nav {
-      background-color: rgba(0, 225, 255, 0.3); /* временно цвет */
+      background-color: rgba(0, 225, 255, 0.2); /* временно цвет */
   display: flex;
   align-items: flex-start;
 
@@ -390,12 +390,37 @@ body {
 }
 
 .slider1 p {
-    position: absolute;
+  position: absolute;
   top: 232px;
   left: 264px;
 
   width: 673px;
   text-align: center;
+}
+
+.slider_btn {
+  position: absolute;
+  top: 442px;
+  left: 460px;
+
+  width: 284px;
+  height: 68px;
+
+/*  border-shadow: ; */
+
+text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+font-size: 32px;
+font-weight: 700;
+line-height: 44px;
+}
+
+.offer {
+      background-color: rgba(255, 25, 255, 0.5); /* временно цвет */
+  margin-top: 475px;
+  margin-left: 26px;
+
+  height: 230px;
+  width: 560px;
 }
 
 .blog_n_subscr {

@@ -471,14 +471,25 @@ line-height: 44px;
 
 .products_list > li {
       background-color: rgba(0, 225, 55, 0.1); /* временно цвет */
+  position: relative;
+
   width: 268px;
   height: 322px;
 }
 
 .products img:first-child {
-  border-radius: 50%; 
+
+  border-radius: 50%;
 }
 
+.products_list img:nth-of-type(2) {
+  position: absolute;
+
+  top: 0px;
+  left: 0px;
+}
+
+/*     Навигация по страницам (1 2 3 4 5 >)      */
 .pagination_list {
       background-color: rgba(255, 120, 10, 0.2); /* временно цвет */
   display: flex;
@@ -490,6 +501,7 @@ line-height: 44px;
   padding-right: 27px;
   padding-left: 27px;
 }
+
 /* ===================  FOOTER  ===================== */
 
 .footer {

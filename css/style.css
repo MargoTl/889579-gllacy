@@ -136,14 +136,14 @@ a {
   font-weight: 700;
 }
 
-/*           Слайдер           */
+/*                  Слайдер                  */
 .slider1 p {
   font-size: 60px;
   font-weight: 700;
   line-height: 60.35px;
 }
 
-/*    Магазин Глейси - Преимущества    */
+/*                   Преимущества        */
 .description {
   color: #323232;
   font-size: 16px;
@@ -151,9 +151,9 @@ a {
   line-height: 22px;
 
   width: 1150px;
-  height: 350px;
-  background-color: #ede1ca;
-/*  background: url(img/waffle.png); */
+  min-height: 306px;
+  background-color: #ebdfc4;
+/*  background-image: url("img/waffle.png");  не работает  */
 }
 
 .description p {
@@ -415,12 +415,40 @@ line-height: 44px;
 }
 
 .offer {
-      background-color: rgba(255, 25, 255, 0.5); /* временно цвет */
-  margin-top: 475px;
-  margin-left: 26px;
+      background-color: rgba(235, 55, 235, 0.4); /* временно цвет */
 
+  display: flex;
+
+  margin-top: 475px;
+}
+
+.offer li {
   height: 230px;
   width: 560px;
+
+}
+
+.offer span {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 41px;
+
+  padding-top: 23px;
+  padding-left: 20px;
+}
+
+.offer p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+
+  padding-top: 23px;
+  padding-left: 20px;
+}
+
+.offer button {
+  padding-top: 23px;
+  padding-left: 20px;
 }
 
 .blog_n_subscr {

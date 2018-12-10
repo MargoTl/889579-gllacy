@@ -48,26 +48,32 @@
     </header>
     <main>
     <h1 class="visually_hidden">Магазин Глейси</h1>
-
-           <!---------- Слайдер ------------->
-      <div class="slider1 container">
-        <img class="slide_pic" src="img/slider1_pic.png" width="1045" height="881" alt="два мороженых">
-        <p>Крем-брюле и пломбир с малиновым джемом</p>
-<!--        <img class="slide_pic" src="img/slider2_pic.png" width="1045" height="881" alt="два мороженых">
-        <p>Шоколадный пломбир и лимонный сорбет</p>
-        <img class="slide_pic" src="img/slider3_pic.png" width="1045" height="881" alt="два мороженых">
-        <p>Пломбир с помадкой и клубничный щербет</p>  -->
-        <ul class="slide_list">
-          <li class="slide_li">
-            <button class="slide_btn">Первый слайд</button></li>
-          <li class="slide_li">
-            <button class="slide_btn">Второй слайд</button></li>
-          <li class="slide_li">
-            <button class="slide_btn">Трейтий слайд</button></li>
+  <!-------------------------- Слайдер -------------------------------->
+    <input class="visually_hidden" type="radio" id="slide_1" name="switch" checked>
+    <input class="visually_hidden" type="radio" id="slide_2" name="switch">
+    <input class="visually_hidden" type="radio" id="slide_3" name="switch">
+      <section class="slider container">
+        <div class="slider_controls">
+          <label for="slide_1">Первый слайд</label>
+          <label for="slide_2">Второй слайд</label>
+          <label for="slide_3">Третий слайд</label>
+        </div>
+        <ul class="slider_list">
+          <li class="slide" id="slide1">
+            <p>Крем-брюле и пломбир с малиновым джемом</p>
+            <button class="button slider_btn" type="button">Давайте оба!"</button>
+          </li>
+          <li class="slide" id="slide2">
+            <p>Шоколадный пломбир и лимонный сорбет</p>
+            <button class="button slider_btn" type="button">Давайте оба!"</button>
+          </li>
+          <li class="slide" id="slide3">
+            <p>Пломбир с помадкой и клубничный щербет</p>
+            <button class="button slider_btn" type="button">Давайте оба!"</button>
+          </li>
         </ul>
-        <button class="button slider_btn" type="button">Давайте оба!"</button>
-      </div>
-
+      </section>
+            <!----------------Предложение-------------------->
       <ul class="offer container">
         <li>
           <span>Малинка даром!</span>

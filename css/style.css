@@ -76,7 +76,8 @@ a {
 /*  background-color: #f8f7f4; */
 }
 
-.site_nav .current { /*Каталог на стр. Каталог*/
+/*       "Каталог" на стр. Каталог      */
+.site_nav .current {
   color: #ffffff;
   background-color: #d07058;
 }
@@ -228,7 +229,7 @@ a {
   line-height: 30px;
 }
 
-/*    Блог      */
+/*           Блог      */
 .blog {
   color: #323232;
   font-size: 16px;
@@ -256,7 +257,7 @@ a {
   line-height: 22px;
 }
 
-/*    Подписка      */
+/*           Подписка      */
 .subscripe {
   color: #5a5a5a;
   font-size: 16px;
@@ -356,7 +357,7 @@ footer hr {
   top: -60px;
 }
 
-/*  ##########   Сеточные стили   ##########  */
+/*                     Сеточные стили                  */
 
 html,
 body {
@@ -370,7 +371,7 @@ body {
   padding-left: 27px;
 }
 
-/* =====================  HEADER  ==================== */
+/*                      HEADER                  */
 .main_header {
   display: flex;
 }
@@ -440,7 +441,7 @@ body {
 /*  text-align: left; */
 }
 
-/* ====================  MAIN  ======================= */
+/*                          MAIN                        */
 
 .offer {
       background-color: rgba(235, 55, 235, 0.4); /* временно цвет */
@@ -489,7 +490,7 @@ body {
   margin-right: 26px;
 }
 
-/* =================== page CATALOG ===================== */
+/*                   page CATALOG                    */
 .breadcrumb {
       background-color: rgba(0, 225, 255, 0.3); /* временно цвет */
   display: flex;
@@ -558,7 +559,7 @@ body {
   padding-left: 27px;
 }
 
-/* ===================  FOOTER  ===================== */
+/*                         FOOTER                      */
 
 .footer {
     background: pink;

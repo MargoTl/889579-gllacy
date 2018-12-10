@@ -1,7 +1,5 @@
 /*              откл.окна                  */
-.search,
-.login,
-.basket,
+.search, .login, .basket,
 .feedback,
 .quick_btn,
 .catalog {
@@ -17,17 +15,14 @@
 }
 
 /*              откл. маркеры ul             */
-.site_nav,
-.user_nav,
-.pagination_list,
-.socials,
+.site_nav, .user_nav,
+.slider_list,
 .products_list,
-.fat_list,
-.filler,
+.offer, .descr_list,
 .breadcrumb,
-.products_list,
-.descr_list,
-.offer {
+.fat_list, .filler,
+.pagination_list,
+.socials {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -40,17 +35,56 @@ body {
   line-height: 16px;
   color: #ffffff;
 
+  min-width: 1200px;
+
   background-color: #849d8f;
 }
 
 .catalog_body {
   background-color: #849d8f;
-/*  background-color: #9cb0a5;  Градиент  */
+/*  background-color: #9cb0a5;  Градиент (кусок сверху) */
 }
 
 a {
   color: #ffffff;
   text-decoration-color: #9CAFA4;     /* цвет подчёркивания*/
+}
+
+/*                 Кнопки               */
+.button {
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  color: #fefefe;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.button:active {
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+/*       Контейнер       */
+.container {
+  width: 1146px;
+
+  margin: 0 auto;
+  padding-right: 27px;
+  padding-left: 27px;
 }
 
 /*        Навигация (Каталог / Доставка / О компании)      */
@@ -73,7 +107,8 @@ a {
 
 .site_nav a:active {
   background-color: #ededed;
-/*  background-color: #f8f7f4; */
+/*  background-color: #f8f7f4;   ?
+  background: linear-gradient(to bottom, #9cb0a5 0%, #849d8f 100%);*/
 }
 
 /*       "Каталог" на стр. Каталог      */
@@ -104,53 +139,29 @@ a {
   background-color: #f8f7f4;
 }
 
-/*          Кнопки          */
-.button {
-  font: inherit;
-  text-align: center;
-  vertical-align: middle;
-  color: #fefefe;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
-
-  background: #f26843;
-  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
-  border-radius: 50px;
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-  border: none;
-}
-
-.button:hover,
-.button:focus {
-  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
-}
-
-.button:active {
-  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
-  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
-}
-
 /*                     Главная                    */
 .time {
   font-size: 14px;
   font-weight: 700;
+  line-height: 16px;
 }
 
 .phone {
   font-size: 22px;
   font-weight: 700;
+  line-height: 24px;
 }
 
 /*                  Слайдер                  */
 
 .slider {
-  position: relative;
+      background-color: rgba(255, 0, 0, 0.5); /* временно цвет */
+  position: absolute;
+  top: 0;
 
-  padding-top: 321px;
+  z-index: -1;
 
-  min-width: 940px;
+  width: 1146px;
 
   background-color: #849d8f;
   background-image: url("../img/slider1_pic.png");
@@ -158,7 +169,7 @@ a {
   background-position: top center;
 
   text-align: center;
-  color:  #ffffff;
+  color: #ffffff;
 }
 
 .slider p {
@@ -167,16 +178,15 @@ a {
   line-height: 61px;
 
   width: 700px;
-  margin: 0 auto;
-  margin-bottom: 27px;
+  margin: 392px auto 27px auto;
 }
 
 .slider_controls {
   position: absolute;
   bottom: 63px;
   left: 0;
-  z-index: 20; /* почему 20? */
-  
+  z-index: 2;
+
   font-size: 0;
 }
 
@@ -201,6 +211,7 @@ a {
   height: 68px;
 
   font-size: 32px;
+  font-weight: 700;
   line-height: 44px;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 }
@@ -358,26 +369,13 @@ footer hr {
 }
 
 /*                     Сеточные стили                  */
-
-html,
-body {
-  min-width: 1200px; }
-
-.container {
-  width: 1146px;
-
-  margin: 0 auto;
-  padding-right: 27px;
-  padding-left: 27px;
-}
-
 /*                      HEADER                  */
 .main_header {
   display: flex;
 }
 
 .main_nav {
-      background-color: rgba(255, 0, 0, 0.1); /* временно цвет */
+/*      background-color: rgba(255, 0, 0, 0.1); /* временно цвет */
   display: flex;
   justify-content: center;
 
@@ -387,7 +385,6 @@ body {
 }
 /*             главный логотип       */
 .main_header_logo {
-      background-color: rgba(255, 100, 0, 0.1); /* временно цвет */
   height: 64px;
   width: 154px;
 
@@ -395,13 +392,13 @@ body {
 }
 
 .main_header_wrapper {
-      background-color: rgba(255, 220, 0, 0.1); /* временно цвет */
+/*      background-color: rgba(255, 220, 0, 0.1); /* временно цвет */
   display: flex;
   justify-content: space-between;
 }
 
 .site_nav {
-     background-color: rgba(0, 255, 40, 0.2); /* временно цвет */
+/*     background-color: rgba(0, 255, 40, 0.2); /* временно цвет */
   display: flex;
   justify-content: space-between;
 
@@ -411,7 +408,7 @@ body {
 }
 
 .user_nav {
-      background-color: rgba(0, 225, 255, 0.2); /* временно цвет */
+/*      background-color: rgba(0, 225, 255, 0.2); /* временно цвет */
   display: flex;
   align-items: flex-start;
 
@@ -426,9 +423,13 @@ body {
 .time_phone {
       background-color: rgba(0, 25, 255, 0.2); /* временно цвет */
   position: absolute;
+
   top: 50px;
   left: 85px;
+
   width: 220px;
+
+  z-index: 3;
 }
 
 .time_phone p {

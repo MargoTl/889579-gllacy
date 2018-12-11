@@ -128,15 +128,17 @@ a {
 /*          Поиск / Вход / Корзина         */
 .user_nav_btn {
   font: inherit;
+
   text-align: center;
-  vertical-align: middle;
+  vertical-align: middle; /* не работает выравнивание */
+
   color: #ffffff;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
 
-  min-width: 33px;
-  min-height: 33px;
+  min-width: 32px;
+  min-height: 32px;
 
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
@@ -145,6 +147,10 @@ a {
   cursor: pointer;
 
   margin-right: 9px;
+}
+
+.login_btn path {
+  fill: #ffffff;
 }
 
 .user_nav_btn:hover,
@@ -157,17 +163,17 @@ a {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.login_btn {
-  padding: 0 21px 0 17px;
-}
+.login_btn { padding: 0 21px 0 17px; }
 
-.bascet_btn {
-  padding: 0 17px 0 16px;
-}
+.bascet_btn { padding: 0 17px 0 16px; }
 
-/*.search_btn:hover,
-.search_btn:focus {
+.basket_red{ padding: 0 17px 0 16px; }
 
+.search_btn:hover path, .search_btn:focus path,
+.login_btn:hover path, .login_btn:focus path,
+.bascet_btn:hover path, .bascet_btn:focus path,
+.bascet_btn:hover circle, .bascet_btn:focus circle {
+  fill: #323232;
 }
 
 /*                     Главная                    */

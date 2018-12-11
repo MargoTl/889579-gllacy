@@ -126,7 +126,7 @@ a {
 }
 
 /*          Поиск / Вход / Корзина         */
-.user_nav_button {
+.user_nav_btn {
   font: inherit;
   text-align: center;
   vertical-align: middle;
@@ -145,30 +145,30 @@ a {
   cursor: pointer;
 
   margin-right: 9px;
-  padding: 10px 17px 9px 16px;
 }
 
-.user_nav_button:hover,
-.user_nav_button:focus {
+.user_nav_btn:hover,
+.user_nav_btn:focus {
   color: #323232;
   background-color: #f8f7f4;
 }
 
 .search_btn {
-  background: url("../img/loupe.svg") center no-repeat;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
 .login_btn {
-  background: url("../img/loupe.svg") center no-repeat;
-  background-color: rgba(255, 255, 255, 0.2);
-}
-/*.search_btn:hover,
-.search_btn:focus {
-  
+  padding: 0 21px 0 17px;
 }
 
-bascet_btn*/
+.bascet_btn {
+  padding: 0 17px 0 16px;
+}
+
+/*.search_btn:hover,
+.search_btn:focus {
+
+}
 
 /*                     Главная                    */
 .time {
@@ -443,12 +443,12 @@ footer hr {
 }
 
 .user_nav {
-/*      background-color: rgba(0, 225, 255, 0.2); /* временно цвет */
+      background-color: rgba(0, 225, 255, 0.2); /* временно цвет */
   display: flex;
   align-items: flex-start;
 
   margin-top: 23px;
-  margin-right: 21px;
+  margin-right: -31px;
 }
 
 .nav_phone {

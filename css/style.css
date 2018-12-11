@@ -42,7 +42,7 @@ body {
 
 .catalog_body {
   background-color: #849d8f;
-/*  background-color: #9cb0a5;  Градиент (кусок сверху) */
+/*  background-color: #9cb0a5;       ! Градиент ! (кусок сверху) */
 }
 
 a {
@@ -247,6 +247,34 @@ a {
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 }
 
+/*                   Предложение (Малинка Шоколад)        */
+.offer li {
+  height: 230px;
+  width: 560px;
+}
+
+.offer span {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 41px;
+
+  padding-top: 23px;
+  padding-left: 20px;
+}
+
+.offer p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+
+  padding-top: 23px;
+  padding-left: 20px;
+}
+
+.offer button {
+  padding: 14px 22px 14px 22px;
+}
+
 /*                   Преимущества        */
 .description {
   color: #323232;
@@ -410,7 +438,6 @@ footer hr {
 }
 
 .main_nav {
-/*      background-color: rgba(255, 0, 0, 0.1); /* временно цвет */
   display: flex;
   justify-content: center;
 
@@ -427,13 +454,11 @@ footer hr {
 }
 
 .main_header_wrapper {
-/*      background-color: rgba(255, 220, 0, 0.1); /* временно цвет */
   display: flex;
   justify-content: space-between;
 }
 
 .site_nav {
-/*     background-color: rgba(0, 255, 40, 0.2); /* временно цвет */
   display: flex;
   justify-content: space-between;
 
@@ -443,7 +468,6 @@ footer hr {
 }
 
 .user_nav {
-      background-color: rgba(0, 225, 255, 0.2); /* временно цвет */
   display: flex;
   align-items: flex-start;
 
@@ -486,35 +510,6 @@ footer hr {
 
   margin-top: 475px;
   margin-bottom: 39px;
-}
-
-.offer li {
-  height: 230px;
-  width: 560px;
-
-}
-
-.offer span {
-  font-size: 35px;
-  font-weight: 700;
-  line-height: 41px;
-
-  padding-top: 23px;
-  padding-left: 20px;
-}
-
-.offer p {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 22px;
-
-  padding-top: 23px;
-  padding-left: 20px;
-}
-
-.offer button {
-  padding-top: 23px;
-  padding-left: 20px;
 }
 
 .blog_n_subscr {

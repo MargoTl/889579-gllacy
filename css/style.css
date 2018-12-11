@@ -55,7 +55,7 @@ a {
   font: inherit;
   text-align: center;
   vertical-align: middle;
-  color: #fefefe;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -65,6 +65,8 @@ a {
   border-radius: 50px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   border: none;
+
+  cursor: pointer;
 }
 
 .button:hover,
@@ -125,12 +127,25 @@ a {
 
 /*          Поиск / Вход / Корзина         */
 .user_nav_button {
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
   color: #ffffff;
   font-size: 14px;
   font-weight: 500;
-  line-height: 32px;
+  line-height: 16px;
+
+  min-width: 33px;
+  min-height: 33px;
 
   background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  border: none;
+
+  cursor: pointer;
+
+  margin-right: 9px;
+  padding: 10px 17px 9px 16px;
 }
 
 .user_nav_button:hover,
@@ -138,6 +153,22 @@ a {
   color: #323232;
   background-color: #f8f7f4;
 }
+
+.search_btn {
+  background: url("../img/loupe.svg") center no-repeat;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.login_btn {
+  background: url("../img/loupe.svg") center no-repeat;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/*.search_btn:hover,
+.search_btn:focus {
+  
+}
+
+bascet_btn*/
 
 /*                     Главная                    */
 .time {
@@ -247,8 +278,8 @@ a {
   font-weight: 500;
   line-height: 22px;
 
-  width: 560px;
-  height: 220px;
+  min-width: 560px;
+  min-height: 220px;
   background-color: #ffffff;
   background-image: url("../img/blog_pic.png");
 }
@@ -275,9 +306,13 @@ a {
   font-weight: 400;
   line-height: 22px;
 
-  width: 549px;
-  height: 211px;
+  min-width: 549px;
+  min-height: 210px;
   background-color: #f8f7f4;
+  background-image: url("../img/mail_pic_02.jpg");
+  background-size: 549px 210px;
+  background-image: url("../img/mail_pic_01.svg");
+  background-size: 560px 220px;
 }
 
 /*  исправить потом!  */
@@ -412,7 +447,7 @@ footer hr {
   display: flex;
   align-items: flex-start;
 
-  margin-top: 24px;
+  margin-top: 23px;
   margin-right: 21px;
 }
 
@@ -450,6 +485,7 @@ footer hr {
   display: flex;
 
   margin-top: 475px;
+  margin-bottom: 39px;
 }
 
 .offer li {
@@ -485,6 +521,7 @@ footer hr {
       background-color: rgba(0, 225, 255, 0.3); /* временно цвет */
   display: flex;
   justify-content: center;
+  margin-bottom: 39px;
 }
 
 .blog {

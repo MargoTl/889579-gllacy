@@ -304,8 +304,9 @@ a {
 
 /*                   Предложение (Малинка Шоколад)        */
 .offer li {
-  height: 230px;
+  display: block;
   width: 560px;
+  height: 230px;
 
   border-radius: 19px;
 }
@@ -321,25 +322,33 @@ a {
 }
 
 .offer span {
+      background: rgba(250, 230, 0, 0.3);  /*   временно фон  */
+  display: block;
+
   font-size: 35px;
   font-weight: 700;
   line-height: 41px;
 
-  padding-top: 23px;
-  padding-left: 20px;
+  padding-top: 17px;
+  padding-left: 17px;
 }
 
 .offer p {
+      background: rgba(0, 230, 230, 0.3);  /*   временно фон  */
+  display: block;
+
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
 
-  padding-top: 23px;
-  padding-left: 20px;
+  margin: 15px 28px 44px 0;
+  padding-left: 18px;
 }
 
 .offer button {
-  padding: 14px 22px 14px 22px;
+  display: block;
+  padding: 11px 22px 11px 22px;
+  margin: 0 21px 0 auto;
 }
 
 /*                   Преимущества        */
@@ -353,8 +362,7 @@ a {
   min-height: 306px;
 
   background-color: #ebdfc4;
-  background-image: url("../img/waffle.png");
-  background-repeat: no-repeat;
+  background: url("../img/waffle.png") no-repeat;
   background-position: top center;
   background-size: 1150px;
 }
@@ -532,16 +540,15 @@ footer hr {
   width: 154px;
 
   padding-top: 9px;
-  margin-right: 10px;
+  margin-right: 9px;
 }
 
 .main_header_wrapper {
   display: flex;
   justify-content: space-between;
 
-  width: 1010px;
-
-  margin: 0 auto;
+  width: 1009px;
+  margin: 0;
 }
 
 .site_nav_index {
@@ -549,8 +556,6 @@ footer hr {
   justify-content: space-between;  /* поменять ? */
 
   min-width: 350px;
-
-  margin-left: 13px;
 }
 
 .site_nav_catalog {
@@ -600,7 +605,7 @@ footer hr {
   display: flex;
 
   margin-top: 546px;
-  margin-bottom: 39px;
+  margin-bottom: 34px;
 }
 
 .blog_n_subscr {

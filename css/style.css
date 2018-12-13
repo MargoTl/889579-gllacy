@@ -130,17 +130,6 @@ a {
   background-color: #d07058;
 }
 
-.catalog_ref:hover,
-.catalog_ref:focus {
-  display: block;
-  background-color: #fbded7;
-}
-
-.catalog_ref:active {
-  background-color: #f6b5a5;
-  display: block;
-}
-
 /*       "Каталог" на стр. Каталог      */
 .site_nav .current {
   color: #ffffff;
@@ -323,13 +312,12 @@ a {
 
 .offer li:first-child {
   background-image: url(../img/offer_raspberry.jpg);
-
+  
   margin-right: 26px;
 }
 
 .offer li:nth-child(2) {
   background-image: url(../img/offer_chocolate.jpg);
-
 }
 
 .offer span {
@@ -470,11 +458,15 @@ footer hr {
   opacity: 0.3;
 }
 
-/*                     Каталог                     */
+/*                      стр. Каталог                      */
+
+/*     заголовок Сливочное мороженое     */
 .ice_cream_h2 {
   font-size: 35px;
   font-weight: 700;
   line-height: 41px;
+
+  margin-bottom: 27px;
 }
 
 .breadcrumb a::after {
@@ -499,8 +491,12 @@ footer hr {
   font-size: 45px;
   font-weight: 700;
   line-height: 45px;
-  text-decoration: none;
 }
+
+.price span{
+  text-decoration: none; /*  не работает!   */
+}
+
 /*                       кг         */
 .products_list .kg {
   font-size: 30px;
@@ -509,6 +505,11 @@ footer hr {
   position: relative;
   top: -60px;
 }
+
+/*               Фильтры               */
+/*.filler {
+
+}*/
 
 /*                     Сеточные стили                  */
 /*                      HEADER                  */
@@ -596,7 +597,6 @@ footer hr {
 
 .offer {
       background-color: rgba(235, 55, 235, 0.2); /* временно цвет */
-
   display: flex;
 
   margin-top: 546px;
@@ -628,26 +628,20 @@ footer hr {
   padding-left: 27px;
 }
 
-.ice_cream_h2 {
-      background-color: rgba(255, 105, 0, 0.2); /* временно цвет */
-  width: 1146px;
-
-  margin: 0 auto;
-  padding-right: 27px;
-  padding-left: 27px;
-}
-
+/*          Продукция (карточки мороженого)         */
 .products_list {
       background-color: rgba(0, 25, 255, 0.1); /* временно цвет */
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 
   width: 1146px;
 
   margin: 0 auto;
-  padding-right: 27px;
-  padding-left: 27px;
+}
+
+.products_list a {
+  display: block;
 }
 
 .products_list > li {
@@ -655,11 +649,10 @@ footer hr {
   position: relative;
 
   width: 268px;
-  height: 322px;
+  min-height: 322px;
 }
 
 .products img:first-child {
-
   border-radius: 50%;
 }
 

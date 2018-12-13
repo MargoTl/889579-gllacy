@@ -102,25 +102,24 @@ a {
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
+
+  text-decoration-color: #adbdb4;
+
+  padding: 5px 13px 6px 14px;
 }
 
 .site_nav a:hover,
 .site_nav a:focus {
   color: #323232;
 
-  padding: 5px 13px 6px 14px;
-
   background-color: #f7f6f3;
-  border-radius: 50px;
-  border: none;
-
+  border-radius: 15px;
   text-decoration: none;
 }
 
 .site_nav a:active {
   background-color: #ededed;
-  border-radius: 50px;
-  border: none;
+  border-radius: 15px;
   box-shadow: inset 0 2px 1px #696969;
   text-decoration: none;
 }
@@ -146,10 +145,7 @@ a {
 .site_nav .current {
   color: #ffffff;
   background-color: #d07058;
-  border-radius: 50px;
-  border: none;
-
-  padding: 5px 13px 5px 14px;
+  border-radius: 15px;
 }
 
 .site_nav li:hover .sub_menu,
@@ -205,7 +201,7 @@ a {
   min-height: 32px;
 
   background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 50px;
+  border-radius: 15px;
   border: none;
 
   cursor: pointer;
@@ -263,6 +259,7 @@ a {
   z-index: -1;
 
   width: 1146px;
+  min-height: 881px;
 
   background-color: #849d8f;
   background-image: url("../img/slider1_pic.png");
@@ -320,6 +317,19 @@ a {
 .offer li {
   height: 230px;
   width: 560px;
+
+  border-radius: 19px;
+}
+
+.offer li:first-child {
+  background-image: url(../img/offer_raspberry.jpg);
+
+  margin-right: 26px;
+}
+
+.offer li:nth-child(2) {
+  background-image: url(../img/offer_chocolate.jpg);
+
 }
 
 .offer span {
@@ -585,16 +595,16 @@ footer hr {
 /*                          MAIN                        */
 
 .offer {
-      background-color: rgba(235, 55, 235, 0.4); /* временно цвет */
+      background-color: rgba(235, 55, 235, 0.2); /* временно цвет */
 
   display: flex;
 
-  margin-top: 475px;
+  margin-top: 546px;
   margin-bottom: 39px;
 }
 
 .blog_n_subscr {
-      background-color: rgba(0, 225, 255, 0.3); /* временно цвет */
+      background-color: rgba(0, 225, 255, 0.1); /* временно цвет */
   display: flex;
   justify-content: center;
   margin-bottom: 39px;
@@ -606,7 +616,7 @@ footer hr {
 
 /*                   page CATALOG                    */
 .breadcrumb {
-      background-color: rgba(0, 225, 255, 0.3); /* временно цвет */
+      background-color: rgba(150, 25, 155, 0.2); /* временно цвет */
   display: flex;
   justify-content: flex-start;
 
@@ -619,7 +629,7 @@ footer hr {
 }
 
 .ice_cream_h2 {
-      background-color: rgba(0, 225, 255, 0.3); /* временно цвет */
+      background-color: rgba(255, 105, 0, 0.2); /* временно цвет */
   width: 1146px;
 
   margin: 0 auto;

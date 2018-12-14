@@ -353,18 +353,21 @@ a {
 
 /*                   Преимущества        */
 .description {
+      background: rgba(0, 230, 230, 0.6);  /*   временно фон  */
+  display: flex;
+  flex-direction: column;
+
   color: #323232;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
 
-  width: 1150px;
-  min-height: 306px;
+  width: 1146px;
+  height: 306px;
 
-  background-color: #ebdfc4;
-  background: url("../img/waffle.png") no-repeat;
-  background-position: top center;
-  background-size: 1150px;
+  margin: 0 27px;
+/*  background-color: #ebdfc4;
+  background: url("../img/waffle.png");*/
 }
 
 .description p {
@@ -372,6 +375,24 @@ a {
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
+
+  padding-left: 22px;
+}
+
+.descr_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.descr_list li {
+  width: 480px;
+
+  padding: 10px;
+}
+
+.descr_list li::before {
+  background-image: url("../img/descr_ice-cream.svg");
+  /*   border-radius: 50%; ?  */
 }
 
 /*           Блог      */
@@ -486,22 +507,21 @@ footer hr {
 .products_list p {
   text-align: center;
   color: #ffffff;
-  font-family: Roboto;
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
+  padding: 5px 5px 0 5px;
 }
 /*                      цена        */
 .products_list span {
   text-align: left;
   color: #ffffff;
-  font-family: Roboto;
   font-size: 45px;
   font-weight: 700;
   line-height: 45px;
 }
 
-.price span{
+.price span {
   text-decoration: none; /*  не работает!   */
 }
 
@@ -605,7 +625,7 @@ footer hr {
   display: flex;
 
   margin-top: 546px;
-  margin-bottom: 34px;
+  margin-bottom: 40px;
 }
 
 .blog_n_subscr {
@@ -635,7 +655,7 @@ footer hr {
 
 /*          Продукция (карточки мороженого)         */
 .products_list {
-      background-color: rgba(0, 25, 255, 0.1); /* временно цвет */
+      background-color: rgba(0, 25, 255, 0.2); /* временно цвет */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -650,11 +670,13 @@ footer hr {
 }
 
 .products_list > li {
-      background-color: rgba(0, 225, 55, 0.1); /* временно цвет */
+      background-color: rgba(0, 225, 55, 0.2); /* временно цвет */
   position: relative;
 
   width: 268px;
-  min-height: 322px;
+  height: 322px;
+
+  margin-bottom: 40px;
 }
 
 .products img:first-child {

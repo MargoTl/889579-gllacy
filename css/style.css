@@ -226,6 +226,28 @@ a {
 }
 
 /*                     Главная                    */
+.nav_phone {
+  position: relative;
+}
+
+.time_phone {
+      background-color: rgba(0, 25, 255, 0.2); /* временно цвет */
+  position: absolute;
+  z-index: 3;
+
+  top: 50px;
+  right: 0;
+
+  width: 220px;
+
+  text-align: right;
+}
+
+.time_phone p {
+  margin: 0;
+  padding-bottom: 3px;
+}
+
 .time {
   font-size: 14px;
   font-weight: 700;
@@ -237,9 +259,7 @@ a {
   font-weight: 700;
   line-height: 24px;
 }
-
 /*                  Слайдер                  */
-
 .slider {
       background-color: rgba(255, 0, 0, 0.5); /* временно цвет */
   position: absolute;
@@ -480,15 +500,7 @@ footer a:last-of-type:focus {
   color: #ffbc9e;
 }
 
-footer hr {
-  width: 1146px;
-  height: 1px;
-  background-color: #ffffff;
-  opacity: 0.3;
-}
-
 /*                      стр. Каталог                      */
-
 /*     заголовок Сливочное мороженое     */
 .ice_cream_h2 {
   font-size: 35px;
@@ -592,32 +604,6 @@ footer hr {
   margin-top: 23px;
 }
 
-.nav_phone {
-  position: relative;
-}
-
-.time_phone {
-      background-color: rgba(0, 25, 255, 0.2); /* временно цвет */
-  position: absolute;
-
-  top: 50px;
-  left: 85px;
-
-  width: 220px;
-
-  z-index: 3;
-}
-
-.time_phone p {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 16px;
-
-  margin: 0;
-
-/*  text-align: left; */
-}
-
 /*                          MAIN                        */
 
 .offer {
@@ -696,11 +682,23 @@ footer hr {
   display: flex;
   justify-content: flex-end;
 
-  width: 1146px;
+  /* ?   width: 190px;  */
 
-  margin: 0 auto;
-  padding-right: 27px;
-  padding-left: 27px;
+  margin-top: 42px;
+  margin-bottom: 38px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.pagination_item {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.pagi_item_current {
+  color: #323232;
 }
 
 /*                         FOOTER                      */

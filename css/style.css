@@ -19,7 +19,7 @@
 .slider_list,
 .products_list,
 .offer, .descr_list,
-.breadcrumb,
+.breadcrumbs,
 .fat_list, .filler,
 .pagination_list,
 .socials {
@@ -384,10 +384,10 @@ a {
   width: 1146px;
   min-height: 306px;
 
-  margin: 0 27px;
+  margin: 0 27px 40px 27px;
 
   border-radius: 15px;
-  background-color: #ebdfc4; 
+  background-color: #ebdfc4;
   /*background: url("../img/waffle.png");   не правильно отображается! */
 }
 
@@ -407,21 +407,22 @@ a {
 .descr_list {
   display: flex;
   flex-wrap: wrap;
-  padding: 0px 33px 48px 69px;
+
+  padding: 0 0 0 5px;
 }
 
 .descr_list li {
   position: relative;
-  width: 480px;
+  width: 476px;
 
-  padding-left: 0 0 0 10px;
+  padding: 0 18px 19px 75px;
 }
 
 .descr_item-1::before {
   content: "";
   position: absolute;
-  left: -50px;
-  top: -20px;
+  left: 15px;
+  top: -15px;
 
   width: 49px;
   height: 49px;
@@ -431,8 +432,8 @@ a {
 .descr_item-2::before {
   content: "";
   position: absolute;
-  left: -50px;
-  top: -20px;
+  left: 15px;
+  top: -15px;
 
   width: 49px;
   height: 49px;
@@ -441,8 +442,8 @@ a {
 .descr_item-3::before {
   content: "";
   position: absolute;
-  left: -50px;
-  top: -20px;
+  left: 15px;
+  top: -15px;
 
   width: 49px;
   height: 49px;
@@ -451,14 +452,22 @@ a {
 .descr_item-4::before {
   content: "";
   position: absolute;
-  left: -50px;
-  top: -20px;
+  left: 15px;
+  top: -15px;
 
   width: 49px;
   height: 49px;
   background-image: url("../img/descr_thermometer.svg");
 }
 
+/*                   Блог и Подписка              */
+.blog_n_subscr {
+      background-color: rgba(0, 125, 255, 0.2); /* временно цвет */
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 39px;
+}
 /*                         Блог                   */
 .blog {
   color: #323232;
@@ -468,16 +477,12 @@ a {
 
   min-width: 560px;
   min-height: 220px;
+
+  margin-right: 26px;
+
+  border-radius: 15px;
   background-color: #ffffff;
   background-image: url("../img/blog_pic.png");
-}
-
-.blog a {
-  color: #323232;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 30px;
-  text-decoration-color: #323232;
 }
 
 .blog h2 {
@@ -485,22 +490,50 @@ a {
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
+
+  padding: 23px 0 0 20px;
+  margin: 0 0 5px 0;
+}
+
+.blog a {
+  display: block;
+  color: #323232;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-decoration-color: #323232;
+
+  width: 281px;
+
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
 }
 
 /*                    Подписка                      */
 .subscripe {
+  display: flex;
+
+  min-width: 549px;
+  min-height: 210px;
+
+  border-radius: 15px;
+  background-color: #f8f7f4;
+  background-image: url("../img/mail_pic_01.svg");
+  background-size: 560px 220px;
+  background-image: url("../img/mail_pic_02.jpg");
+  background-size: 549px 210px;
+} /*  не наслаиваются картинки!  */
+
+.subscripe p {
   color: #5a5a5a;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
 
-  min-width: 549px;
-  min-height: 210px;
-  background-color: #f8f7f4;
-  background-image: url("../img/mail_pic_02.jpg");
-  background-size: 549px 210px;
-  background-image: url("../img/mail_pic_01.svg");
-  background-size: 560px 220px;
+  width: 507px;
+  margin: 0;
+  padding: 36px 27px 0 27px;
 }
 
 /*                Карта и Контакты                  */
@@ -558,7 +591,7 @@ footer a:last-of-type:focus {
   margin-bottom: 27px;
 }
 
-.breadcrumb a::after {
+.breadcrumbs a::after {
   content: "»";
 }
 
@@ -657,26 +690,14 @@ footer a:last-of-type:focus {
 /*                          MAIN                        */
 
 .offer {
-      background-color: rgba(235, 55, 235, 0.2); /* временно цвет */
   display: flex;
 
   margin-top: 546px;
   margin-bottom: 40px;
 }
 
-.blog_n_subscr {
-      background-color: rgba(0, 125, 255, 0.5); /* временно цвет */
-  display: flex;
-  justify-content: center;
-  margin: 0 27px 39px 27px;
-}
-
-.blog {
-  margin-right: 26px;
-}
-
 /*                   page CATALOG                    */
-.breadcrumb {
+.breadcrumbs {
       background-color: rgba(150, 25, 155, 0.2); /* временно цвет */
   display: flex;
   justify-content: flex-start;

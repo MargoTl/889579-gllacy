@@ -328,9 +328,9 @@ a {
   width: 560px;
   height: 230px;
 
-  border-radius: 19px;
+  border-radius: 15px;
 }
-
+         /*  сместить изображение внутри блока на 1 px вниз?  */
 .offer li:first-child {
   background-image: url(../img/offer_raspberry.jpg);
   
@@ -371,9 +371,8 @@ a {
   margin: 0 21px 0 auto;
 }
 
-/*                   Преимущества        */
+/*                   Преимущества                */
 .description {
-      background: rgba(0, 230, 230, 0.6);  /*   временно фон  */
   display: flex;
   flex-direction: column;
 
@@ -383,11 +382,13 @@ a {
   line-height: 22px;
 
   width: 1146px;
-  height: 306px;
+  min-height: 306px;
 
   margin: 0 27px;
-/*  background-color: #ebdfc4;
-  background: url("../img/waffle.png");*/
+
+  border-radius: 15px;
+  background-color: #ebdfc4; 
+  /*background: url("../img/waffle.png");   не правильно отображается! */
 }
 
 .description p {
@@ -396,26 +397,69 @@ a {
   font-weight: 500;
   line-height: 30px;
 
-  padding-left: 22px;
+  padding-left: 19px;
+}
+  /*  непонятная разница в шрифтах!  */
+.description span {
+  letter-spacing: 1px;
 }
 
 .descr_list {
   display: flex;
   flex-wrap: wrap;
+  padding: 0px 33px 48px 69px;
 }
 
 .descr_list li {
+  position: relative;
   width: 480px;
 
-  padding: 10px;
+  padding-left: 0 0 0 10px;
 }
 
-.descr_list li::before {
+.descr_item-1::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: -20px;
+
+  width: 49px;
+  height: 49px;
   background-image: url("../img/descr_ice-cream.svg");
-  /*   border-radius: 50%; ?  */
 }
 
-/*           Блог      */
+.descr_item-2::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: -20px;
+
+  width: 49px;
+  height: 49px;
+  background-image: url("../img/descr_cow.svg");
+}
+.descr_item-3::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: -20px;
+
+  width: 49px;
+  height: 49px;
+  background-image: url("../img/descr_eco.svg");
+}
+.descr_item-4::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: -20px;
+
+  width: 49px;
+  height: 49px;
+  background-image: url("../img/descr_thermometer.svg");
+}
+
+/*                         Блог                   */
 .blog {
   color: #323232;
   font-size: 16px;
@@ -443,7 +487,7 @@ a {
   line-height: 22px;
 }
 
-/*           Подписка      */
+/*                    Подписка                      */
 .subscripe {
   color: #5a5a5a;
   font-size: 16px;
@@ -459,7 +503,11 @@ a {
   background-size: 560px 220px;
 }
 
-/*  исправить потом!  */
+/*                Карта и Контакты                  */
+.contacts {
+  
+}
+
 .contacts p {
   color: #323232;
   font-size: 14px;
@@ -467,7 +515,7 @@ a {
   line-height: 22px;
 }
 
-/*               Футер                  */
+/*                      Футер                        */
 .footer_links {
   color: #ffffff;
   font-size: 13px;
@@ -532,7 +580,9 @@ footer a:last-of-type:focus {
   font-weight: 700;
   line-height: 45px;
 }
-
+  /*  подчёркивание вместо линии ссылки?  */
+  /*  убрать черту под ценой!  */
+  /*  разный знак рубля!  */
 .price span {
   text-decoration: none; /*  не работает!   */
 }
@@ -615,10 +665,10 @@ footer a:last-of-type:focus {
 }
 
 .blog_n_subscr {
-      background-color: rgba(0, 225, 255, 0.1); /* временно цвет */
+      background-color: rgba(0, 125, 255, 0.5); /* временно цвет */
   display: flex;
   justify-content: center;
-  margin-bottom: 39px;
+  margin: 0 27px 39px 27px;
 }
 
 .blog {
@@ -641,7 +691,6 @@ footer a:last-of-type:focus {
 
 /*          Продукция (карточки мороженого)         */
 .products_list {
-      background-color: rgba(0, 25, 255, 0.2); /* временно цвет */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -656,7 +705,6 @@ footer a:last-of-type:focus {
 }
 
 .products_list > li {
-      background-color: rgba(0, 225, 55, 0.2); /* временно цвет */
   position: relative;
 
   width: 268px;
@@ -702,9 +750,7 @@ footer a:last-of-type:focus {
 }
 
 /*                         FOOTER                      */
-
 .footer {
-    background: pink;
   min-height: 104px;
 
   display: flex;
@@ -720,14 +766,11 @@ footer a:last-of-type:focus {
 
 .footer_links_column {
   width: 305px;
-
   margin-right: 206px;
 }
 
 .footer_copyright_column {
-    background-color: rgba(255, 120, 0, 0.3);
   width: 190px;
-
   margin-top: 18px;
 }
 
@@ -746,7 +789,7 @@ footer a:last-of-type:focus {
 }
 
 .socials {
-  background-color: rgba(255, 220, 0, 0.3);
+
   display: flex;
   justify-content: flex-start;
 

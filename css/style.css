@@ -1,9 +1,8 @@
 /*              откл.окна                  */
-.search, .login, .basket,
+.modal,
 .sub_menu,
-.feedback,
 .quick_btn {
-  display: none;
+/*  display: none;*/
 }
 
 .visually_hidden {
@@ -231,7 +230,6 @@ a {
 }
 
 .time_phone {
-      background-color: rgba(0, 25, 255, 0.2); /* временно цвет */
   position: absolute;
   z-index: 3;
 
@@ -845,7 +843,6 @@ footer a:last-of-type:focus {
 }
 
 .footer_socials_column {
-  background-color: rgba(255, 120, 100, 0.2);
   width: 192px;
 
   margin-right: 208px;
@@ -876,7 +873,6 @@ footer a:last-of-type:focus {
 }
 
 .socials {
-
   display: flex;
   justify-content: flex-start;
 
@@ -934,7 +930,7 @@ footer a:last-of-type:focus {
   width: 142px;
 }
 
-/*                 Поля ФОРМ                */
+/*               Кнопки, Формы              */
 
 input[type="text"] {
   color: #999999;
@@ -944,4 +940,69 @@ input[type="text"] {
 
   margin: 0;
   padding: 0 0 0 7px;
+}
+
+/*                   Поля форм                  */
+.modal {
+  position: fixed;
+
+  color: #323232;
+
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+
+  background-color: #f8f7f4;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+/*  Поле Поиска  */
+.modal_search {
+  width: 341px;
+
+  padding: 20px 15px;
+
+  top: 59px;
+  right: 255px;
+}
+
+/*  Поле Входа  */
+.modal_login {
+  width: 277px;
+
+  padding: 20px 15px;
+
+  top: 59px;
+  right: 153px;
+}
+
+.modal_login a {
+  color: #323232;
+}
+
+.modal_login button{
+  padding: 8px 22px;
+}
+
+/*  Поле Обратной связи  */
+.modal_feedback {
+  width: 478px;
+
+  top: 337px;
+  right: 360px;
+
+  padding: 16px 26px 27px 24px;
+}
+
+/*  Поле Корзины  */
+.modal_basket {
+  z-index: 4;
+
+  width: 540px;
+
+  top: 59px;
+  right: 26px;
+
+  padding: 20px 13px 21px 21px;
 }

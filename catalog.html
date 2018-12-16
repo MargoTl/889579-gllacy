@@ -280,7 +280,7 @@
      </footer>
                     <!-- формы -->
                     <!-- Поиск -->
-      <section class="search">
+      <section class="modal modal_search">
         <h2 class="visually_hidden">Поиск</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
           <label for="search">Поиск</label>
@@ -288,7 +288,7 @@
         </form>
       </section>
                     <!-- Логин -->
-      <section class="login">
+      <section class="modal modal_login">
         <h2>Вход</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
           <p>
@@ -305,12 +305,12 @@
         </form>
       </section>
                     <!-- Корзина -->
-      <section class="basket">
+      <section class="modal modal_basket">
         <form action="https://echo.htmlacademy.ru" method="post">
           <h2 class="visually_hidden">Корзина. 2 товара</h2>
           <table>
             <tr>
-              <td><button>(X) Убрать из корзины</button></td> <!-- (X) будет в CSS -->
+              <td class="visually_hidden"><button>(X) Убрать из корзины</button></td>
               <td><img src="img/ice_cream_mini_1.png" width="33" height="33" alt=""></td>
               <td>Пломбир с апельсиновым джемом</td>
               <td>1,5 кг</td>
@@ -319,7 +319,7 @@
               <td>300 руб.</td>
             </tr>
             <tr>
-              <td><button>(X) Убрать из корзины</button></td> <!-- (X) будет в CSS -->
+              <td class="visually_hidden"><button>(X) Убрать из корзины</button></td>
               <td><img src="img/ice_cream_mini_2.png" width="33" height="33" alt=""></td>
               <td>Клубничный пломбир с присыпкой из белого шоколада</td>
               <td>1,5 кг</td>

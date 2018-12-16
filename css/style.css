@@ -567,8 +567,11 @@ a {
 /*                Карта и Контакты                  */
 .contacts {
   position: relative;
+
+  width: 1200px;
+  margin: 0 auto;
 }
-                  /*      откорректировать!        */
+
 .contacts div{
   position: absolute;
   top: 62px;
@@ -577,9 +580,9 @@ a {
   display: flex;
   flex-direction: column;
 
-  width: 302px;
+  width: 260px;
 
-  padding: 32px 25px 31px 25px;
+  padding: 32px 20px 31px 25px;
 
   border-radius: 15px;
   background-color: #ffffff;
@@ -602,15 +605,19 @@ a {
   line-height: 24px;
 
   width: 230px;
-  margin: 0;
+}
+
+.contacts p:nth-child(2) {
+  margin-bottom: 15px;
 }
 
 .contacts p:nth-child(3) {
-  width: 165px;
-  margin: 0;
+  width: 175px;
 }
 
 .contacts button {
+  width: 250px;
+
   margin-top: 25px;
   padding: 7px 0;
 }

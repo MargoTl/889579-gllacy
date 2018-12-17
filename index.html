@@ -211,7 +211,7 @@
                     <!--     Поиск     -->
       <section class="modal modal_search">
         <h2 class="visually_hidden">Поиск</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form class="search_form" action="https://echo.htmlacademy.ru" method="post">
           <label for="search">Поиск</label>
           <input type="search" id="search" name="search" placeholder="Что ищем?">
         </form>
@@ -219,7 +219,7 @@
                     <!--    Логин     -->
       <section class="modal modal_login">
         <h2>Вход</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form class="login_form" action="https://echo.htmlacademy.ru" method="post">
           <p>
             <label class="visually_hidden" for="login_email">email</label>
             <input type="text" id="login_email" name="login_email" placeholder="Электронная почта">
@@ -236,7 +236,7 @@
                    <!--    Обратная связь    -->
       <section class="modal modal_feedback">
         <h2 class="visually_hidden">Обратная связь</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
+        <form class="feedback_form" action="https://echo.htmlacademy.ru" method="post">
           <p>Мы обязательно вам ответим!</p>
           <p><label class="visually_hidden" for="name_id">Как вас зовут?</label>
             <input type="text" id="name_id" name="name" placeholder="как вас зовут?">
@@ -244,10 +244,11 @@
           <p><label class="visually_hidden" for="email_2_id">Ваша почта для ответа?</label>
             <input type="text" id="email_2_id" name="feedback_email" placeholder="Ваша почта для ответа?">
           </p>
-          <p><label class="visually_hidden" for="text_id">Напишите что-нибудь</label>
+          <p><label class="visually_hidden fdbk_label" for="text_id">Напишите что-нибудь</label>
             <input type="text" id="text_id" name="text_name" placeholder="Напишите что-нибудь...">
           </p>
-          <button class="button" type="submit">Отправить</button>
+          <button class="button fdbk_btn" type="submit">Отправить</button>
+          <button class="modal_close" type="button"><span class="visually_hidden">Закрыть</span></button>
         </form>
       </section>
   </body>

@@ -957,7 +957,7 @@ input[type="text"] {
   border-radius: 5px;
 }
 
-/*  Поле Поиска  */
+/*        Поле Поиска     */
 .modal_search {
   width: 341px;
 
@@ -967,8 +967,10 @@ input[type="text"] {
   right: 255px;
 }
 
-/*  Поле Входа  */
+/*        Поле Входа        */
 .modal_login {
+  z-index: 4;
+
   width: 277px;
 
   padding: 20px 15px;
@@ -985,17 +987,80 @@ input[type="text"] {
   padding: 8px 22px;
 }
 
-/*  Поле Обратной связи  */
+/*      Поле Обратной связи     */
 .modal_feedback {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+
   width: 478px;
+  height: 443px;
 
   top: 337px;
   right: 360px;
 
-  padding: 16px 26px 27px 24px;
+  padding: 15px 0 0 26px;
 }
 
-/*  Поле Корзины  */
+.modal_feedback p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.fdbk_label {  /*  не работает! row?  */
+  width: 428px;
+  height: 155px;
+}
+
+.feedback_form input[type="text"] {
+  font: inherit;
+  color: #999999;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+
+  width: 267px;
+}
+
+.fdbk_btn {
+  padding: 10px 20px;
+}
+
+.modal_close {
+  position: absolute;
+  top: 19px;
+  right: 27px;
+
+  width: 18px;
+  height: 17px;
+
+  border: 0;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.modal_close::before,
+.modal_close::after {
+  content: "";
+
+  position: absolute;
+  top: 2px;
+  left: 14px;
+
+  width: 19px;
+  height: 2px;
+
+  background-color: #231f20;
+}
+
+.modal_close::before {
+  transform: rotate(45deg); }
+
+.modal_close::after {
+  transform: rotate(-45deg); }
+
+/*         Поле Корзины          */
 .modal_basket {
   z-index: 4;
 
@@ -1005,4 +1070,34 @@ input[type="text"] {
   right: 26px;
 
   padding: 20px 13px 21px 21px;
+}
+
+.modal_basket button {
+  padding: 10px 20px;
+}
+
+.search_form input,
+.login_form input,
+.feedback_form input,
+.basket_form input {
+  box-sizing: border-box;
+
+  padding: 9px 0 6px 15px;
+
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 5px;
+}
+
+.search_form input:hover, .search_form input:focus,
+.login_form input:hover, .login_form input:focus,
+.feedback_form input:hover, .feedback_form input:focus,
+.basket_form input:hover, .basket_form input:focus {
+  border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+.search_form input:active,
+.login_form input:active,
+.feedback_form input:active,
+.basket_form input:active {
+  border: 2px solid rgba(46, 136, 228, 0.52);
 }

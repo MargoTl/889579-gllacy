@@ -1077,6 +1077,17 @@ input[type="text"] {
   padding: 10px 20px;
 }
 
+.modal_basket .modal_close {
+  position: absolute;
+
+  left: 10px;
+}
+
+.modal_basket .modal_close:nth-child(2) {
+
+  top:20px;  /*    не работает   */
+}
+
 .search_form input,
 .login_form input,
 .feedback_form input,

@@ -944,7 +944,7 @@ input[type="text"] {
 
 /*                   Поля форм                  */
 .modal {
-  position: fixed;
+  position: absolute;
 
   color: #323232;
 
@@ -989,6 +989,7 @@ input[type="text"] {
 
 /*      Поле Обратной связи     */
 .modal_feedback {
+  position: fixed;
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
@@ -1045,8 +1046,8 @@ input[type="text"] {
   content: "";
 
   position: absolute;
-  top: 2px;
-  left: 14px;
+  top: 0;
+  left: 0;
 
   width: 19px;
   height: 2px;

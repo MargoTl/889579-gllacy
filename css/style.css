@@ -1124,12 +1124,14 @@ input[type="text"] {
   background-color: #cacac7;
 }
 
-.modal_basket_bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+.modal_basket p {
+  padding-right: 14px;
+  padding-left: 418px;
+}
 
-  padding-left: 10px;  /* не работает*/
+.modal_basket div {
+  padding-right: 14px;
+  padding-left: 360px;
 }
 
 .basket_btn {

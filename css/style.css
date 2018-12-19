@@ -86,10 +86,6 @@ a {
   display: block;              /*   не работает  */
 }
 
-.quick_btn {
-  padding: 9px 15px;
-}
-
 /*       Контейнер       */
 .container {
   width: 1146px;
@@ -726,10 +722,10 @@ footer a:last-of-type:focus {
 .product_card {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -14px;
 
-  width: 293px;
-  min-height: 405px;
+  max-width: 293px;
+  height: 405px;
 
   padding: 6px 14px 22px 14px;
 
@@ -738,6 +734,15 @@ footer a:last-of-type:focus {
   border-radius: 5px;
 
   z-index: 4;
+}
+
+.quick_btn {
+  position: absolute;
+  top: 355px;
+  left: 50px;
+
+  margin: 0;
+  padding: 9px 15px;
 }
 
 /*               Фильтры               */

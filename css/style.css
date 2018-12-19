@@ -702,12 +702,6 @@ footer a:last-of-type:focus {
   font-weight: 700;
   line-height: 45px;
 }
-  /*  подчёркивание вместо линии ссылки?  */
-  /*  убрать черту под ценой!  */
-  /*  разный знак рубля!  */
-.price span {
-  text-decoration: none; /*  не работает!   */
-}
 
 .products_list .kg {     /*        кг         */
   font-size: 30px;
@@ -717,6 +711,10 @@ footer a:last-of-type:focus {
   top: -60px;
 }
 
+.price p::after {  /*   черта под названием (не показывается)  */
+  content: "";
+  border-color: rgba(255, 255, 255, 0.4);
+}
 
 /*          Окно Быстрый просмотр                  */
 .product_card {
@@ -725,7 +723,7 @@ footer a:last-of-type:focus {
   left: -14px;
 
   max-width: 293px;
-  height: 405px;
+  height: 377px;
 
   padding: 6px 14px 22px 14px;
 
@@ -738,7 +736,7 @@ footer a:last-of-type:focus {
 
 .quick_btn {
   position: absolute;
-  top: 355px;
+  top: 340px;
   left: 50px;
 
   margin: 0;

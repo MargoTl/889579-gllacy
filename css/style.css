@@ -931,7 +931,7 @@ footer a:last-of-type:focus {
 }
 
 /*               Кнопки, Формы              */
-
+/*  оставить так или сделать вложенность 2 эл-та?  */
 input[type="text"] {
   color: #999999;
   font-size: 14px;
@@ -987,12 +987,9 @@ input[type="text"] {
   padding: 8px 22px;
 }
 
-/*      Поле Обратной связи     */
+/*           Поле Обратной связи         */
 .modal_feedback {
   position: fixed;
-
-  display: flex;
-  flex-direction: column;
 
   font-size: 24px;
   font-weight: 500;
@@ -1029,7 +1026,7 @@ input[type="text"] {
 
 .fdbk_btn {
   padding: 10px 20px;
-  align-self: flex-end;  /*  не перемещается!  */
+  margin-left: 290px;
 }
 
 .modal_close {
@@ -1066,33 +1063,80 @@ input[type="text"] {
 .modal_close::after {
   transform: rotate(-45deg); }
 
-/*         Поле Корзины          */
+/*             Поле Корзины             */
 .modal_basket {
   z-index: 4;
 
-  width: 540px;
+  min-width: 540px;
 
   top: 59px;
   right: 26px;
 
-  padding: 20px 13px 21px 21px;
+  padding: 13px 0 25px 0;
 }
 
-.modal_basket button {
-  padding: 10px 20px;
+.modal_basket td {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+
+  vertical-align: top;
+
+  padding-top: 11px;
 }
 
-.modal_basket .modal_close {
-  position: absolute;
-
-  left: 10px;
+.modal_basket tr {
+  display: block;
 }
 
-.modal_basket .modal_close:nth-child(2) {
-
-  top:20px;  /*    не работает   */
+.td_price {
+  color: #999999;
 }
 
+.modal_basket p {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.X_basket {
+  margin: 0 2px 0 5px;
+
+  border: none;
+  background: transparent;
+}
+
+.td_img {
+  margin-right: 10px;
+}
+
+.td_name {
+  width: 218px;
+  padding-right: 26px;
+}
+
+.td_price {
+  padding-right: 22px;
+}
+
+.modal_basket hr {
+  width: 508px;
+  background-color: #cacac7;
+}
+
+.modal_basket_bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  padding-left: 10px;  /* не работает*/
+}
+
+.basket_btn {
+  padding: 8px 11px 8px 11px;
+}
+
+/*                            */
 .search_form input,
 .login_form input,
 .feedback_form input,

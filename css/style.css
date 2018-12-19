@@ -1,9 +1,13 @@
-/*              откл.окна                  */
+/*            откл.окна             */
 .modal,
 .sub_menu,
 .quick_btn {
 /*  display: none; */
 }
+
+/*       включение окон              */
+
+/*        скрытие элементов          */
 
 .visually_hidden {
   position: absolute;
@@ -13,7 +17,7 @@
   margin: -1px;
 }
 
-/*              откл. маркеры ul             */
+/*              откл. маркеры ul       */
 .site_nav, .user_nav, .sub_menu,
 .slider_list,
 .products_list,
@@ -725,7 +729,7 @@ footer a:last-of-type:focus {
   max-width: 293px;
   height: 377px;
 
-  padding: 6px 14px 22px 14px;
+  padding: 6px 14px 22px 14px; 
 
   background-color: rgba(248,247,244,0.2);
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
@@ -1069,29 +1073,10 @@ input[type="text"] {
 
   border: 0;
   background-color: transparent;
+  background-image: url("../img/cross-big.svg");
 
   cursor: pointer;
 }
-
-.modal_close::before,
-.modal_close::after {
-  content: "";
-
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 19px;
-  height: 2px;
-
-  background-color: #231f20;
-}
-
-.modal_close::before {
-  transform: rotate(45deg); }
-
-.modal_close::after {
-  transform: rotate(-45deg); }
 
 /*             Поле Корзины             */
 .modal_basket {

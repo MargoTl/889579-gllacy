@@ -1,8 +1,9 @@
 /*            откл.окна             */
 .modal,
 .sub_menu,
-.quick_btn {
-/*  display: none; */
+.quick_btn,
+ {
+  display: none; 
 }
 
 /*       включение окон              */
@@ -689,6 +690,11 @@ footer a:last-of-type:focus {
 }
 
 /*              каталог мороженого            */
+
+.products_list a {
+  text-decoration: none;
+}
+
 /*                    название      */
 .products_list p {
   text-align: center;
@@ -699,6 +705,7 @@ footer a:last-of-type:focus {
 
   padding: 5px 5px 0 5px;
 }
+
 /*                      цена        */
 .products_list span {
   text-align: left;
@@ -706,6 +713,8 @@ footer a:last-of-type:focus {
   font-size: 45px;
   font-weight: 700;
   line-height: 45px;
+
+  text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
 .products_list .kg {     /*        кг         */
@@ -714,13 +723,17 @@ footer a:last-of-type:focus {
 .price {                 /*  цена на картинке  */
   position: relative;
   top: -60px;
-
-  text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
-.price p::after {  /*   черта под названием (не показывается)  */
+/*.price p::after {
   content: "";
+  border-bottom: 1px;
   border-color: rgba(255, 255, 255, 0.4);
+}*/
+
+.price p {
+  text-decoration: underline;
+  text-decoration-color: #9CAFA4;
 }
 
 /*          Окно Быстрый просмотр                  */

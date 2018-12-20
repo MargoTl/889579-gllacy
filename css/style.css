@@ -967,7 +967,7 @@ footer a:last-of-type:focus {
   width: 142px;
 }
 
-/*               Кнопки, Формы              */
+/*                      Кнопки, Формы              */
 /*  оставить так или сделать вложенность 2 эл-та?  */
 input[type="text"] {
   color: #999999;
@@ -994,7 +994,7 @@ input[type="text"] {
   border-radius: 5px;
 }
 
-/*        Поле Поиска     */
+/*                  Поле Поиска               */
 .modal_search {
   width: 341px;
 
@@ -1004,7 +1004,7 @@ input[type="text"] {
   right: 255px;
 }
 
-/*        Поле Входа        */
+/*                   Поле Входа                 */
 .modal_login {
   z-index: 4;
 
@@ -1024,7 +1024,7 @@ input[type="text"] {
   padding: 8px 22px;
 }
 
-/*           Поле Обратной связи         */
+/*                  Поле Обратной связи         */
 .modal_feedback {
   position: fixed;
 
@@ -1052,12 +1052,18 @@ input[type="text"] {
   font-weight: 400;
   line-height: 24px;
 
-  width: 428px;
+  min-width: 267px;
 }
 
-.fdbk_label input[type="text"] {  /*  не работает! row?  */
+.feedback_text {
+  font: inherit;
+  color: #999999;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 
-  height: 155px;
+  padding: 13px 0 0 15px;
+  width: 428px;
 }
 
 .fdbk_btn {
@@ -1080,7 +1086,7 @@ input[type="text"] {
   cursor: pointer;
 }
 
-/*             Поле Корзины             */
+/*                    Поле Корзины             */
 .modal_basket {
   z-index: 4;
 
@@ -1151,10 +1157,11 @@ input[type="text"] {
   border-radius: 20px;
 }
 
-/*            Поля ввода               */
+/*                    Поля ввода               */
 .search_form input,
 .login_form input,
 .feedback_form input,
+.feedback_text,
 .basket_form input {
   box-sizing: border-box;
 
@@ -1167,6 +1174,7 @@ input[type="text"] {
 .search_form input:hover, .search_form input:focus,
 .login_form input:hover, .login_form input:focus,
 .feedback_form input:hover, .feedback_form input:focus,
+.feedback_text:hover, .feedback_text:focus,
 .basket_form input:hover, .basket_form input:focus {
   border: 2px solid rgba(154, 154, 154, 0.52);
 }
@@ -1174,6 +1182,13 @@ input[type="text"] {
 .search_form input:active,
 .login_form input:active,
 .feedback_form input:active,
+.feedback_text:active,
 .basket_form input:active {
   border: 2px solid rgba(46, 136, 228, 0.52);
+}
+
+/*          hover - focus - active          */
+
+.product_card:hover .quick_btn {
+  display: block;
 }

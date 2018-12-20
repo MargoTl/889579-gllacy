@@ -49,7 +49,7 @@ body {
 
 a {
   color: #ffffff;
-  text-decoration-color: #9CAFA4;     /* цвет подчёркивания*/
+  text-decoration-color: transparent;
 }
 
 /*                 Кнопки               */
@@ -185,10 +185,7 @@ a {
 /*          Поиск / Вход / Корзина         */
 .user_nav_btn {
   font: inherit;
-
   text-align: center;
-  vertical-align: middle; /* не работает выравнивание */
-
   color: #ffffff;
   font-size: 14px;
   font-weight: 500;
@@ -196,14 +193,29 @@ a {
 
   min-width: 32px;
   min-height: 32px;
+  margin-right: 9px;
 
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   border: none;
 
   cursor: pointer;
+}
 
-  margin-right: 9px;
+.login_btn span,
+.basket_red span,
+.bascet_btn span {
+  display: inline-block;
+  padding: 5px 0;
+}
+
+/*   сдвиг картинки на кнопке вниз и в сторону   */
+.login_btn svg,
+.basket_red svg,
+.bascet_btn svg {
+  position: relative;
+  top: 4px;
+  right: 3px;
 }
 
 .login_btn path {
@@ -674,16 +686,23 @@ a {
   line-height: 16px;
 }
 
+.breadcrumbs li:not(.breadcrumbs-current)::after {
+  content: "»";
+  padding: 0 7px;
+}
+
 .breadcrumbs a {
-  text-decoration: underline;
-  text-decoration-color: #aebeb5;
+  position: relative;
 }
 
 .breadcrumbs a::after {
-  content: "»";
-  padding: 0 7px;
-
-  text-decoration: none; /*  не работает. убрать подчёркивание */
+  content: "";
+  position: absolute;
+  height: 1px;
+  background: white;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 /*              каталог мороженого            */

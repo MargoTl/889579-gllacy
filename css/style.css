@@ -1,9 +1,10 @@
 /*            откл.окна             */
 .modal,
 .sub_menu,
-.quick_btn,
+.product_card,
+.quick_btn
  {
-  display: none; 
+  display: none;
 }
 
 /*       включение окон              */
@@ -644,21 +645,14 @@ a {
   line-height: 18px;
 }
 
-footer span {
-  color: #fefefe;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 18px;
-}
-
 .products span:hover,
 .products span:focus,
 .products p:hover,
 .products p:focus,
 .footer_links a:hover,
 .footer_links a:focus,
-footer a:last-of-type:hover,
-footer a:last-of-type:focus {
+.footer a:last-of-type:hover,
+.footer a:last-of-type:focus {
   color: #ffbc9e;
 }
 
@@ -680,13 +674,18 @@ footer a:last-of-type:focus {
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
+}
 
-/*  text-decoration: ;     добавить подчёркивание!  */
+.breadcrumbs a {
+  text-decoration: underline;
+  text-decoration-color: #aebeb5;
 }
 
 .breadcrumbs a::after {
   content: "»";
   padding: 0 7px;
+
+  text-decoration: none; /*  не работает. убрать подчёркивание */
 }
 
 /*              каталог мороженого            */
@@ -720,6 +719,7 @@ footer a:last-of-type:focus {
 .products_list .kg {     /*        кг         */
   font-size: 30px;
 }
+
 .price {                 /*  цена на картинке  */
   position: relative;
   top: -60px;
@@ -739,13 +739,13 @@ footer a:last-of-type:focus {
 /*          Окно Быстрый просмотр                  */
 .product_card {
   position: absolute;
-  top: 0;
+  top: -6px;
   left: -14px;
 
-  max-width: 293px;
+  width: 293px;
   height: 377px;
 
-  padding: 6px 14px 22px 14px; 
+  padding-bottom: 22px;
 
   background-color: rgba(248,247,244,0.2);
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
@@ -1202,6 +1202,16 @@ input[type="text"] {
 
 /*          hover - focus - active          */
 
-.product_card:hover .quick_btn {
+.products_list li:hover .product_card {
   display: block;
+}
+
+.products_list li:hover a {
+  position: relative;
+  z-index: 4;
+}
+
+.products_list li:hover .quick_btn {
+  display: block;
+  z-index: 5;
 }

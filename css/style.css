@@ -4,16 +4,17 @@
 .product_card,
 .quick_btn
  {
-  display: none;
-}
+  display: none; }
 
 /*        скрытие элементов          */
 .visually_hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
+
+  clip: rect(0 0 0 0);
 }
 
 /*              откл. маркеры ul       */
@@ -26,6 +27,7 @@
 .pagination_list,
 .socials {
   list-style: none;
+
   margin: 0;
   padding: 0;
 }
@@ -72,10 +74,8 @@ a {
   cursor: pointer;
 }
 
-/*       Контейнер       */
-.container {
+.container {      /*       Контейнер       */
   width: 1146px;
-
   margin: 0 auto;
   padding-right: 27px;
   padding-left: 27px;
@@ -90,15 +90,12 @@ a {
   justify-content: center;
 
   width: 1146px;
-
   min-height: 100px;
 }
 
-/*             главный логотип       */
-.main_header_logo {
+.main_header_logo {   /*     главный логотип     */
   height: 64px;
   width: 154px;
-
   padding-top: 9px;
   margin-right: 9px;
 }
@@ -143,7 +140,6 @@ a {
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
-
   text-decoration-color: #adbdb4;
 
   padding: 5px 13px 6px 14px;
@@ -189,23 +185,23 @@ a {
 /*       "Каталог" на стр. Каталог      */
 .site_nav .current {
   color: #ffffff;
+
   background-color: #d07058;
   border-radius: 15px;
 }
 
 .site_nav li:hover .sub_menu,
 .site_nav li:focus .sub_menu {
-  display: block;
-}
+  display: block; }
 
 /*  подменю Каталог (новинки, сливочное..)  */
-
 .sub_menu {
   position: absolute;
   top: 37px;
   left: 7px;
 
   width: 143px;
+
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   background-color: #f8f7f4;
   border-radius: 6px;
@@ -218,7 +214,7 @@ a {
   line-height: 16px;
 
   padding: 10px 15px; /*  не работает отступ*/
-      /* как-то обойти наследование св-в при выделении */
+         /* как-то обойти наследование св-в при выделении */
 }
 
 .sub_menu li:hover,
@@ -280,11 +276,14 @@ a {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.login_btn { padding: 0 21px 0 17px; }
+.login_btn {
+  padding: 0 21px 0 17px; }
 
-.bascet_btn { padding: 0 17px 0 16px; }
+.bascet_btn {
+  padding: 0 17px 0 16px; }
 
-.basket_red{ padding: 0 17px 0 16px; }
+.basket_red{
+  padding: 0 17px 0 16px; }
 
 .search_btn:hover path, .search_btn:focus path,
 .login_btn:hover path, .login_btn:focus path,
@@ -295,16 +294,14 @@ a {
 
 /*                     Главная                    */
 .nav_phone {
-  position: relative;
-}
+  position: relative; }
 
 .time_phone {
   position: absolute;
-
-  text-align: right;
-
   top: 50px;
   right: 0;
+
+  text-align: right;
 
   width: 220px;
 
@@ -331,11 +328,10 @@ a {
 .slider {
       background-color: rgba(255, 0, 0, 0.5); /* временно цвет */
   position: absolute;
+  top: 0;
 
   text-align: center;
   color: #ffffff;
-
-  top: 0;
 
   width: 1146px;
   min-height: 881px;
@@ -370,12 +366,10 @@ a {
 
 .slider_controls label {
   display: inline-block;
-
   vertical-align: top;
 
   width: 17px;
   height: 17px;
-
   margin-right: 8px;
 
   background-color: transparent;
@@ -384,13 +378,13 @@ a {
 }
 
 .slider_btn {
-  width: 284px;
-  height: 68px;
-
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
+  width: 284px;
+  height: 68px;
 }
 
 /*                   Предложение (Малинка Шоколад)        */
@@ -403,21 +397,20 @@ a {
 
 .offer li {
   display: block;
+
   width: 560px;
   height: 230px;
 
   border-radius: 15px;
 }
-         /*  сместить изображение внутри блока на 1 px вниз?  */
+             /*  сместить изображение внутри блока на 1 px вниз?  */
 .offer li:first-child {
   background-image: url(../img/offer_raspberry.jpg);
-  
   margin-right: 26px;
 }
 
 .offer li:nth-child(2) {
-  background-image: url(../img/offer_chocolate.jpg);
-}
+  background-image: url(../img/offer_chocolate.jpg); }
 
 .offer span {
   display: block;
@@ -443,6 +436,7 @@ a {
 
 .offer button {
   display: block;
+
   padding: 11px 22px 11px 22px;
   margin: 0 21px 0 auto;
 }
@@ -476,8 +470,7 @@ a {
 }
   /*  непонятная разница в шрифтах!  */
 .description span {
-  letter-spacing: 1px;
-}
+  letter-spacing: 1px; }
 
 .descr_list {
   display: flex;
@@ -541,8 +534,8 @@ a {
 
   margin-bottom: 39px;
 }
-/*                         Блог                   */
-.blog {
+
+.blog {            /*         Блог           */
   color: #323232;
   font-size: 16px;
   font-weight: 500;
@@ -550,7 +543,6 @@ a {
 
   min-width: 560px;
   min-height: 220px;
-
   margin-right: 26px;
 
   border-radius: 15px;
@@ -568,7 +560,7 @@ a {
   margin: 0 0 5px 0;
 }
 
-.blog a {   /*   разное подчёркивание   */
+.blog a {          /*    подчёркивание!   */
   display: block;
   color: #323232;
   font-size: 24px;
@@ -577,14 +569,12 @@ a {
   text-decoration-color: #323232;
 
   width: 281px;
-
   margin: 0;
   padding: 0;
   padding-left: 20px;
 }
 
-/*                    Подписка                      */
-.subscripe {
+.subscripe {          /*        Подписка          */
   display: flex;
 
   min-width: 560px;
@@ -619,19 +609,18 @@ a {
   justify-content: space-around;
 
   margin: 0 11px 0 10px;
-  
 }
 
 .subscr_mail input[type="text"] {
   width: 362px;
   height: 42px;
+
   border: 1px solid rgba(178, 178, 178, 0.5);
   background-color: #ffffff;
 }
 
 .subscr_mail .button {
-  padding: 0px 21px;
-}
+  padding: 0px 21px; }
 
 /*                Карта и Контакты                  */
 .contacts {
@@ -642,15 +631,14 @@ a {
 }
 
 .contacts div{
+  display: flex;
+  flex-direction: column;
+
   position: absolute;
   top: 62px;
   right: 28px;
 
-  display: flex;
-  flex-direction: column;
-
   width: 260px;
-
   padding: 32px 20px 31px 25px;
 
   border-radius: 15px;
@@ -677,16 +665,13 @@ a {
 }
 
 .contacts p:nth-child(2) {
-  margin-bottom: 15px;
-}
+  margin-bottom: 15px; }
 
 .contacts p:nth-child(3) {
-  width: 175px;
-}
+  width: 175px; }
 
 .contacts button {
   width: 250px;
-
   margin-top: 25px;
   padding: 7px 0;
 }
@@ -710,18 +695,16 @@ a {
 .products p:hover, .products p:focus,
 .footer_links a:hover, .footer_links a:focus,
 .footer a:last-of-type:hover, .footer a:last-of-type:focus {
-  color: #ffbc9e;
-}
+  color: #ffbc9e; }
 
 /*                      стр. Каталог                      */
-/*     заголовок Сливочное мороженое     */
-.ice_cream_h2 {
+.ice_cream_h2 { /*    "Сливочное мороженое""    */
   font-size: 35px;
   font-weight: 700;
   line-height: 41px;
 
   margin-top: 2px;
-  margin-bottom: 27px;
+  margin-bottom: 12px;
 }
 
 .breadcrumbs {
@@ -739,17 +722,18 @@ a {
 }
 
 .breadcrumbs a {
-  position: relative;
-}
+  position: relative; }
 
 .breadcrumbs a::after {
   content: "";
   position: absolute;
-  height: 1px;
-  background: white;
   right: 0;
   left: 0;
   bottom: 0;
+
+  height: 1px;
+
+  background: white;
 }
 
 /*               Фильтры               */
@@ -785,12 +769,10 @@ a {
 }
 
 .filter_select:hover {
-  color: #323232;
-}
+  color: #323232; }
 
 .price_filter {
-  margin-right: 14px;
-}
+  margin-right: 14px; }
 
 .price_filter p {
   padding-left: 16px;
@@ -799,8 +781,7 @@ a {
 
 .range_controls .scale {  /*  псевдо-эл-т range_controls?  */
   position: relative;
-
-  top: 17px;
+  top: 16px;
   left: 22px;
 
   width: 176px;
@@ -812,7 +793,6 @@ a {
 .range_controls .scale::after {
   content: "";
   position: absolute;
-
   left: 28px;
 
   width: 100px;
@@ -823,6 +803,7 @@ a {
 
 .range_controls {
   position: relative;
+
   width: 220px;
   height: 37px;
 
@@ -833,9 +814,9 @@ a {
 
 .range_controls .price_switch {
   position: absolute;
-  top: 10px;
+  top: 8px;
   left: 0;
-  
+
   width: 4px;
   height: 4px;
   padding: 0;
@@ -843,20 +824,18 @@ a {
   border: 8px solid #ffffff;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
+
   cursor: pointer;
 }
 
 .range_controls .price_switch_min {
-  left: 38px;
-}
+  left: 36px; }
 
 .range_controls .price_switch_max {
-  left: 150px;
-}
+  left: 134px; }
 
 .fat_filter {
-  min-width: 415px;
-}
+  min-width: 415px; }
 
 .fat_filter p {
   padding-left: 16px;
@@ -878,7 +857,6 @@ a {
 
 .fat_list_item {
   position: relative;
-
   top: 11px;
   left: 26px;
 
@@ -887,9 +865,9 @@ a {
 
 .fat_list_item::before {
   content: "";
-  position: absolute;
   display: block;
 
+  position: absolute;
   top: -5px;
   left: -33px;
 
@@ -945,11 +923,9 @@ a {
 
 /*              каталог мороженого            */
 .products_list a {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
-/*                    название      */
-.products_list p {
+.products_list p {/*         название      */
   text-align: center;
   color: #ffffff;
   font-size: 16px;
@@ -959,8 +935,7 @@ a {
   padding: 5px 5px 0 5px;
 }
 
-/*                      цена        */
-.products_list span {
+.products_list span { /*        цена        */
   text-align: left;
   color: #ffffff;
   font-size: 45px;
@@ -971,8 +946,7 @@ a {
 }
 
 .products_list .kg {     /*        кг         */
-  font-size: 30px;
-}
+  font-size: 30px; }
 
 .price {                 /*  цена на картинке  */
   position: relative;
@@ -1401,8 +1375,8 @@ input[type="text"] {
 
 .basket_red:hover .modal_basket,
 .basket_red:focus .modal_basket {
-  display: block;              /*   не работает  */
-}
+  display: block; }              /*   не работает  */
+
 
 .button:hover, .button:focus {
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);

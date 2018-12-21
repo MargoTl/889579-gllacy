@@ -73,11 +73,14 @@
               <option>по жирности</option>
             </select>
           </div>
-          <div>
-            Цена: 100 руб. - 500 руб.<br>
-            <!-- ползунок цены -->
+
+          <div class="price_filter">
+            <p>Цена: 100 руб. - 500 руб.</p>
+            <div class="price_controls">
+            </div>
           </div>
-          <div>
+
+          <div class="fat_filter">
             Жирность:<br>
             <ul class="fat_list">
               <li>0%</li>
@@ -87,7 +90,7 @@
             </ul>
           </div>
 
-          <fieldset>
+          <fieldset class="filler_filter">
             <legend>Наполнители:</legend>
             <ul class="filler">
               <li>
@@ -103,7 +106,7 @@
             </ul>
           </fieldset>
 
-          <button type="submit">Применить</button>
+          <button class="filter_btn" type="submit">Применить</button>
         </form>
       </section>
 <!--                         Карточки товаров                             -->

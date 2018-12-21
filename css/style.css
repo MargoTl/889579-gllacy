@@ -8,7 +8,6 @@
 }
 
 /*        скрытие элементов          */
-
 .visually_hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -44,8 +43,7 @@ body {
 }
 
 .catalog_background {
-  background: linear-gradient(to bottom, #9cb0a5, #849d8f 40%);
-}
+  background: linear-gradient(to bottom, #9cb0a5, #849d8f 40%); }
 
 a {
   color: #ffffff;
@@ -74,18 +72,6 @@ a {
   cursor: pointer;
 }
 
-.button:hover,
-.button:focus {
-  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
-}
-
-.button:active {
-  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
-  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
-}
-
-
 /*       Контейнер       */
 .container {
   width: 1146px;
@@ -97,8 +83,7 @@ a {
 
 /*                      HEADER                  */
 .main_header {
-  display: flex;
-}
+  display: flex; }
 
 .main_nav {
   display: flex;
@@ -879,7 +864,13 @@ a {
 .products_list li:hover .quick_btn,
 .products_list li:focus .quick_btn {
   display: block;
-  z-index: 5;
+  z-index: 15;
+}
+
+/*   не работает для Быстрого просмотра */
+.products_list li:hover + .quick_btn:hover {
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 /*     Навигация по страницам (1 2 3 4 5 >)      */
@@ -1035,7 +1026,6 @@ input[type="text"] {
   width: 341px;
 
   padding: 20px 15px;
-
   top: 59px;
   right: 255px;
 }
@@ -1043,8 +1033,8 @@ input[type="text"] {
 /*                   Поле Входа                 */
 .modal_login {
   width: 277px;
-  padding: 20px 15px;
 
+  padding: 20px 15px;
   top: 59px;
   right: 153px;
 
@@ -1094,8 +1084,8 @@ input[type="text"] {
   font-weight: 400;
   line-height: 24px;
 
-  padding: 13px 0 0 15px;
   width: 428px;
+  padding: 13px 0 0 15px;
 }
 
 .fdbk_btn {
@@ -1121,7 +1111,6 @@ input[type="text"] {
 /*                    Поле Корзины             */
 .modal_basket {
   min-width: 540px;
-
   top: 59px;
   right: 26px;
   padding: 15px 0 20px 0;
@@ -1133,8 +1122,8 @@ input[type="text"] {
   font-size: 13px;
   font-weight: 400;
   line-height: 16px;
-
   vertical-align: top;
+
   padding-top: 12px;
 }
 
@@ -1221,4 +1210,15 @@ input[type="text"] {
 .basket_red:hover .modal_basket,
 .basket_red:focus .modal_basket {
   display: block;              /*   не работает  */
+}
+
+.button:hover, .button:focus,
+.quick_btn:hover, .quick_btn:focus {  /*   не работает для Быстрого просмотра */
+  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.button:active {
+  background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }

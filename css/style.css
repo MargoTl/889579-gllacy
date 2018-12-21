@@ -826,6 +826,7 @@ a {
   flex-wrap: wrap;
 
   width: 865px;
+  margin-bottom: 40px;
 }
 
 .filter_sort {
@@ -854,7 +855,9 @@ a {
 }
 
 .price_filter {
+      background-color: rgba(0, 220, 210, 0.4); /* временно цвет */
   height: 60px;
+  margin-right: 14px;
 }
 
 .price_controls {
@@ -864,9 +867,40 @@ a {
 }
 
 .fat_filter {
+      background-color: rgba(255, 120, 10, 0.4); /* временно цвет */
   width: 415px;
   min-height: 60px;
 }
+
+.fat_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.fat_list_item {
+  position: relative;
+
+  cursor: pointer;
+}
+
+.fat_list_item::before {
+  content: "";
+  position: absolute;
+  display: block;
+
+  top: -5px;
+  left: -30px;
+
+  width: 20px;
+  height: 20px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid #ffffff;
+}
+
+/*    состояние   */
+/*  border-radius: 50%;*/
 
 .filler_filter {
   max-width: 703px;

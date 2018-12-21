@@ -820,9 +820,45 @@ a {
 }
 
 /*               Фильтры               */
-.filter {
 
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+
+  min-width: 860px;
 }
+
+.filter_sort {
+  padding-left: 16px;
+  margin-bottom: 6px;
+}
+
+.filter_select {  /*   треугольник не такой!   */
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+
+  width: 194px;
+  height: 37px;
+  padding-left: 16px;
+  margin-right: 14px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  border: none;
+}
+
+.filter_select:hover {
+  color: #323232;
+}
+
+
+/*              чекбокс ЦЕНА  
+  width: 220px;
+  height: 37px;
+  background-color: rgba(255, 255, 255, 0.2);
+*/
 
 /*                     Сеточные стили                 */
 /*          Продукция (карточки мороженого)         */

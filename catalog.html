@@ -62,19 +62,31 @@
       </ul>
       <h2 class="ice_cream_h2 container">Сливочное мороженое</h2>
 <!--                           Фильтр                               -->
-      <section class="filter container">
-        <form action="https://echo.htmlacademy.ru">
-          Сортировка:
-          <span>По популярности</span>
-          Цена: 100 руб. - 500 руб.<br>
-          <!-- ползунок цены -->
-          Жирность:<br>
-          <ul class="fat_list">
-            <li>0%</li>
-            <li>до 10%</li>
-            <li>до 30%</li>
-            <li>выше 30%</li>
-          </ul>
+      <section class="container">
+        <form class="filter action="https://echo.htmlacademy.ru">
+          <div class="filter_sort">
+            <p> Сортировка:</p>
+            <select class="filter_select">
+              <option>по популярности</option>
+              <option>сначала недорогие</option>
+              <option>сначала дорогие</option>
+              <option>по жирности</option>
+            </select>
+          </div>
+          <div>
+            Цена: 100 руб. - 500 руб.<br>
+            <!-- ползунок цены -->
+          </div>
+          <div>
+            Жирность:<br>
+            <ul class="fat_list">
+              <li>0%</li>
+              <li>до 10%</li>
+              <li>до 30%</li>
+              <li>выше 30%</li>
+            </ul>
+          </div>
+
           <fieldset>
             <legend>Наполнители:</legend>
             <ul class="filler">
@@ -90,6 +102,7 @@
                 <label><input type="checkbox" name="jam">джемы</label></li>
             </ul>
           </fieldset>
+
           <button type="submit">Применить</button>
         </form>
       </section>

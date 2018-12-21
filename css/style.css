@@ -797,11 +797,35 @@ a {
   margin-bottom: 6px;
 }
 
-.range_controls {
+.range_controls .scale {  /*  псевдо-эл-т range_controls?  */
   position: relative;
 
+  top: 17px;
+  left: 22px;
+
+  width: 176px;
+  height: 4px;
+
+  background-color: rgba(248, 247, 244, 0.5);
+}
+
+.range_controls .scale::after {
+  content: "";
+  position: absolute;
+
+  left: 28px;
+
+  width: 100px;
+  height: 4px;
+
+  background-color: rgb(248, 247, 244);
+}
+
+.range_controls {
+  position: relative;
   width: 220px;
   height: 37px;
+
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
   border: none;
@@ -817,8 +841,7 @@ a {
   padding: 0;
 
   border: 8px solid #ffffff;
-  background-color: #ababab;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   cursor: pointer;
 }

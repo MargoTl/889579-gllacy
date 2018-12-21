@@ -752,6 +752,174 @@ a {
   bottom: 0;
 }
 
+/*               Фильтры               */
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 865px;
+  margin-bottom: 40px;
+}
+
+.filter_sort p {
+  padding-left: 16px;
+  margin-bottom: 6px;
+}
+
+.filter_select {  /*   треугольник не такой!   */
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+
+  width: 194px;
+  height: 37px;
+  padding-left: 16px;
+  margin-right: 14px;
+  margin-bottom: 18px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  border: none;
+}
+
+.filter_select:hover {
+  color: #323232;
+}
+
+.price_filter {
+  margin-right: 14px;
+}
+
+.price_filter p {
+  padding-left: 16px;
+  margin-bottom: 6px;
+}
+
+.range_controls {
+  position: relative;
+
+  width: 220px;
+  height: 37px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  border: none;
+}
+
+.range_controls .price_switch {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range_controls .price_switch_min {
+  left: 38px;
+}
+
+.range_controls .price_switch_max {
+  left: 150px;
+}
+
+.fat_filter {
+  min-width: 415px;
+}
+
+.fat_filter p {
+  padding-left: 16px;
+  margin-bottom: 6px;
+}
+
+.fat_list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  width: 415px;
+  height: 37px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  border: none;
+}
+
+.fat_list_item {
+  position: relative;
+
+  top: 11px;
+  left: 26px;
+
+  cursor: pointer;
+}
+
+.fat_list_item::before {
+  content: "";
+  position: absolute;
+  display: block;
+
+  top: -5px;
+  left: -33px;
+
+  width: 16px;
+  height: 16px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 4px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+}
+
+.selected_fat {
+  /*border: 4px solid rgba(255, 255, 255, 0.8);        точка внутри 4 px*/
+}
+
+.filler_filter {
+  max-width: 703px;
+  min-height: 60px;
+  margin-right: 13px;
+}
+
+.filter_btn{
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+
+  max-width: 144px;
+  height: 36px;
+  margin: 0;
+  padding: 0 30px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+
+  cursor: pointer;
+}
+
+.filter_btn:hover, .filter_btn:focus {
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.filter_btn:active {
+  color: #323232;
+  box-shadow: inset 0 2px 1px #696969;
+  background-color: #ededed;
+}
+
 /*              каталог мороженого            */
 .products_list a {
   text-decoration: none;
@@ -819,147 +987,7 @@ a {
   padding: 9px 15px;
 }
 
-/*               Фильтры               */
-
-.filter {
-  display: flex;
-  flex-wrap: wrap;
-
-  width: 865px;
-  margin-bottom: 40px;
-}
-
-.filter_sort p {
-  padding-left: 16px;
-  margin-bottom: 6px;
-}
-
-.filter_select {  /*   треугольник не такой!   */
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 18px;
-
-  width: 194px;
-  height: 37px;
-  padding-left: 16px;
-  margin-right: 14px;
-
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 50px;
-  border: none;
-}
-
-.filter_select:hover {
-  color: #323232;
-}
-
-.price_filter {
-      background-color: rgba(0, 220, 210, 0.4); /* временно цвет */
-  margin-right: 14px;
-}
-
-.price_filter p {
-  padding-left: 16px;
-  margin-bottom: 6px;
-}
-
-.range_controls {
-  width: 220px;
-  height: 37px;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 50px;
-  border: none;
-}
-
-.fat_filter {
-      background-color: rgba(255, 120, 10, 0.4); /* временно цвет */
-  width: 415px;
-}
-
-.fat_filter p {
-  padding-left: 16px;
-  margin-bottom: 6px;
-}
-
-.fat_list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-
-  width: 415px;
-
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 50px;
-  border: none;
-}
-
-.fat_list_item {
-  position: relative;
-
-  cursor: pointer;
-}
-
-.fat_list_item::before {
-  content: "";
-  position: absolute;
-  display: block;
-
-  top: -5px;
-  left: -33px;
-
-  width: 20px;
-  height: 20px;
-
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 4px solid rgba(255, 255, 255, 0.8);
-  border-radius: 50%;
-}
-
-.selected_fat {
-  /*border: 4px solid rgba(255, 255, 255, 0.8);        точка внутри 4 px*/
-}
-
-.filler_filter {
-  max-width: 703px;
-  min-height: 60px;
-  margin-right: 13px;
-}
-
-.filter_btn{
-  font: inherit;
-  text-align: center;
-  vertical-align: middle;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 18px;
-
-  max-width: 144px;
-  height: 36px; /*  временно  */
-  margin: 0;
-  padding: 0 30px;
-
-  background-color: rgba(255, 255, 255, 0.2);
-  border: 2px solid #ffffff;
-  border-radius: 50px;
-
-  cursor: pointer;
-}
-
-.filter_btn:hover, .filter_btn:focus {
-  color: #323232;
-  background-color: #ffffff;
-}
-
-.filter_btn:active {
-  color: #323232;
-  box-shadow: inset 0 2px 1px #696969;
-  background-color: #ededed;
-}
-
-/*                     Сеточные стили                 */
-/*          Продукция (карточки мороженого)         */
+/*                  Сеточные стили            */
 .products_list {
   display: flex;
   flex-wrap: wrap;
@@ -1013,12 +1041,6 @@ a {
 .products_list li:focus .quick_btn {
   display: block;
   z-index: 15;
-}
-
-/*   не работает для Быстрого просмотра */
-.products_list li:hover + .quick_btn:hover {
-  background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }
 
 /*     Навигация по страницам (1 2 3 4 5 >)      */

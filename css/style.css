@@ -401,14 +401,13 @@ a {
   font-weight: 400;
   line-height: 22px;
 
-  width: 1146px;
   min-height: 306px;
-
-  margin: 0 27px 40px 27px;
+  padding: 0;
+  margin-bottom: 40px;
 
   border-radius: 15px;
   background-color: #ebdfc4;
-  background: url("../img/waffle.png"); /*  не правильно отображается! */
+  background: url("../img/waffle.png") no-repeat;
 }
 
 .description p {

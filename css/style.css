@@ -149,6 +149,21 @@ a {
   padding: 5px 13px 6px 14px;
 }
 
+/*.site_nav_a {   подчёркивание ссылкам!
+  position: relative;
+}
+
+.site_nav_a::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background: white;
+  right: 0;
+  left: 0;
+  bottom: 0;
+    box-sizing: border-box; ?
+}*/
+
 .site_nav a:hover,
 .site_nav a:focus {
   color: #323232;
@@ -792,7 +807,7 @@ a {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
 
-  z-index: 4;
+  z-index: 5;
 }
 
 .quick_btn {
@@ -805,12 +820,11 @@ a {
 }
 
 /*               Фильтры               */
-/*.filler {
+.filter {
 
-}*/
+}
 
 /*                     Сеточные стили                 */
-/*                   page CATALOG                    */
 /*          Продукция (карточки мороженого)         */
 .products_list {
   display: flex;
@@ -1190,7 +1204,6 @@ input[type="text"] {
 }
 
 /*          hover - focus - active          */
-
 .search_form input:hover, .search_form input:focus,
 .login_form input:hover, .login_form input:focus,
 .feedback_form input:hover, .feedback_form input:focus,
@@ -1212,8 +1225,7 @@ input[type="text"] {
   display: block;              /*   не работает  */
 }
 
-.button:hover, .button:focus,
-.quick_btn:hover, .quick_btn:focus {  /*   не работает для Быстрого просмотра */
+.button:hover, .button:focus {
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
 }

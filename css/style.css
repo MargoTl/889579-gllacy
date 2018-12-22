@@ -4,7 +4,7 @@
 .product_card,
 .quick_btn
  {
-/*  display: none; */}
+  display: none; }
 
 /*        скрытие элементов          */
 .visually_hidden {
@@ -900,9 +900,32 @@ a {
 
 /*         фильтр начинки         */
 .filler_filter {
-  max-width: 703px;
-  min-height: 60px;
+  margin: 0;
+  padding: 0;
   margin-right: 13px;
+
+  border: 0 none;
+}
+
+.filler {
+  display: flex;
+  justify-content: space-around;
+
+  width: 703px;
+  height: 37px;
+
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  border: none;
+}
+
+.filler_filter_item {
+  position: relative;
+  top: 11px;
+
+
+  cursor: pointer;
 }
 
 .filter_btn{

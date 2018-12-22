@@ -847,7 +847,7 @@ a {
 .fat_list {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-around; /* сжать! отступы?*/
 
   width: 415px;
   height: 37px;
@@ -899,6 +899,11 @@ a {
 /*  :checked {}  ?*/
 
 /*         фильтр начинки         */
+.filler_filter legend {
+  padding-left: 16px;
+  margin-bottom: 6px;
+}
+
 .filler_filter {
   margin: 0;
   padding: 0;
@@ -909,11 +914,10 @@ a {
 
 .filler {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around; /* сжать! отступы?*/
 
   width: 703px;
   height: 37px;
-
 
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
@@ -924,10 +928,39 @@ a {
   position: relative;
   top: 11px;
 
-
   cursor: pointer;
 }
 
+.filler_filter input[type="checkbox"] {
+  display: none;
+}
+
+.filler_filter label {
+  position: relative;
+  left: 15px;
+}
+
+.filler_filter label::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -33px;
+
+  width: 18px;
+  height: 18px;
+
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 2px;
+}
+
+.filler_filter label:hover,
+.filler_filter label:focus { /*  фокуса нет  */
+  cursor: pointer;
+}
+
+  /*  добавить замену на картинку svg  для checked */
+
+/*  Кнопка Применить   */
 .filter_btn{
   font: inherit;
   text-align: center;
@@ -940,6 +973,7 @@ a {
   max-width: 144px;
   height: 36px;
   margin: 0;
+  margin-top: 23px; /* выровнять иначе?  align-self: bottom например */
   padding: 0 30px;
 
   background-color: rgba(255, 255, 255, 0.2);
@@ -1081,14 +1115,10 @@ a {
 
 /*     Навигация по страницам (1 2 3 4 5 >)      */
 .pagination_list {
-      background-color: rgba(255, 120, 10, 0.2); /* временно цвет */
   display: flex;
   justify-content: flex-end;
 
-  /* ?   width: 190px;  */
-
-  margin-top: 42px;
-  margin-bottom: 38px;
+  margin: 42px 0 38px 0;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -1098,10 +1128,22 @@ a {
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
+
+  padding: 0 10px;
 }
 
 .pagi_item_current {
   color: #323232;
+
+  height: 27px;
+
+  background-color: #ffffff;
+  border-radius: 50px;
+  border: none;
+}
+
+.next {
+  
 }
 
 /*                         FOOTER                      */

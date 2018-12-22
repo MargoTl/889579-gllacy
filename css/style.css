@@ -41,6 +41,9 @@ body {
 
   min-width: 1200px;
 
+  background-image: url("../img/slider1_pic.png");
+  background-repeat: no-repeat;
+  background-position: top center;
   background-color: #849d8f;
 }
 
@@ -326,7 +329,6 @@ a {
 }
 /*                  Слайдер                  */
 .slider {
-      background-color: rgba(255, 0, 0, 0.5); /* временно цвет */
   position: absolute;
   top: 0;
 
@@ -336,12 +338,12 @@ a {
   width: 1146px;
   min-height: 881px;
 
-  background-color: #849d8f;
-  background-image: url("../img/slider1_pic.png");
-  background-repeat: no-repeat;
-  background-position: top center;
-
   z-index: -1;
+}
+
+.slide {
+  position: relative;
+
 }
 
 .slider p {
@@ -355,11 +357,10 @@ a {
 
 .slider_controls {
   position: absolute;
+  top: 570px;
+  left: 0;
 
   font-size: 0;
-
-  bottom: 63px;
-  left: 0;
 
   z-index: 2;
 }
@@ -375,6 +376,8 @@ a {
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 50%;
+
+  cursor: pointer;
 }
 
 .slider_btn {
@@ -386,6 +389,8 @@ a {
   width: 284px;
   height: 68px;
 }
+
+/* #slide_1 {} */
 
 /*                   Предложение (Малинка Шоколад)        */
 .offer {

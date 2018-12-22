@@ -222,7 +222,7 @@
       </section>
                     <!--    Логин     -->
       <section class="modal modal_login">
-        <h2>Вход</h2>
+        <h2 class="visually_hidden">Вход</h2>
         <form class="login_form" action="https://echo.htmlacademy.ru" method="post">
           <p>
             <label class="visually_hidden" for="login_email">email</label>
@@ -233,8 +233,10 @@
             <input type="password" id="login_pass" name="password" placeholder="Пароль">
           </p>
           <button class="button" type="submit">Войти</button>
-          <a href="#">Забыли пароль?</a>
-          <a href="#">Новая регистрация</a>
+          <div class="modal_login_links">
+            <a href="#">Забыли пароль?</a>
+            <a href="#">Новая регистрация</a>
+          </div>
         </form>
       </section>
                    <!--    Обратная связь    -->

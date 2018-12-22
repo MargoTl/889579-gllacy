@@ -4,7 +4,7 @@
 .product_card,
 .quick_btn
  {
-  display: none; }
+/*  display: none; */}
 
 /*        скрытие элементов          */
 .visually_hidden {
@@ -771,6 +771,7 @@ a {
 .filter_select:hover {
   color: #323232; }
 
+/*         фильтр цены         */
 .price_filter {
   margin-right: 14px; }
 
@@ -779,7 +780,7 @@ a {
   margin-bottom: 6px;
 }
 
-.range_controls .scale {  /*  псевдо-эл-т range_controls?  */
+.range_controls .scale {
   position: relative;
   top: 16px;
   left: 22px;
@@ -834,6 +835,7 @@ a {
 .range_controls .price_switch_max {
   left: 134px; }
 
+/*         фильтр жирности         */
 .fat_filter {
   min-width: 415px; }
 
@@ -879,10 +881,24 @@ a {
   border-radius: 50%;
 }
 
-.selected_fat {
-  /*border: 4px solid rgba(255, 255, 255, 0.8);        точка внутри 4 px*/
-}
+/*.fat_list_item::after .selected_fat{  не так..
+  content: "";
+  display: block;
 
+  position: absolute;
+  top: -5px;
+  left: -33px;
+
+  width: 8px;
+  height: 8px;
+
+  border: 4px solid red;
+  border-radius: 50%;
+}  */
+
+/*  :checked {}  ?*/
+
+/*         фильтр начинки         */
 .filler_filter {
   max-width: 703px;
   min-height: 60px;
@@ -1199,20 +1215,49 @@ input[type="text"] {
 
 /*                   Поле Входа                 */
 .modal_login {
-  width: 277px;
-
-  padding: 20px 15px;
+  max-width: 277px;
+  padding: 8px 18px 9px 18px;
   top: 59px;
-  right: 153px;
+  right: 145px;
 
   z-index: 4;
 }
 
 .modal_login a {
-  color: #323232; }
+  position: relative;
+  bottom: 7px;
+
+  color: #323232;
+
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
+.modal_login a::after { /*   подчёркивание  */
+  content: "";
+  position: absolute;
+  right: 5px;         /*  не так  */
+  left: 10px;
+  bottom: 5px;
+
+  height: 1px;
+
+  background: #323232;
+}
 
 .modal_login button{
   padding: 8px 22px; }
+
+.modal_login_links {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.modal_login input {
+  width: 241px;
+}
+
+/*  сделать отступы  */
 
 /*                  Поле Обратной связи         */
 .modal_feedback {
@@ -1362,14 +1407,18 @@ input[type="text"] {
 .feedback_form input:hover, .feedback_form input:focus,
 .feedback_text:hover, .feedback_text:focus,
 .basket_form input:hover, .basket_form input:focus {
-  border: 2px solid rgba(154, 154, 154, 0.52); }
+  border: 1px solid rgba(154, 154, 154, 0.52);
+  outline: 1px solid rgba(154, 154, 154, 0.52);
+}
 
 .search_form input:active,
 .login_form input:active,
 .feedback_form input:active,
 .feedback_text:active,
 .basket_form input:active {
-  border: 2px solid rgba(46, 136, 228, 0.52); }
+  border: 1px solid rgba(46, 136, 228, 0.52);
+  outline: 1px solid rgba(46, 136, 228, 0.52)
+}
 
 /*  кнопки  */
 
@@ -1387,3 +1436,4 @@ input[type="text"] {
   background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
+

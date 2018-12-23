@@ -84,16 +84,16 @@
             <p>Жирность:</p>
             <ul class="fat_list">
               <li class="fat_list_item">
-                <input type="radio" name="fat_radio" id="fat_radio1">
+                <input class="input" type="radio" name="fat_radio" id="fat_radio1">
                 <label for="fat_radio1">0%</label></li>
               <li class="fat_list_item selected_fat">
-                <input type="radio" name="fat_radio" id="fat_radio2">
+                <input class="input" type="radio" name="fat_radio" id="fat_radio2">
                 <label for="fat_radio2"> до 10%</label></li>
               <li class="fat_list_item">
-                <input type="radio" name="fat_radio" id="fat_radio3">
+                <input class="input" type="radio" name="fat_radio" id="fat_radio3">
                 <label for="fat_radio3"> до 30%</label></li>
               <li class="fat_list_item">
-                <input type="radio" name="fat_radio" id="fat_radio4">
+                <input class="input" type="radio" name="fat_radio" id="fat_radio4">
                 <label for="fat_radio4"> выше 30%</label></li>
             </ul>
           </div>
@@ -102,19 +102,19 @@
             <ul class="filler">
               <li class="filler_filter_item">
                 <label>
-                  <input type="checkbox" name="chocolate" checked>шоколадные</label></li>
+                  <input class="input" type="checkbox" name="chocolate" checked>шоколадные</label></li>
               <li class="filler_filter_item">
                 <label>
-                  <input type="checkbox" name="sugar" checked>сахарные присыпки</label></li>
+                  <input class="input" type="checkbox" name="sugar" checked>сахарные присыпки</label></li>
               <li class="filler_filter_item">
                 <label>
-                  <input type="checkbox" name="fruit">фрукты</label></li>
+                  <input class="input" type="checkbox" name="fruit">фрукты</label></li>
               <li class="filler_filter_item">
                 <label>
-                  <input type="checkbox" name="syrup">сиропы</label></li>
+                  <input class="input" type="checkbox" name="syrup">сиропы</label></li>
               <li class="filler_filter_item">
                 <label>
-                  <input type="checkbox" name="jam">джемы</label></li>
+                  <input class="input" type="checkbox" name="jam">джемы</label></li>
             </ul>
           </fieldset>
           <button class="filter_btn" type="submit">Применить</button>
@@ -342,7 +342,7 @@
         <h2 class="visually_hidden">Поиск</h2>
         <form class="search_form" action="https://echo.htmlacademy.ru" method="post">
           <label for="search">Поиск</label>
-          <input type="search" id="search" name="search" placeholder="Что ищем?">
+          <input class="input" type="search" id="search" name="search" placeholder="Что ищем?">
         </form>
       </section>
                     <!-- Логин -->
@@ -351,11 +351,11 @@
         <form class="login_form" action="https://echo.htmlacademy.ru" method="post">
           <p>
             <label class="visually_hidden" for="login_email">email</label>
-            <input type="text" id="login_email" name="login_email" placeholder="Электронная почта">
+            <input class="input" type="text" id="login_email" name="login_email" placeholder="Электронная почта">
           </p>
           <p>
             <label class="visually_hidden" for="login_pass">Пароль</label>
-            <input type="password" id="login_pass" name="password" placeholder="Пароль">
+            <input class="input" type="password" id="login_pass" name="password" placeholder="Пароль">
           </p>
           <button class="button" type="submit">Войти</button>
           <a href="#">Забыли пароль?</a>

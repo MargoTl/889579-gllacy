@@ -1285,9 +1285,8 @@ a {
   width: 142px;
 }
 
-/*                      Кнопки, Формы              */
-/*  оставить так или сделать вложенность 2 эл-та?  */
-input[type="text"] {
+/*                      Кнопки, Формы     input[type="text"]         */
+.input {
   color: #999999;
   font-size: 14px;
   font-weight: 400;

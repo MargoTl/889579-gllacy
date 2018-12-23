@@ -19,12 +19,16 @@
 }
 
 /*              откл. маркеры ul       */
-.site_nav, .user_nav, .sub_menu,
+.site_nav,
+.user_nav,
+.sub_menu,
 .slider_list,
 .products_list,
-.offer, .descr_list,
+.offer,
+.descr_list,
 .breadcrumbs,
-.fat_list, .filler,
+.fat_list,
+.filler,
 .pagination_list,
 .socials {
   list-style: none;
@@ -997,8 +1001,9 @@ a {
   border-radius: 2px;
 }
 
+/*  фокуса нет  */
 .filler_filter label:hover,
-.filler_filter label:focus { /*  фокуса нет  */
+.filler_filter label:focus {
   cursor: pointer;
 }
 
@@ -1043,7 +1048,8 @@ a {
   text-decoration: none;
 }
 
-.products_list p {/*         название      */
+/*         название      */
+.products_list p {
   text-align: center;
   color: #ffffff;
   font-size: 16px;
@@ -1053,7 +1059,8 @@ a {
   padding: 5px 5px 0 5px;
 }
 
-.products_list span { /*        цена        */
+/*        цена        */
+.products_list span {
   text-align: left;
   color: #ffffff;
   font-size: 45px;
@@ -1063,11 +1070,13 @@ a {
   text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
-.products_list .kg {     /*        кг         */
+/*        кг         */
+.products_list .kg {
   font-size: 30px;
 }
 
-.price {                 /*  цена на картинке  */
+/*  цена на картинке  */
+.price {
   position: relative;
   top: -60px;
 }
@@ -1077,7 +1086,7 @@ a {
   text-decoration-color: #9CAFA4;
 }
 
-/*          Окно Быстрый просмотр                  */
+/*          Окно Быстрый просмотр               */
 .product_card {
   position: absolute;
   top: -6px;
@@ -1148,11 +1157,13 @@ a {
 
 .products_list li:hover p,
 .products_list li:focus p {
-  color: #ffffff; }
+  color: #ffffff;
+}
 
 .products_list li:hover span,
 .products_list li:focus span {
-  color: #ffffff; }
+  color: #ffffff;
+}
 
 .products_list li:hover .quick_btn,
 .products_list li:focus .quick_btn {
@@ -1189,7 +1200,7 @@ a {
   border: none;
 }
 
-/*                         FOOTER                      */
+/*                    FOOTER                */
 .footer {
   min-height: 104px;
 
@@ -1199,7 +1210,6 @@ a {
 
 .footer_socials_column {
   width: 192px;
-
   margin-right: 208px;
 }
 
@@ -1285,7 +1295,7 @@ a {
   width: 142px;
 }
 
-/*                      Кнопки, Формы     input[type="text"]         */
+/*                  Кнопки, Формы        */
 .input {
   color: #999999;
   font-size: 14px;
@@ -1296,7 +1306,7 @@ a {
   padding: 0 0 0 7px;
 }
 
-/*                 Поля форм                 */
+/*                 Поля форм              */
 .modal {
   position: absolute;
 
@@ -1390,7 +1400,6 @@ a {
 
 .feedback_form input[type="text"] {
   font: inherit;
-  color: #999999;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;

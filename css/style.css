@@ -299,6 +299,7 @@ a {
 }
 
 .login_btn {
+  position: relative;
   padding: 0 21px 0 17px;
 }
 
@@ -321,7 +322,13 @@ a {
   fill: #323232;
 }
 
-.search_ref:hover .modal_search {
+.search_ref:hover .modal_search,
+.search_ref:focus .modal_search {
+  display: block;
+}
+
+.login_btn:hover .modal_login,
+.login_btn:focus .modal_login {
   display: block;
 }
 
@@ -653,7 +660,7 @@ a {
   margin: 0 11px 0 10px;
 }
 
-.subscr_mail input[type="text"] {
+.subscr_mail .input {
   width: 362px;
   height: 42px;
 
@@ -1347,10 +1354,11 @@ a {
 
 /*               Поле Входа            */
 .modal_login {
-  max-width: 277px;
-  padding: 8px 18px 9px 18px;
   top: 59px;
   right: 145px;
+
+  max-width: 277px;
+  padding: 8px 18px 9px 18px;
 
   z-index: 4;
 }

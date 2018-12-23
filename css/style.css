@@ -2,8 +2,7 @@
 .modal,
 .sub_menu,
 .product_card,
-.quick_btn
- {
+.quick_btn {
   display: none;
 }
 
@@ -264,7 +263,7 @@ a {
 
 .login_btn span,
 .basket_full span,
-.bascet_btn span {
+.basket_btn span {
   display: inline-block;
   vertical-align: top;
   padding: 7px 0;
@@ -273,7 +272,7 @@ a {
 /*   сдвиг картинки   */
 .login_btn svg,
 .basket_full svg,
-.bascet_btn svg {
+.basket_btn svg {
   position: relative;
   top: 5px;
   right: 3px;
@@ -304,7 +303,7 @@ a {
   padding: 0 21px 0 17px;
 }
 
-.bascet_btn {
+.basket_btn {
   position: relative;
   padding: 0 17px 0 16px;
 }
@@ -317,10 +316,10 @@ a {
 .search_ref:focus path,
 .login_btn:hover path,
 .login_btn:focus path,
-.bascet_btn:hover path,
-.bascet_btn:focus path,
-.bascet_btn:hover circle,
-.bascet_btn:focus circle {
+.basket_btn:hover path,
+.basket_btn:focus path,
+.basket_btn:hover circle,
+.basket_btn:focus circle {
   fill: #323232;
 }
 
@@ -334,7 +333,7 @@ a {
   display: block;
 }
 
-.bascet_btn:hover .modal_login,
+/*.basket_btn:hover .modal_login */
 
 /*                     Главная                    */
 .nav_phone {
@@ -1526,12 +1525,12 @@ a {
   margin-bottom: 11px;
 }
 
-.basket_btn_wrap {
+.basket_full_btn_wrap {
   text-align: right;
   padding-right: 15px;
 }
 
-.basket_btn {
+.basket_full_btn {
   padding: 9px 14px 11px 14px;
   border-radius: 20px;
 }

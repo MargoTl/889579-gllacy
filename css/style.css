@@ -255,6 +255,7 @@ a {
   margin-right: 9px;
 
   background-color: rgba(255, 255, 255, 0.2);
+
   border-radius: 15px;
   border: none;
 
@@ -268,13 +269,18 @@ a {
   padding: 5px 0;
 }
 
-/*   сдвиг картинки на кнопке вниз и в сторону   */
+/*   сдвиг картинки   */
 .login_btn svg,
 .basket_red svg,
 .bascet_btn svg {
   position: relative;
   top: 4px;
   right: 3px;
+}
+
+.search_ref svg {
+  position: relative;
+  top: 7px;
 }
 
 .login_btn path {
@@ -287,7 +293,8 @@ a {
   background-color: #f8f7f4;
 }
 
-.search_btn {
+.search_ref {
+  position: relative;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -303,8 +310,8 @@ a {
   padding: 0 17px 0 16px;
 }
 
-.search_btn:hover path,
-.search_btn:focus path,
+.search_ref:hover path,
+.search_ref:focus path,
 .login_btn:hover path,
 .login_btn:focus path,
 .bascet_btn:hover path,
@@ -312,6 +319,10 @@ a {
 .bascet_btn:hover circle,
 .bascet_btn:focus circle {
   fill: #323232;
+}
+
+.search_ref:hover .modal_search {
+  display: block;
 }
 
 /*                     Главная                    */
@@ -1323,11 +1334,15 @@ a {
 
 /*              Поле Поиска           */
 .modal_search {
-  width: 341px;
+  top: 38px;
+  right: 0;
 
+  width: 341px;
   padding: 20px 15px;
-  top: 59px;
-  right: 255px;
+}
+
+.search_form .input{
+  min-width: 311px;
 }
 
 /*               Поле Входа            */
@@ -1416,6 +1431,7 @@ a {
 
   width: 428px;
   padding: 13px 0 0 15px;
+  resize: vertical;
 }
 
 .fdbk_btn {

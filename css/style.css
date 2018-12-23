@@ -263,18 +263,19 @@ a {
 }
 
 .login_btn span,
-.basket_red span,
+.basket_full span,
 .bascet_btn span {
   display: inline-block;
-  padding: 5px 0;
+  vertical-align: top;
+  padding: 7px 0;
 }
 
 /*   сдвиг картинки   */
 .login_btn svg,
-.basket_red svg,
+.basket_full svg,
 .bascet_btn svg {
   position: relative;
-  top: 4px;
+  top: 5px;
   right: 3px;
 }
 
@@ -304,10 +305,11 @@ a {
 }
 
 .bascet_btn {
+  position: relative;
   padding: 0 17px 0 16px;
 }
 
-.basket_red {
+.basket_full {
   padding: 0 17px 0 16px;
 }
 
@@ -331,6 +333,8 @@ a {
 .login_btn:focus .modal_login {
   display: block;
 }
+
+.bascet_btn:hover .modal_login,
 
 /*                     Главная                    */
 .nav_phone {
@@ -1571,8 +1575,8 @@ a {
 }
 
 /*  кнопки  */
-.basket_red:hover .modal_basket,
-.basket_red:focus .modal_basket {
+.basket_full:hover .modal_basket,
+.basket_full:focus .modal_basket {
   display: block;
 }              /*   не работает  */
 

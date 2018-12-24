@@ -3,7 +3,7 @@
 .sub_menu,
 .product_card,
 .quick_btn {
-  display: none;
+
 }
 
 /*        скрытие элементов          */
@@ -121,7 +121,7 @@ a {
 
 .site_nav_index {
   display: flex;
-  justify-content: space-between;  /* поменять ? */
+  justify-content: space-between;
 
   min-width: 350px;
 }
@@ -201,10 +201,8 @@ a {
   border-radius: 15px;
 }
 
-.site_nav li:hover
-.sub_menu,
-.site_nav li:focus
-.sub_menu {
+.site_nav li:hover .sub_menu,
+.site_nav li:focus .sub_menu {
   display: block;
 }
 
@@ -333,7 +331,9 @@ a {
   display: block;
 }
 
-/*.basket_btn:hover .modal_login */
+.basket_btn:hover .modal_basket {
+  display: block;
+}
 
 /*                     Главная                    */
 .nav_phone {
@@ -1357,11 +1357,11 @@ a {
 
 /*               Поле Входа            */
 .modal_login {
-  top: 59px;
+  top: 38px;
   right: 145px;
 
-  max-width: 277px;
-  padding: 8px 18px 9px 18px;
+  width: 277px;
+
 
   z-index: 4;
 }
@@ -1376,17 +1376,8 @@ a {
   padding-bottom: 5px;
 }
 
-/*   подчёркивание  */
-.modal_login a::after {
-  content: "";
-  position: absolute;
-  right: 5px;         /*  не так  */
-  left: 10px;
-  bottom: 5px;
-
-  height: 1px;
-
-  background: #323232;
+.modal_login_links {
+  text-decoration: underline;
 }
 
 .modal_login button {

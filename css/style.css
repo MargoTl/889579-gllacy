@@ -3,7 +3,11 @@
 .sub_menu,
 .product_card,
 .quick_btn {
+/*  display: none; */
+}
 
+.modal_basket {
+  display: none;
 }
 
 /*        скрытие элементов          */
@@ -302,11 +306,11 @@ a {
 }
 
 .basket_btn {
-  position: relative;
   padding: 0 17px 0 16px;
 }
 
 .basket_full {
+  position: relative;
   padding: 0 17px 0 16px;
 }
 
@@ -331,7 +335,12 @@ a {
   display: block;
 }
 
-.basket_btn:hover .modal_basket {
+.basket_full:hover .modal_basket,
+.basket_full:focus .modal_basket {
+  display: block;
+}
+
+.basket_full:active .modal_basket {
   display: block;
 }
 
@@ -450,7 +459,7 @@ a {
   border-radius: 15px;
 }
 
-             /*  сместить изображение внутри блока на 1 px вниз?  */
+/*  сместить изображение внутри блока на 1 px вниз?  */
 .offer li:first-child {
   background-image: url(../img/offer_raspberry.jpg);
   margin-right: 26px;
@@ -489,7 +498,7 @@ a {
   margin: 0 21px 0 auto;
 }
 
-/*                   Преимущества                */
+/*               Преимущества         */
 .description {
   display: flex;
   flex-direction: column;
@@ -579,7 +588,7 @@ a {
   background-image: url("../img/descr_thermometer.svg");
 }
 
-/*                   Блог и Подписка              */
+/*               Блог и Подписка           */
 .blog_n_subscr {
   display: flex;
   justify-content: center;
@@ -587,7 +596,8 @@ a {
   margin-bottom: 39px;
 }
 
-.blog {            /*         Блог           */
+/*         Блог           */
+.blog {
   color: #323232;
   font-size: 16px;
   font-weight: 500;
@@ -612,7 +622,7 @@ a {
   margin: 0 0 5px 0;
 }
 
-.blog a {          /*    подчёркивание!   */
+.blog a {
   display: block;
   color: #323232;
   font-size: 24px;
@@ -626,7 +636,9 @@ a {
   padding-left: 20px;
 }
 
-.subscripe {          /*        Подписка          */
+/*        Подписка          */
+/*      сделать второе закругление углов!    */
+.subscripe {
   display: flex;
 
   min-width: 560px;
@@ -643,7 +655,7 @@ a {
   background-size: 549px 210px, 560px 220px;
   background-clip: padding-box;
   background-origin: border-box;
-} /*      сделать второе закругление углов!    */
+}
 
 .subscripe p {
   color: #5a5a5a;
@@ -675,7 +687,7 @@ a {
   padding: 0px 21px;
 }
 
-/*                Карта и Контакты                  */
+/*              Карта и Контакты            */
 .contacts {
   position: relative;
 
@@ -731,7 +743,7 @@ a {
   padding: 7px 0;
 }
 
-/*                      Футер                        */
+/*                   Футер                */
 .footer_links {
   color: #ffffff;
   font-size: 13px;
@@ -757,8 +769,9 @@ a {
   color: #ffbc9e;
 }
 
-/*                      стр. Каталог                      */
-.ice_cream_h2 { /*    "Сливочное мороженое""    */
+/*              стр. Каталог             */
+/*   "Сливочное мороженое"    */
+.ice_cream_h2 {
   font-size: 35px;
   font-weight: 700;
   line-height: 41px;
@@ -798,7 +811,6 @@ a {
 }
 
 /*               Фильтры               */
-
 .filter {
   display: flex;
   flex-wrap: wrap;
@@ -812,7 +824,8 @@ a {
   margin-bottom: 6px;
 }
 
-.filter_select {  /*   треугольник не такой!   */
+/*   треугольник не такой!   */
+.filter_select {
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
@@ -909,10 +922,11 @@ a {
   margin-bottom: 6px;
 }
 
+/*          сжать!   отступы?  */
 .fat_list {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; /* сжать! отступы?*/
+  justify-content: space-around;
 
   width: 415px;
   height: 37px;
@@ -981,9 +995,10 @@ a {
   border: 0 none;
 }
 
+/*         сжать!   отступы?    */
 .filler {
   display: flex;
-  justify-content: space-around; /* сжать! отступы?*/
+  justify-content: space-around;
 
   width: 703px;
   height: 37px;
@@ -1022,15 +1037,15 @@ a {
   border-radius: 2px;
 }
 
-/*  фокуса нет  */
+/*                                         фокуса нет!     */
 .filler_filter label:hover,
 .filler_filter label:focus {
   cursor: pointer;
 }
 
-  /*  добавить замену на картинку svg  для checked */
+/*            добавить замену на картинку svg  для checked! */
 
-/*  Кнопка Применить   */
+/*   Кнопка Применить   */
 .filter_btn{
   font: inherit;
   text-align: center;
@@ -1053,7 +1068,8 @@ a {
   cursor: pointer;
 }
 
-.filter_btn:hover, .filter_btn:focus {
+.filter_btn:hover,
+.filter_btn:focus {
   color: #323232;
   background-color: #ffffff;
 }
@@ -1064,12 +1080,12 @@ a {
   background-color: #ededed;
 }
 
-/*              каталог мороженого            */
+/*          каталог мороженого        */
 .products_list a {
   text-decoration: none;
 }
 
-/*         название      */
+/*           название     */
 .products_list p {
   text-align: center;
   color: #ffffff;
@@ -1080,7 +1096,7 @@ a {
   padding: 5px 5px 0 5px;
 }
 
-/*        цена        */
+/*            цена         */
 .products_list span {
   text-align: left;
   color: #ffffff;
@@ -1091,12 +1107,12 @@ a {
   text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
-/*        кг         */
+/*             кг           */
 .products_list .kg {
   font-size: 30px;
 }
 
-/*  цена на картинке  */
+/*      цена на картинке    */
 .price {
   position: relative;
   top: -60px;
@@ -1107,7 +1123,7 @@ a {
   text-decoration-color: #9CAFA4;
 }
 
-/*          Окно Быстрый просмотр               */
+/*         Окно Быстрый просмотр          */
 .product_card {
   position: absolute;
   top: -6px;
@@ -1133,7 +1149,7 @@ a {
   padding: 9px 15px;
 }
 
-/*                  Сеточные стили            */
+/*               Сеточные стили         */
 .products_list {
   display: flex;
   flex-wrap: wrap;
@@ -1192,7 +1208,7 @@ a {
   z-index: 15;
 }
 
-/*     Навигация по страницам (1 2 3 4 5 >)      */
+/*         Навигация по страницам       */
 .pagination_list {
   display: flex;
   justify-content: flex-end;
@@ -1221,7 +1237,7 @@ a {
   border: none;
 }
 
-/*                    FOOTER                */
+/*                FOOTER           */
 .footer {
   min-height: 104px;
 
@@ -1316,7 +1332,7 @@ a {
   width: 142px;
 }
 
-/*                  Кнопки, Формы        */
+/*               Кнопки, Формы        */
 .input {
   color: #999999;
   font-size: 14px;
@@ -1327,7 +1343,7 @@ a {
   padding: 0 0 0 7px;
 }
 
-/*                 Поля форм              */
+/*                Поля форм          */
 .modal {
   position: absolute;
 
@@ -1342,7 +1358,7 @@ a {
   border-radius: 5px;
 }
 
-/*              Поле Поиска           */
+/*             Поле Поиска         */
 .modal_search {
   top: 38px;
   right: 0;
@@ -1351,14 +1367,15 @@ a {
   padding: 20px 15px;
 }
 
-.search_form .input{
+.search_form .input {
   min-width: 311px;
 }
 
-/*               Поле Входа            */
+/*              Поле Входа          */
+/*                      сделать отступы!  */
 .modal_login {
   top: 38px;
-  right: 145px;
+  right: 130px;
 
   width: 277px;
 
@@ -1377,6 +1394,9 @@ a {
 }
 
 .modal_login_links {
+  display: inline-flex;
+  flex-direction: column;
+
   text-decoration: underline;
 }
 
@@ -1384,18 +1404,11 @@ a {
   padding: 8px 22px;
 }
 
-.modal_login_links {
-  display: inline-flex;
-  flex-direction: column;
-}
-
 .modal_login input {
   width: 241px;
 }
 
-/*  сделать отступы  */
-
-/*                Поле Обратной связи      */
+/*             Поле Обратной связи     */
 .modal_feedback {
   position: fixed;
 
@@ -1456,11 +1469,12 @@ a {
   cursor: pointer;
 }
 
-/*               Поле Корзины         */
+/*             Поле Корзины        */
 .modal_basket {
-  min-width: 540px;
   top: 59px;
   right: 26px;
+
+  min-width: 540px;
   padding: 15px 0 20px 0;
 
   z-index: 4;
@@ -1526,7 +1540,7 @@ a {
   border-radius: 20px;
 }
 
-/*                 Поля ввода           */
+/*               Поля ввода           */
 .search_form input,
 .login_form input,
 .feedback_form input,
@@ -1564,11 +1578,7 @@ a {
   outline: 1px solid rgba(46, 136, 228, 0.52)
 }
 
-/*  кнопки  */
-.basket_full:hover .modal_basket,
-.basket_full:focus .modal_basket {
-  display: block;
-}              /*   не работает  */
+/*             кнопки            */
 
 .button:hover,
 .button:focus {

@@ -35,39 +35,39 @@
             <a class="site_nav_a" href="#">О Компании</a></li>
           </ul>
           <div class="user_nav nav_phone">
+<!--                                     Поиск             -->
             <a class="user_nav_btn search_ref">
               <span class="visually_hidden">Поиск</span>
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
-              <section class="modal modal_search">
-                <h2 class="visually_hidden">Поиск</h2>
-                <form class="search_form" action="https://echo.htmlacademy.ru" method="post">
-                  <label for="search"></label>
-                  <input class="input" type="search" id="search" name="search" placeholder="Что ищем?">
-                </form>
-              </section>
-            </a>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg></a>
+            <section class="modal modal_search">
+              <h2 class="visually_hidden">Поиск</h2>
+              <form class="search_form" action="https://echo.htmlacademy.ru" method="post">
+                <label for="search"></label>
+                <input class="input" type="search" id="search" name="search" placeholder="Что ищем?">
+              </form>
+            </section>
+<!--                                      Вход               -->
             <a class="user_nav_btn login_btn">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#000"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
-              <span>Вход</span>
-              <section class="modal modal_login">
-                <h2 class="visually_hidden">Вход</h2>
-                <form class="login_form" action="https://echo.htmlacademy.ru" method="post">
-                  <p>
-                    <label class="visually_hidden" for="login_email">email</label>
-                    <input class="input" type="text" id="login_email" name="login_email" placeholder="Электронная почта">
-                  </p>
-                  <p>
-                    <label class="visually_hidden" for="login_pass">Пароль</label>
-                    <input class="input" type="password" id="login_pass" name="password" placeholder="Пароль">
-                  </p>
-                  <button class="button" type="submit">Войти</button>
-                  <div class="modal_login_links">
-                    <a href="#">Забыли пароль?</a>
-                    <a href="#">Новая регистрация</a>
-                  </div>
-                </form>
-              </section>
-            </a>
+              <span>Вход</span></a>
+            <section class="modal modal_login">
+              <h2 class="visually_hidden">Вход</h2>
+              <form class="login_form" action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                  <label class="visually_hidden" for="login_email">email</label>
+                  <input class="input" type="text" id="login_email" name="login_email" placeholder="Электронная почта">
+                </p>
+                <p>
+                  <label class="visually_hidden" for="login_pass">Пароль</label>
+                  <input class="input" type="password" id="login_pass" name="password" placeholder="Пароль">
+                </p>
+                <button class="button" type="submit">Войти</button>
+                <div class="modal_login_links">
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </div>
+              </form>
+            </section>
             <button class="user_nav_btn basket_btn" type="button">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><g fill="#FFF"><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g></svg>
               <span>Пусто</span></button>
@@ -81,7 +81,7 @@
     </header>
     <main>
     <h1 class="visually_hidden">Магазин Глейси</h1>
-  <!--                Слайдер                      -->
+<!--                        Слайдер                      -->
     <input class="visually_hidden input" type="radio" id="slide_1" name="switch" checked>
     <input class="visually_hidden input" type="radio" id="slide_2" name="switch">
     <input class="visually_hidden input" type="radio" id="slide_3" name="switch">
@@ -112,7 +112,7 @@
         </ul>
       </section>
     </div> 
-            <!--                 Предложение               -->
+<!--                          Предложение               -->
       <ul class="offer container">
         <li>
           <span>Малинка даром!</span>
@@ -259,8 +259,8 @@
         &copy; 2017</p>
       </div>
      </footer>
-                    <!--     формы    -->
-                   <!--    Обратная связь    -->
+<!--                            Формы                 -->
+<!--                         Обратная связь    -->
       <section class="modal modal_feedback">
         <h2 class="visually_hidden">Обратная связь</h2>
         <form class="feedback_form" action="https://echo.htmlacademy.ru" method="post">

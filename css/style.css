@@ -3,10 +3,6 @@
 .sub_menu,
 .product_card,
 .quick_btn {
-/*  display: none; */
-}
-
-.modal_basket {
   display: none;
 }
 
@@ -107,7 +103,6 @@ a {
   min-height: 100px;
 }
 
-/*     главный логотип     */
 .main_header_logo {
   height: 64px;
   width: 154px;
@@ -124,16 +119,10 @@ a {
 }
 
 .site_nav_index {
-  display: flex;
-  justify-content: space-between;
-
   min-width: 350px;
 }
 
 .site_nav_catalog {
-  display: flex;
-  justify-content: space-between;
-
   min-width: 363px;
 }
 
@@ -144,9 +133,13 @@ a {
   margin-top: 23px;
 }
 
-/*        Навигация (Каталог / Доставка / О компании)      */
+/*      Навигация (Каталог / Доставка / О компании)    */
 .site_nav {
   position: relative;
+
+  display: flex;
+  justify-content: space-between;
+
   margin-top: 32px;
 }
 
@@ -160,35 +153,21 @@ a {
   padding: 5px 13px 6px 14px;
 }
 
-/*.site_nav_a {   подчёркивание ссылкам!
-  position: relative;
-}
-
-.site_nav_a::after {
-  content: "";
-  position: absolute;
-  height: 1px;
-  background: white;
-  right: 0;
-  left: 0;
-  bottom: 0;
-    box-sizing: border-box; ?
-}*/
-
 .site_nav a:hover,
 .site_nav a:focus {
   color: #323232;
+  text-decoration: none;
 
   background-color: #f7f6f3;
   border-radius: 15px;
-  text-decoration: none;
 }
 
 .site_nav a:active {
+  text-decoration: none;
+
   background-color: #ededed;
   border-radius: 15px;
   box-shadow: inset 0 2px 1px #696969;
-  text-decoration: none;
 }
 
 .site_nav .current:hover,
@@ -197,7 +176,7 @@ a {
   background-color: #d07058;
 }
 
-/*       "Каталог" на стр. Каталог      */
+/*     "Каталог" на стр. Каталог     */
 .site_nav .current {
   color: #ffffff;
 
@@ -224,13 +203,31 @@ a {
 }
 
 .sub_menu a {
+  display: block;
+
   color: #323232;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
 
-  padding: 10px 15px; /*  не работает отступ*/
+  padding: 5px 15px;
          /* как-то обойти наследование св-в при выделении */
+}
+
+.site_nav_first {
+  position: relative;
+}
+
+.site_nav_first::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+
+  width: 128px;
+  height: 1px;
+
+  background-color: red/*rgba(255, 255, 255, 0.2)*/;
 }
 
 .sub_menu li:hover,
@@ -344,7 +341,7 @@ a {
   display: block;
 }
 
-/*                     Главная                    */
+/*                   Главная                */
 .nav_phone {
   position: relative;
 }
@@ -389,7 +386,7 @@ a {
   width: 1146px;
   min-height: 881px;
 
-  z-index: -1;
+  z-index: -1; /*            убрать?*/
 }
 
 .slide {
@@ -461,8 +458,9 @@ a {
 
 /*  сместить изображение внутри блока на 1 px вниз?  */
 .offer li:first-child {
-  background-image: url(../img/offer_raspberry.jpg);
   margin-right: 26px;
+
+  background-image: url(../img/offer_raspberry.jpg);
 }
 
 .offer li:nth-child(2) {
@@ -791,6 +789,7 @@ a {
 
 .breadcrumbs li:not(.breadcrumbs-current)::after {
   content: "»";
+
   padding: 0 7px;
 }
 
@@ -824,7 +823,9 @@ a {
   margin-bottom: 6px;
 }
 
-/*   треугольник не такой!   */
+/*   треугольник не такой!   
+appearance: none ?
+*/
 .filter_select {
   color: #ffffff;
   font-size: 16px;
@@ -846,9 +847,9 @@ a {
   color: #323232;
 }
 
-/*         фильтр цены         */
 .price_filter {
-  margin-right: 14px; }
+  margin-right: 14px;
+}
 
 .price_filter p {
   padding-left: 16px;
@@ -1189,6 +1190,7 @@ a {
 .products_list li:hover a,
 .products_list li:focus a {
   position: relative;
+
   z-index: 4;
 }
 
@@ -1372,13 +1374,12 @@ a {
 }
 
 /*              Поле Входа          */
-/*                      сделать отступы!  */
 .modal_login {
   top: 38px;
   right: 130px;
 
   width: 277px;
-
+  padding: 20px 17px 22px 19px;
 
   z-index: 4;
 }
@@ -1406,20 +1407,20 @@ a {
 
 .modal_login input {
   width: 241px;
+  margin: 0;
 }
 
-/*             Поле Обратной связи     */
+/*          Поле Обратной связи     */
 .modal_feedback {
   position: fixed;
+  top: 337px;
+  right: 360px;
 
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
 
   width: 478px;
-
-  top: 337px;
-  right: 360px;
   padding: 15px 0 20px 26px;
 }
 
@@ -1446,6 +1447,7 @@ a {
 
   width: 428px;
   padding: 13px 0 0 15px;
+
   resize: vertical;
 }
 
@@ -1500,10 +1502,10 @@ a {
 }
 
 .X_basket {
+  margin: 0 3px 0 5px;
+
   border: none;
   background: transparent;
-
-  margin: 0 3px 0 5px;
 }
 
 .td_img {
@@ -1526,17 +1528,20 @@ a {
 
 .modal_basket p {
   text-align: right;
+
   padding-right: 15px;
   margin-bottom: 11px;
 }
 
 .basket_full_btn_wrap {
   text-align: right;
+
   padding-right: 15px;
 }
 
 .basket_full_btn {
   padding: 9px 14px 11px 14px;
+
   border-radius: 20px;
 }
 
@@ -1579,7 +1584,6 @@ a {
 }
 
 /*             кнопки            */
-
 .button:hover,
 .button:focus {
   background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);

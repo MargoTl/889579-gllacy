@@ -211,7 +211,39 @@ a {
   line-height: 16px;
 
   padding: 5px 15px;
-         /* как-то обойти наследование св-в при выделении */
+}
+
+.site_nav_a {
+  text-decoration: none;
+}
+
+/*    подчёркивание навигации "Доставка, О компании"
+.site_nav_a::after {
+  content: "";
+  display: block;
+
+  border-bottom: 1px solid #ffffff;
+} */
+
+.sub_menu .catalog_item {
+  text-decoration: none;
+}
+
+.sub_menu .catalog_item:hover,
+.sub_menu .catalog_item:focus {
+  background-color: #fbded7;
+  border-radius: 0;
+}
+
+.sub_menu .catalog_item:active {
+  background-color: #f6b5a5;
+  border-radius: 0;
+}
+
+.sub_menu .current_catalog_item {
+  color: #ffffff;
+  background-color: #d07058;
+  border-radius: 0;
 }
 
 .site_nav_first {

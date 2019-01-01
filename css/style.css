@@ -1208,6 +1208,20 @@ appearance: none ?
   border-radius: 50%;
 }
 
+.hit::after{
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  width: 61px;
+  height: 61px;
+
+  background-image: url('../img/HIT.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .products_list img:nth-of-type(2) {
   position: absolute;
   top: 0px;

@@ -226,6 +226,9 @@ a {
 } */
 
 .sub_menu .catalog_item {
+  margin-bottom: 5px;
+  margin-top: 5px;
+
   text-decoration: none;
 }
 
@@ -250,16 +253,17 @@ a {
   position: relative;
 }
 
+/* подчёркивание в меню Каталог */
 .site_nav_first::after {
   content: "";
   position: absolute;
   bottom: 0px;
-  left: 0;
+  left: 5px;
 
   width: 128px;
   height: 1px;
 
-  background-color: red/*rgba(255, 255, 255, 0.2)*/;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .sub_menu li:hover,

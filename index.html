@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин Gllacy Shop</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
   </head>
   <body>
     <header class="main_header container">
@@ -80,38 +80,38 @@
       </nav>
     </header>
     <main>
-    <h1 class="visually_hidden">Магазин Глейси</h1>
+      <h1 class="visually_hidden">Магазин Глейси</h1>
 <!--                        Слайдер                      -->
-    <input class="visually_hidden input" type="radio" id="slide_1" name="switch" checked>
-    <input class="visually_hidden input" type="radio" id="slide_2" name="switch">
-    <input class="visually_hidden input" type="radio" id="slide_3" name="switch">
-    <div class="container">
-      <section class="slider">
-        <h2 class="visually_hidden">Слайдер</h2>
-        <div class="slider_controls">
-          <label for="slide_c1">Первый слайд</label>
-          <input type="radio" class="visually_hidden input" id="slide_c1" name="switch_slide" checked>
-          <label for="slide_c2">Второй слайд</label>
-          <input type="radio" class="visually_hidden input" id="slide_c2" name="switch_slide">
-          <label for="slide_c3">Третий слайд</label>
-          <input type="radio" class="visually_hidden input" id="slide_c3" name="switch_slide">
-        </div>
-        <ul class="slider_list">
-          <li class="slider_item slide" id="slide1">
-            <p>Крем-брюле и пломбир с малиновым джемом</p>
-            <button class="button slider_btn" type="button">Давайте оба!</button>
-          </li>
-<!--      <li class="slider_item slide" id="slide2">
-            <p>Шоколадный пломбир и лимонный сорбет</p>
-            <button class="button slider_btn" type="button">Давайте оба!</button>
-          </li>
-          <li class="slider_item slide" id="slide3">
-            <p>Пломбир с помадкой и клубничный щербет</p>
-            <button class="button slider_btn" type="button">Давайте оба!</button>
-          </li> -->
-        </ul>
-      </section>
-    </div> 
+      <input class="visually_hidden input" type="radio" id="slide_1" name="switch" checked>
+      <input class="visually_hidden input" type="radio" id="slide_2" name="switch">
+      <input class="visually_hidden input" type="radio" id="slide_3" name="switch">
+      <div class="container">
+        <section class="slider">
+          <h2 class="visually_hidden">Слайдер</h2>
+          <div class="slider_controls">
+            <label for="slide_c1">Первый слайд</label>
+            <input type="radio" class="visually_hidden input" id="slide_c1" name="switch_slide" checked>
+            <label for="slide_c2">Второй слайд</label>
+            <input type="radio" class="visually_hidden input" id="slide_c2" name="switch_slide">
+            <label for="slide_c3">Третий слайд</label>
+            <input type="radio" class="visually_hidden input" id="slide_c3" name="switch_slide">
+          </div>
+          <ul class="slider_list">
+            <li class="slider_item slide" id="slide1">
+              <p>Крем-брюле и пломбир с малиновым джемом</p>
+              <button class="button slider_btn" type="button">Давайте оба!</button>
+            </li>
+<!--        <li class="slider_item slide" id="slide2">
+              <p>Шоколадный пломбир и лимонный сорбет</p>
+              <button class="button slider_btn" type="button">Давайте оба!</button>
+            </li>
+            <li class="slider_item slide" id="slide3">
+              <p>Пломбир с помадкой и клубничный щербет</p>
+              <button class="button slider_btn" type="button">Давайте оба!</button>
+            </li> -->
+          </ul>
+        </section>
+      </div>
 <!--                          Предложение               -->
       <ul class="offer container">
         <li>
@@ -267,12 +267,15 @@
           <p><label class="visually_hidden" for="email_2_id">Ваша почта для ответа?</label>
             <input class="input" type="text" id="email_2_id" name="feedback_email" placeholder="Ваша почта для ответа?">
           </p>
-          <p><label class="visually_hidden" for="text_id">Напишите что-нибудь</label>
-            <textarea class="feedback_text" rows="5" id="text_id" name="text_name">Напишите что-нибудь...</textarea>
+          <p><label class="visually_hidden" for="message">Напишите что-нибудь</label>
+            <textarea class="feedback_text" rows="5" id="message" name="message">Напишите что-нибудь...</textarea>
           </p>
           <button class="button fdbk_btn" type="submit">Отправить</button>
           <button class="modal_close" type="button" aria-label="Закрыть"></button>
         </form>
       </section>
+      <script>
+        
+      </script>
   </body>
 </html>

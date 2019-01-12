@@ -3,7 +3,7 @@
 .sub_menu,
 .product_card,
 .quick_btn {
-  display: none;
+/*  display: none;*/
 }
 
 /*        скрытие элементов          */
@@ -724,7 +724,6 @@ a {
   width: 362px;
   height: 42px;
 
-  border: 1px solid rgba(178, 178, 178, 0.5);
   background-color: #ffffff;
 }
 
@@ -1246,7 +1245,8 @@ appearance: none ?
 /*            включение окон         */
 .products_list li:hover .product_card,
 .products_list li:focus .product_card {
-  display: block; }
+  display: block;
+}
 
 .products_list li:hover a,
 .products_list li:focus a {
@@ -1619,7 +1619,8 @@ appearance: none ?
 .login_form input,
 .feedback_form input,
 .feedback_text,
-.basket_form input {
+.basket_form input,
+.subscr_mail input {
   box-sizing: border-box;
 
   padding: 9px 0 6px 15px;
@@ -1630,26 +1631,23 @@ appearance: none ?
 
 /*          hover - focus - active          */
 .search_form input:hover,
-.search_form input:focus,
 .login_form input:hover,
-.login_form input:focus,
 .feedback_form input:hover,
-.feedback_form input:focus,
 .feedback_text:hover,
-.feedback_text:focus,
 .basket_form input:hover,
-.basket_form input:focus {
+.subscr_mail input:hover {
   border: 1px solid rgba(154, 154, 154, 0.52);
   outline: 1px solid rgba(154, 154, 154, 0.52);
 }
 
-.search_form input:active,
-.login_form input:active,
-.feedback_form input:active,
-.feedback_text:active,
-.basket_form input:active {
+.search_form input:focus,
+.login_form input:focus,
+.feedback_form input:focus,
+.feedback_text:focus,
+.basket_form input:focus,
+.subscr_mail input:focus {
   border: 1px solid rgba(46, 136, 228, 0.52);
-  outline: 1px solid rgba(46, 136, 228, 0.52)
+  outline: 1px solid rgba(46, 136, 228, 0.52);
 }
 
 /*             кнопки            */

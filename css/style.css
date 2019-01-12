@@ -32,8 +32,8 @@
 .socials {
   list-style: none;
 
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 body {
@@ -76,8 +76,8 @@ a {
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   border: none;
 
-  margin: 0;
   padding: 0;
+  margin: 0;
 
   cursor: pointer;
 }
@@ -85,9 +85,9 @@ a {
 /*       Контейнер       */
 .container {
   width: 1146px;
-  margin: 0 auto;
   padding-right: 27px;
   padding-left: 27px;
+  margin: 0 auto;
 }
 
 /*                  HEADER             */
@@ -104,8 +104,8 @@ a {
 }
 
 .main_header_logo {
-  height: 64px;
   width: 154px;
+  height: 64px;
   padding-top: 9px;
   margin-right: 9px;
 }
@@ -300,7 +300,9 @@ a {
 .basket_full span,
 .basket_btn span {
   display: inline-block;
+
   vertical-align: top;
+
   padding: 7px 0;
 }
 
@@ -325,16 +327,19 @@ a {
 .user_nav_btn:hover,
 .user_nav_btn:focus {
   color: #323232;
+
   background-color: #f8f7f4;
 }
 
 .search_ref {
   position: relative;
+
   background-color: rgba(255, 255, 255, 0.2);
 }
 
 .login_btn {
   position: relative;
+
   padding: 0 21px 0 17px;
 }
 
@@ -344,6 +349,7 @@ a {
 
 .basket_full {
   position: relative;
+
   padding: 0 17px 0 16px;
 }
 
@@ -395,8 +401,8 @@ a {
 }
 
 .time_phone p {
-  margin: 0;
   padding-bottom: 3px;
+  margin: 0;
 }
 
 .time {
@@ -521,8 +527,8 @@ a {
   font-weight: 700;
   line-height: 22px;
 
-  margin: 15px 28px 44px 0;
   padding-left: 18px;
+  margin: 15px 28px 44px 0;
 }
 
 .offer button {
@@ -560,7 +566,6 @@ a {
   padding-left: 19px;
 }
 
-  /*  непонятная разница в шрифтах!  */
 .description span {
   letter-spacing: 1px; }
 
@@ -573,8 +578,8 @@ a {
 
 .descr_list li {
   position: relative;
-  width: 476px;
 
+  width: 476px;
   padding: 0 15px 20px 75px;
 }
 
@@ -665,9 +670,15 @@ a {
   text-decoration-color: #323232;
 
   width: 281px;
-  margin: 0;
   padding: 0;
   padding-left: 20px;
+  margin: 0;
+}
+
+.blog a:hover,
+.blog a:focus {
+  color: #e84d37;
+  text-decoration-color: #e84d37;
 }
 
 /*        Подписка          */
@@ -698,8 +709,8 @@ a {
   line-height: 22px;
 
   width: 507px;
-  margin: 0 0 38px 0;
   padding: 36px 27px 0 27px;
+  margin: 0 0 38px 0;
 }
 
 .subscr_mail {
@@ -773,8 +784,8 @@ a {
 
 .contacts button {
   width: 250px;
-  margin-top: 25px;
   padding: 7px 0;
+  margin-top: 25px;
 }
 
 /*                   Футер                */
@@ -1025,8 +1036,8 @@ appearance: none ?
 }
 
 .filler_filter {
-  margin: 0;
   padding: 0;
+  margin: 0;
   margin-right: 13px;
 
   border: 0 none;
@@ -1094,9 +1105,9 @@ appearance: none ?
 
   max-width: 144px;
   height: 36px;
-  margin: 0;
-  margin-top: 23px; /* выровнять иначе?  align-self: bottom например */
   padding: 0 30px;
+  margin: 0;
+  margin-top: 23px;
 
   background-color: rgba(255, 255, 255, 0.2);
   border: 2px solid #ffffff;
@@ -1182,8 +1193,8 @@ appearance: none ?
   top: 340px;
   left: 50px;
 
-  margin: 0;
   padding: 9px 15px;
+  margin: 0;
 }
 
 /*               Сеточные стили         */
@@ -1317,8 +1328,8 @@ appearance: none ?
   font-weight: 400;
   line-height: 18px;
 
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 .footer_logo {
@@ -1399,8 +1410,8 @@ appearance: none ?
   font-weight: 400;
   line-height: 24px;
 
-  margin: 0;
   padding: 0 0 0 7px;
+  margin: 0;
 }
 
 /*                Поля форм          */
@@ -1448,8 +1459,8 @@ appearance: none ?
 
   color: #323232;
 
-  padding-left: 10px;
   padding-bottom: 5px;
+  padding-left: 10px;
 }
 
 .modal_login_links {

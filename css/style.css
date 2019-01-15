@@ -479,8 +479,6 @@ a {
   height: 68px;
 }
 
-/* #slide_1 {} */
-
 /*                   Предложение (Малинка Шоколад)        */
 .offer {
   display: flex;
@@ -498,7 +496,6 @@ a {
   border-radius: 15px;
 }
 
-/*  сместить изображение внутри блока на 1 px вниз?  */
 .offer li:first-child {
   margin-right: 26px;
 
@@ -869,9 +866,6 @@ a {
   margin-bottom: 6px;
 }
 
-/*   треугольник не такой!   
-appearance: none ?
-*/
 .filter_select {
   color: #ffffff;
   font-size: 16px;
@@ -1276,6 +1270,7 @@ appearance: none ?
   display: flex;
   justify-content: flex-end;
 
+  padding-bottom: 35px;
   margin: 42px 0 38px 0;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -1287,17 +1282,31 @@ appearance: none ?
   font-weight: 500;
   line-height: 18px;
 
-  padding: 0 10px;
+  margin: 0 10px;
 }
 
 .pagi_item_current {
-  color: #323232;
+  position: relative;
+}
 
-  height: 27px;
+.pagi_item_current::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -8px;
+
+  width: 27px;
+  height: 26px;
 
   background-color: #ffffff;
-  border-radius: 50px;
+  border-radius: 50%;
   border: none;
+
+  z-index: -1;
+}
+
+.pagi_item_current a {
+  color: #323232;
 }
 
 /*                FOOTER           */
@@ -1592,6 +1601,7 @@ appearance: none ?
 
 .modal_basket hr {
   width: 508px;
+
   background-color: #cacac7;
 }
 

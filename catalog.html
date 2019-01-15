@@ -122,12 +122,12 @@
       </ul>
       <h2 class="ice_cream_h2 container">Сливочное мороженое</h2>
 <!--                           Фильтр                               -->
-      <section class="container">
+      <section class="filters container">
         <h3 class="visually_hidden">Фильтры</h3>
         <form class="filter" action="https://echo.htmlacademy.ru">
           <div class="filter_sort">
             <p> Сортировка:</p>
-            <select class="filter_select">
+            <select class="filter_select" name="filter_select">
               <option>по популярности</option>
               <option>сначала недорогие</option>
               <option>сначала дорогие</option>
@@ -359,16 +359,19 @@
           </li>
         </ul>
       </section>
+
       <h2 class="visually_hidden">Страницы каталога</h2>
       <ul class="pagination_list container">
+        <li class="pagination_item"><a href="#"><</a></li>
         <li class="pagination_item pagi_item_current"><a href="#" >1</a></li>
         <li class="pagination_item"><a href="#" >2</a></li>
         <li class="pagination_item"><a href="#" >3</a></li>
         <li class="pagination_item"><a href="#" >4</a></li>
         <li class="pagination_item"><a href="#" >5</a></li>
-        <li class="pagination_item"><a class="next" href="#"></a></li>
+        <li class="pagination_item"><a href="#">></a></li>
       </ul>
     </main>
+
     <footer class="footer container">
       <div class="footer_socials_column">
         <ul class="socials">

@@ -99,7 +99,6 @@ a {
   display: flex;
   justify-content: center;
 
-  width: 1146px;
   min-height: 100px;
 }
 
@@ -114,7 +113,7 @@ a {
   display: flex;
   justify-content: space-between;
 
-  width: 1009px;
+  width: 992px;
   margin: 0;
 }
 
@@ -311,8 +310,8 @@ a {
 .basket_full svg,
 .basket_btn svg {
   position: relative;
-  top: 5px;
-  right: 3px;
+  top: 6px;
+  right: 4px;
 }
 
 .search_ref svg {
@@ -344,13 +343,17 @@ a {
 }
 
 .basket_btn {
-  padding: 0 17px 0 16px;
+  padding: 0 17px 0 19px;
 }
 
 .basket_full {
   position: relative;
 
+  color: #323232;
+
   padding: 0 17px 0 16px;
+
+  background-color: #f8f7f4;
 }
 
 .search_ref:hover path,
@@ -391,13 +394,13 @@ a {
 .time_phone {
   position: absolute;
   top: 50px;
-  right: 0;
+  right: 10px;
 
   text-align: right;
 
-  width: 220px;
+  min-width: 170px;
 
-  z-index: 3;
+  z-index: 2;
 }
 
 .time_phone p {

@@ -212,18 +212,6 @@ a {
   padding: 5px 15px;
 }
 
-.site_nav_a {
-  text-decoration: none;
-}
-
-/*    подчёркивание навигации "Доставка, О компании"
-.site_nav_a::after {
-  content: "";
-  display: block;
-
-  border-bottom: 1px solid #ffffff;
-} */
-
 .sub_menu .catalog_item {
   margin-bottom: 5px;
   margin-top: 5px;
@@ -700,8 +688,8 @@ a {
   line-height: 22px;
 
   width: 507px;
-  padding: 36px 27px 0 27px;
-  margin: 0 0 38px 0;
+  padding: 31px 27px 0 22px;
+  margin: 0 0 36px 0;
 }
 
 .subscr_form {
@@ -717,7 +705,7 @@ a {
   display: flex;
   justify-content: space-around;
 
-  margin: 0 11px 0 10px;
+  margin: 0 11px 0 12px;
 }
 
 .subscr_mail .input {
@@ -739,13 +727,13 @@ a {
   margin: 0 auto;
 }
 
-.contacts div{
+.contacts .address{
   display: flex;
   flex-direction: column;
 
   position: absolute;
-  top: 62px;
-  right: 28px;
+  top: 61px;
+  right: 25px;
 
   width: 260px;
   padding: 32px 20px 31px 25px;
@@ -754,7 +742,7 @@ a {
   background-color: #ffffff;
 }
 
-.contacts p {
+.address p {
   color: #323232;
   font-size: 14px;
   font-weight: 400;
@@ -764,8 +752,12 @@ a {
   margin: 0;
 }
 
-.contacts p:nth-child(2),
-.contacts p:nth-child(4) {
+.address p:first-child {
+  line-height: 20px;
+}
+
+.address p:nth-child(2),
+.address p:nth-child(4) {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -773,18 +765,19 @@ a {
   width: 230px;
 }
 
-.contacts p:nth-child(2) {
-  margin-bottom: 15px;
+.address p:nth-child(2) {
+  margin-bottom: 18px;
 }
 
-.contacts p:nth-child(3) {
+.address p:nth-child(3) {
   width: 175px;
+  margin-bottom: 4px;
 }
 
 .contacts button {
   width: 250px;
-  padding: 7px 0;
-  margin-top: 25px;
+  padding: 9px 0 10px 3px;
+  margin-top: 24px;
 }
 
 /*                   Футер                */
@@ -861,7 +854,7 @@ a {
   flex-wrap: wrap;
 
   width: 865px;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .filter_sort p {
@@ -879,7 +872,7 @@ a {
   height: 37px;
   padding-left: 16px;
   margin-right: 14px;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
@@ -966,7 +959,6 @@ a {
   margin-bottom: 6px;
 }
 
-/*          сжать!   отступы?  */
 .fat_list {
   display: flex;
   flex-direction: row;
@@ -1008,23 +1000,6 @@ a {
   display: none;
 }
 
-/*.fat_list_item::after .selected_fat{  не так..
-  content: "";
-  display: block;
-
-  position: absolute;
-  top: -5px;
-  left: -33px;
-
-  width: 8px;
-  height: 8px;
-
-  border: 4px solid red;
-  border-radius: 50%;
-}  */
-
-/*  :checked {}  ?*/
-
 /*         фильтр начинки         */
 .filler_filter legend {
   padding-left: 16px;
@@ -1039,7 +1014,6 @@ a {
   border: 0 none;
 }
 
-/*         сжать!   отступы?    */
 .filler {
   display: flex;
   justify-content: space-around;
@@ -1081,13 +1055,10 @@ a {
   border-radius: 2px;
 }
 
-/*                                         фокуса нет!     */
 .filler_filter label:hover,
 .filler_filter label:focus {
   cursor: pointer;
 }
-
-/*            добавить замену на картинку svg  для checked! */
 
 /*   Кнопка Применить   */
 .filter_btn{
@@ -1163,8 +1134,7 @@ a {
 }
 
 .price p {
-  text-decoration: underline;
-  text-decoration-color: #9CAFA4;
+  text-decoration-color: #9cafa4;
 }
 
 /*         Окно Быстрый просмотр          */
@@ -1215,7 +1185,8 @@ a {
   margin-bottom: 40px;
 }
 
-.products img:first-child {
+/*  картинка - круг  */
+.ice_cr_pic {
   border-radius: 50%;
 }
 
@@ -1312,6 +1283,20 @@ a {
   color: #323232;
 }
 
+.pagi_1 {
+  width: 8px;
+  height: 14px;
+
+  background-image: url("../img/pagination_back.png");
+}
+
+.pagi_2 {
+  width: 8px;
+  height: 14px;
+
+  background-image: url("../img/pagination_next.png");
+}
+
 /*                FOOTER           */
 .footer {
   min-height: 104px;
@@ -1344,6 +1329,10 @@ a {
   margin: 0;
 }
 
+.footer_copyright_column a {
+  text-decoration: underline;
+}
+
 .footer_logo {
   position: relative;
   left: 2px;
@@ -1362,9 +1351,9 @@ a {
   align-items: center;
   flex-wrap: wrap;
 
-  width: 40px;
-  height: 40px;
-  margin-right: 9px;
+  width: 38px;
+  height: 38px;
+  margin-right: 11px;
 
   border: 4px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
@@ -1404,11 +1393,14 @@ a {
   display: flex;
   flex-wrap: wrap;
 
-  width: 307px;
-
-  margin-top: 33px;
-
   line-height: 22px;
+
+  width: 307px;
+  margin-top: 31px;
+}
+
+.footer_links a {
+  text-decoration: underline;
 }
 
 .footer_link:nth-child(odd) {

@@ -35,7 +35,7 @@
             <a class="site_nav_a" href="#">О Компании</a></li>
           </ul>
           <div class="user_nav nav_phone">
-<!--                                     Поиск             -->
+<!--                         Поиск             -->
             <a class="user_nav_btn search_ref" href="#">
               <span class="visually_hidden">Поиск</span>
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg></a>
@@ -46,7 +46,7 @@
                 <input class="input" type="search" id="search" name="search" placeholder="Что ищем?">
               </form>
             </section>
-<!--                                      Вход               -->
+<!--                         Вход               -->
             <a class="user_nav_btn login_btn" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#000"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
               <span>Вход</span></a>
@@ -68,7 +68,7 @@
                 </div>
               </form>
             </section>
-<!--                                 Корзина           -->
+<!--                           Корзина           -->
             <button class="user_nav_btn basket_btn" type="button">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><g fill="#FFF"><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g></svg>
               <span>Пусто</span></button>
@@ -83,7 +83,7 @@
 
     <main>
       <h1 class="visually_hidden">Магазин Глейси</h1>
-<!--                        Слайдер                      -->
+<!--                    Слайдер                 -->
       <input class="visually_hidden input" type="radio" id="slide_1" name="switch" checked>
       <input class="visually_hidden input" type="radio" id="slide_2" name="switch">
       <input class="visually_hidden input" type="radio" id="slide_3" name="switch">
@@ -136,7 +136,7 @@
               <button class="button quick_btn" type="button">Быстрый просмотр</button>
             </div>
             <a class="hit" href="#">
-              <img src="img/ice_cream_01.jpg" width="267" height="267" alt="мороженое хит">
+              <img class="ice_cr_pic" src="img/ice_cream_01.jpg" width="267" height="267" alt="мороженое хит">
               <div class="price">
                 <span>310</span>
                 <img src="img/ruble.svg" width="29" height="34" alt="рублей">
@@ -150,7 +150,7 @@
               <button class="button quick_btn" type="button">Быстрый просмотр</button>
             </div>
             <a class="hit" href="#">
-              <img src="img/ice_cream_02.jpg" width="267" height="267" alt="изображение мороженого 2">
+              <img class="ice_cr_pic" src="img/ice_cream_02.jpg" width="267" height="267" alt="изображение мороженого 2">
               <div class="price">
                 <span>380</span>
                 <img src="img/ruble.svg" width="29" height="34" alt="рублей">
@@ -164,7 +164,7 @@
               <button class="button quick_btn" type="button">Быстрый просмотр</button>
             </div>
             <a class="hit" href="#">
-              <img src="img/ice_cream_03.jpg" width="267" height="267" alt="изображение мороженого 3">
+              <img class="ice_cr_pic" src="img/ice_cream_03.jpg" width="267" height="267" alt="изображение мороженого 3">
               <div class="price">
                 <span>355</span>
                 <img src="img/ruble.svg" width="29" height="34" alt="рублей">
@@ -178,7 +178,7 @@
               <button class="button quick_btn" type="button">Быстрый просмотр</button>
             </div>
             <a class="hit" href="#">
-              <img src="img/ice_cream_04.jpg" width="267" height="267" alt="изображение мороженого 4">
+              <img class="ice_cr_pic" src="img/ice_cream_04.jpg" width="267" height="267" alt="изображение мороженого 4">
               <div class="price">
                 <span>415</span>
                 <img src="img/ruble.svg" width="29" height="34" alt="рублей">
@@ -222,8 +222,8 @@
       <section class="contacts">
         <h2 class="visually_hidden">Контакты</h2>
         <img src="img/map.jpg" width="1200" height="430" alt="карта">
-        <div>
-          <p>Адрес главного офиса и оф-лайн магазина:</p>
+        <div class="address">
+          <p>Адрес главного офиса и офлайн-магазина:</p>
           <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
           <p>Для заказов по телефону:</p>
           <p>8 812 450-25-25</p>
@@ -262,8 +262,7 @@
         &copy; 2017</p>
       </div>
      </footer>
-<!--                            Формы                 -->
-<!--                         Обратная связь    -->
+<!--                Форма 'Обратная связь'   -->
       <section class="modal modal_feedback">
         <h2 class="visually_hidden">Обратная связь</h2>
         <form class="feedback_form" action="https://echo.htmlacademy.ru" method="post">
@@ -281,6 +280,5 @@
           <button class="modal_close" type="button" aria-label="Закрыть"></button>
         </form>
       </section>
-      <script></script>
   </body>
 </html>

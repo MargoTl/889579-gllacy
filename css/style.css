@@ -1108,75 +1108,7 @@ a {
   background-color: #ededed;
 }
 
-/*          каталог мороженого        */
-.products_list a {
-  text-decoration: none;
-}
-
-/*           название     */
-.products_list p {
-  text-align: center;
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 22px;
-
-  padding: 5px 5px 0 5px;
-}
-
-/*            цена         */
-.products_list span {
-  text-align: left;
-  color: #ffffff;
-  font-size: 45px;
-  font-weight: 700;
-  line-height: 45px;
-
-  text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
-}
-
-/*             кг           */
-.products_list .kg {
-  font-size: 30px;
-}
-
-/*      цена на картинке    */
-.price {
-  position: relative;
-  top: -60px;
-}
-
-.price p {
-  text-decoration-color: #9cafa4;
-}
-
-/*         Окно Быстрый просмотр          */
-.product_card {
-  position: absolute;
-  top: -6px;
-  left: -14px;
-
-  width: 293px;
-  height: 377px;
-  padding-bottom: 22px;
-
-  background-color: rgba(248,247,244,0.2);
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
-
-  z-index: 5;
-}
-
-.quick_btn {
-  position: absolute;
-  top: 340px;
-  left: 50px;
-
-  padding: 9px 15px;
-  margin: 0;
-}
-
-/*               Сеточные стили         */
+/*                каталог мороженого        */
 .products_list {
   display: flex;
   flex-wrap: wrap;
@@ -1223,6 +1155,47 @@ a {
   left: 0px;
 }
 
+.products_list a {
+  text-decoration: none;
+}
+
+/*           название     */
+.products_list p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+
+  padding: 5px 5px 0 5px;
+}
+
+/*            цена         */
+.products_list span {
+  text-align: left;
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+
+  text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+/*             кг           */
+.products_list .kg {
+  font-size: 30px;
+}
+
+/*      цена на картинке    */
+.price {
+  position: relative;
+  top: -60px;
+}
+
+.price p {
+  text-decoration-color: #9cafa4;
+}
+
 /*            включение окон         */
 .products_list li:hover .product_card,
 .products_list li:focus .product_card {
@@ -1250,6 +1223,32 @@ a {
 .products_list li:focus .quick_btn {
   display: block;
   z-index: 15;
+}
+
+/*         Окно Быстрый просмотр          */
+.product_card {
+  position: absolute;
+  top: -6px;
+  left: -14px;
+
+  width: 293px;
+  height: 377px;
+  padding-bottom: 22px;
+
+  background-color: rgba(248,247,244,0.2);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+
+  z-index: 5;
+}
+
+.quick_btn {
+  position: absolute;
+  top: 340px;
+  left: 50px;
+
+  padding: 9px 15px;
+  margin: 0;
 }
 
 /*         Навигация по страницам       */

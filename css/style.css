@@ -160,7 +160,7 @@ a {
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
-  text-decoration-color: #adbdb4;
+  text-decoration-color: #a9bcb1;
 
   padding: 5px 13px 6px 14px;
 }
@@ -741,8 +741,7 @@ a {
 .contacts {
   position: relative;
 
-  width: 1200px;
-  margin: 0 auto;
+  margin: 0 0 0 -27px;
 }
 
 .contacts .address{
@@ -1211,7 +1210,8 @@ a {
 }
 
 .price p {
-  text-decoration-color: #9cafa4;
+  text-decoration: underline;
+  text-decoration-color: #a9bcb1;
 }
 
 /*            включение окон         */
@@ -1275,7 +1275,7 @@ a {
   justify-content: flex-end;
 
   padding-bottom: 35px;
-  margin: 42px 0 38px 0;
+  margin: 42px 0 4px auto;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }

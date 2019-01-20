@@ -19,7 +19,6 @@
 
 /*              откл. маркеры ul       */
 .site_nav,
-.user_nav,
 .sub_menu,
 .slider_list,
 .products_list,
@@ -296,7 +295,7 @@ a {
   cursor: pointer;
 }
 
-.login_btn span,
+.login_ref span,
 .basket_full span,
 .basket_btn span {
   display: inline-block;
@@ -307,7 +306,7 @@ a {
 }
 
 /*   сдвиг картинки   */
-.login_btn svg,
+.login_ref svg,
 .basket_full svg,
 .basket_btn svg {
   position: relative;
@@ -320,7 +319,7 @@ a {
   top: 7px;
 }
 
-.login_btn path {
+.login_ref path {
   fill: #ffffff;
 }
 
@@ -331,16 +330,34 @@ a {
   background-color: #f8f7f4;
 }
 
-.search_ref {
+.nav_search_wrapper {
+  display: flex;
+
   position: relative;
 
+  padding-bottom: 10px;
+}
+
+.nav_login_wrapper {
+  position: relative;
+
+  padding-bottom: 10px;
+}
+
+
+.nav_basket_full_wrapper {
+  position: relative;
+
+  padding-bottom: 10px;
+}
+
+
+.search_ref {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.login_btn {
-  position: relative;
-
-  padding: 0 21px 0 17px;
+.login_ref {
+  padding: 6px 21px 8px 17px;
 }
 
 .basket_btn {
@@ -348,8 +365,6 @@ a {
 }
 
 .basket_full {
-  position: relative;
-
   color: #323232;
 
   padding: 0 17px 0 16px;
@@ -359,8 +374,8 @@ a {
 
 .search_ref:hover path,
 .search_ref:focus path,
-.login_btn:hover path,
-.login_btn:focus path,
+.login_ref:hover path,
+.login_ref:focus path,
 .basket_btn:hover path,
 .basket_btn:focus path,
 .basket_btn:hover circle,
@@ -368,22 +383,22 @@ a {
   fill: #323232;
 }
 
-.search_ref:hover .modal_search,
-.search_ref:focus .modal_search {
+.nav_search_wrapper:hover .modal_search,
+.nav_search_wrapper:focus .modal_search {
   display: block;
 }
 
-.login_btn:hover .modal_login,
-.login_btn:focus .modal_login {
+.nav_login_wrapper:hover .modal_login,
+.nav_login_wrapper:focus .modal_login {
   display: block;
 }
 
-.basket_full:hover .modal_basket,
-.basket_full:focus .modal_basket {
+.nav_basket_full_wrapper:hover .modal_basket,
+.nav_basket_full_wrapper:focus .modal_basket {
   display: block;
 }
 
-.basket_full:active .modal_basket {
+.nav_basket_full_wrapper:active .modal_basket {
   display: block;
 }
 
@@ -432,7 +447,7 @@ a {
   width: 1146px;
   min-height: 881px;
 
-  z-index: -1; /*            убрать?*/
+  z-index: -1;
 }
 
 .slide {
@@ -1466,7 +1481,7 @@ a {
 /*             Поле Поиска         */
 .modal_search {
   top: 38px;
-  right: 0;
+  right: 10px;
 
   width: 341px;
   padding: 20px 15px;

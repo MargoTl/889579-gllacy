@@ -331,9 +331,9 @@ a {
 }
 
 .nav_search_wrapper {
-  display: flex;
-
   position: relative;
+
+  display: flex;
 
   padding-bottom: 10px;
 }
@@ -342,6 +342,7 @@ a {
   position: relative;
 
   padding-bottom: 10px;
+  margin-top: 2px;
 }
 
 
@@ -349,6 +350,7 @@ a {
   position: relative;
 
   padding-bottom: 10px;
+  margin-top: 2px;
 }
 
 
@@ -357,17 +359,17 @@ a {
 }
 
 .login_ref {
-  padding: 6px 21px 8px 17px;
+  padding: 6px 17px 8px 18px;
 }
 
 .basket_btn {
-  padding: 0 17px 0 19px;
+  padding: 0 17px 0 21px;
 }
 
 .basket_full {
   color: #323232;
 
-  padding: 0 17px 0 16px;
+  padding: 8px 17px 8px 19px;
 
   background-color: #f8f7f4;
 }
@@ -420,7 +422,7 @@ a {
 }
 
 .time_phone p {
-  padding-bottom: 3px;
+  padding-bottom: 4px;
   margin: 0;
 }
 
@@ -465,7 +467,7 @@ a {
 
 .slider_controls {
   position: absolute;
-  top: 570px;
+  top: 565px;
   left: 0;
 
   font-size: 0;
@@ -1465,8 +1467,6 @@ a {
 
 /*                Поля форм          */
 .modal {
-  position: absolute;
-
   color: #323232;
 
   font-size: 13px;
@@ -1480,6 +1480,7 @@ a {
 
 /*             Поле Поиска         */
 .modal_search {
+  position: absolute;
   top: 38px;
   right: 10px;
 
@@ -1493,8 +1494,9 @@ a {
 
 /*              Поле Входа          */
 .modal_login {
+  position: absolute;
   top: 38px;
-  right: 130px;
+  right: 10px;
 
   width: 277px;
   padding: 20px 17px 22px 19px;
@@ -1531,15 +1533,19 @@ a {
 /*          Поле Обратной связи     */
 .modal_feedback {
   position: fixed;
-  top: 337px;
-  right: 360px;
+  top: 50%;
+  left: 50%;
+
+  width: 477px;
+  padding: 15px 0 20px 26px;
+  margin-top: -115px;
+  margin-left: -231px;
 
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
 
-  width: 478px;
-  padding: 15px 0 20px 26px;
+  z-index: 6;
 }
 
 .modal_feedback p {
@@ -1591,8 +1597,9 @@ a {
 
 /*             Поле Корзины        */
 .modal_basket {
-  top: 59px;
-  right: 26px;
+  position: absolute;
+  top: 37px;
+  right: 10px;
 
   min-width: 540px;
   padding: 15px 0 20px 0;
@@ -1679,7 +1686,7 @@ a {
   border-radius: 5px;
 }
 
-/*          hover - focus - active          */
+/*                 input hover - focus -     */
 .search_form input:hover,
 .login_form input:hover,
 .feedback_form input:hover,
@@ -1696,6 +1703,9 @@ a {
 .feedback_text:focus,
 .basket_form input:focus,
 .subscr_mail input:focus {
+  color: #323232;
+  font-weight: 700;
+
   border: 1px solid rgba(46, 136, 228, 0.52);
   outline: 1px solid rgba(46, 136, 228, 0.52);
 }

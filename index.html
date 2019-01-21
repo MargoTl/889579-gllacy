@@ -133,6 +133,8 @@
           <a class="button offer_2" href="#">Хочу шоколадки!</a>
         </li>
       </ul>
+
+<!--                                Хиты            -->
       <section class="products">
         <h2 class="visually_hidden">Популярная продукция</h2>
         <ul class="products_list">
@@ -233,7 +235,7 @@
           <p>Для заказов по телефону:</p>
           <p>8 812 450-25-25</p>
           <p>(с 10 до 20 ежедневно)</p>
-          <a class="button" href="#">Форма обратной связи</a>
+          <a class="button feedback_btn" href="#">Форма обратной связи</a>
         </div>
       </section>
     </main>
@@ -241,13 +243,13 @@
     <footer class="footer container">
       <div class="footer_socials_column">
         <ul class="socials">
-          <li><a class="socials_link" href="#" >
+          <li><a class="socials_link" href="#">
             <img src="img/soc_twitter.svg" width="32" height="32" alt="Глейси в twitter"></a></li>
-          <li><a class="socials_link" href="#" >
+          <li><a class="socials_link" href="#">
             <img src="img/soc_instagram.svg" width="32" height="32" alt="Глейси в instagram"></a></li>
-          <li><a class="socials_link" href="#" >
+          <li><a class="socials_link" href="#">
             <img src="img/soc_facebook.svg" width="32" height="32" alt="Глейси в facebook"></a></li>
-          <li><a class="socials_link" href="#" >
+          <li><a class="socials_link" href="#">
             <img src="img/soc_vk.svg" width="32" height="32" alt="Глейси в vkontakte"></a></li>
         </ul>
       </div>
@@ -268,22 +270,21 @@
       </div>
      </footer>
 <!--                Форма 'Обратная связь'   -->
-      <section class="modal modal_feedback">
-        <h2 class="visually_hidden">Обратная связь</h2>
-        <form class="feedback_form" action="https://echo.htmlacademy.ru" method="post">
-          <p>Мы обязательно вам ответим!</p>
-          <p><label class="visually_hidden" for="name_id">Как вас зовут?</label>
-            <input class="input" type="text" id="name_id" name="name" placeholder="Как вас зовут?">
-          </p>
-          <p><label class="visually_hidden" for="email_2_id">Ваша почта для ответа?</label>
-            <input class="input" type="text" id="email_2_id" name="feedback_email" placeholder="Ваша почта для ответа?">
-          </p>
-          <p><label class="visually_hidden" for="message">Напишите что-нибудь</label>
-            <textarea class="feedback_text" rows="5" id="message" name="message">Напишите что-нибудь...</textarea>
-          </p>
-          <button class="button fdbk_btn" type="submit">Отправить</button>
-          <button class="modal_close" type="button" aria-label="Закрыть"></button>
-        </form>
-      </section>
+      <div class="feedback_wrapper">
+        <section class="modal modal_feedback">
+          <h2 class="visually_hidden">Обратная связь</h2>
+          <form class="feedback_form" action="https://echo.htmlacademy.ru" method="post">
+            <p>Мы обязательно вам ответим!</p>
+            <p><label class="visually_hidden" for="name_id">Как вас зовут?</label>
+              <input class="input" type="text" id="name_id" name="name" placeholder="Как вас зовут?"></p>
+            <p><label class="visually_hidden" for="email_2_id">Ваша почта для ответа?</label>
+              <input class="input" type="text" id="email_2_id" name="feedback_email" placeholder="Ваша почта для ответа?"></p>
+            <p><label class="visually_hidden" for="message">Напишите что-нибудь</label>
+              <textarea class="feedback_text" rows="5" id="message" name="message">Напишите что-нибудь...</textarea></p>
+            <button class="button feedback_send_btn" type="submit">Отправить</button>
+            <button class="modal_close" type="button" aria-label="Закрыть"></button>
+          </form>
+        </section>
+      </div>
   </body>
 </html>

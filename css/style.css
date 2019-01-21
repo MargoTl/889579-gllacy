@@ -2,7 +2,8 @@
 .modal,
 .sub_menu,
 .product_card,
-.quick_btn {
+.quick_btn,
+.feedback_wrapper {
   display: none;
 }
 
@@ -1261,7 +1262,7 @@ a {
   left: -14px;
 
   width: 293px;
-  height: 377px;
+  min-height: 377px;
   padding-bottom: 22px;
 
   background-color: rgba(248,247,244,0.2);
@@ -1525,6 +1526,18 @@ a {
 }
 
 /*          Поле Обратной связи     */
+.feedback_wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, 0.3);
+
+  z-index: 6;
+}
+
 .modal_feedback {
   position: fixed;
   top: 50%;
@@ -1539,7 +1552,7 @@ a {
   font-weight: 500;
   line-height: 28px;
 
-  z-index: 6;
+  z-index: 7;
 }
 
 .modal_feedback p {
@@ -1569,7 +1582,11 @@ a {
   resize: vertical;
 }
 
-.fdbk_btn {
+.feedback_btn:hover .feedback_wrapper {
+  display: block;
+}
+
+.feedback_send_btn {
   padding: 10px 20px;
   margin-left: 290px;
 }

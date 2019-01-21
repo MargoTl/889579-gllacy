@@ -195,8 +195,8 @@ a {
   border-radius: 15px;
 }
 
-.site_nav li:hover .sub_menu,
-.site_nav li:focus .sub_menu {
+.site_nav_item:hover .sub_menu,
+.site_nav_item:focus .sub_menu {
   display: block;
 }
 
@@ -297,7 +297,7 @@ a {
 
 .login_ref span,
 .basket_full span,
-.basket_btn span {
+.basket_ref span {
   display: inline-block;
 
   vertical-align: top;
@@ -308,7 +308,7 @@ a {
 /*   сдвиг картинки   */
 .login_ref svg,
 .basket_full svg,
-.basket_btn svg {
+.basket_ref svg {
   position: relative;
   top: 6px;
   right: 4px;
@@ -338,21 +338,13 @@ a {
   padding-bottom: 10px;
 }
 
-.nav_login_wrapper {
+.nav_login_wrapper,
+.nav_basket_wrapper {
   position: relative;
 
   padding-bottom: 10px;
   margin-top: 2px;
 }
-
-
-.nav_basket_full_wrapper {
-  position: relative;
-
-  padding-bottom: 10px;
-  margin-top: 2px;
-}
-
 
 .search_ref {
   background-color: rgba(255, 255, 255, 0.2);
@@ -362,14 +354,12 @@ a {
   padding: 6px 17px 8px 18px;
 }
 
-.basket_btn {
-  padding: 0 17px 0 21px;
+.basket_ref {
+  padding: 6px 17px 8px 19px;
 }
 
 .basket_full {
   color: #323232;
-
-  padding: 8px 17px 8px 19px;
 
   background-color: #f8f7f4;
 }
@@ -378,10 +368,10 @@ a {
 .search_ref:focus path,
 .login_ref:hover path,
 .login_ref:focus path,
-.basket_btn:hover path,
-.basket_btn:focus path,
-.basket_btn:hover circle,
-.basket_btn:focus circle {
+.basket_ref:not(.basket_full):hover path,
+.basket_ref:not(.basket_full):focus path,
+.basket_ref:hover circle,
+.basket_ref:focus circle {
   fill: #323232;
 }
 
@@ -395,12 +385,12 @@ a {
   display: block;
 }
 
-.nav_basket_full_wrapper:hover .modal_basket,
-.nav_basket_full_wrapper:focus .modal_basket {
+.b_full:hover .modal_basket,
+.b_full:focus .modal_basket {
   display: block;
 }
 
-.nav_basket_full_wrapper:active .modal_basket {
+.b_full:active .modal_basket {
   display: block;
 }
 
@@ -520,10 +510,12 @@ a {
 .offer li:first-child {
   margin-right: 26px;
 
+  background-color: #4f0b19;
   background-image: url(../img/offer_raspberry.jpg);
 }
 
 .offer li:nth-child(2) {
+  background-color: #41281c;
   background-image: url(../img/offer_chocolate.jpg);
 }
 
@@ -1257,7 +1249,7 @@ a {
 .products_list li:hover .quick_btn,
 .products_list li:focus .quick_btn {
   display: block;
-  z-index: 15;
+  z-index: 6;
 }
 
 /*         Окно Быстрый просмотр          */

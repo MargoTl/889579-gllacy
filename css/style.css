@@ -7,6 +7,10 @@
   display: none;
 }
 
+.modal_show {
+  display: block;
+}
+
 /*        скрытие элементов          */
 .visually_hidden {
   position: absolute;
@@ -1275,6 +1279,10 @@ a:focus {
   line-height: 22px;
 
   padding: 5px 5px 0 5px;
+
+  text-decoration: underline;
+  -webkit-text-decoration-color: #a9bcb1;
+          text-decoration-color: #a9bcb1;
 }
 
 /*            цена         */
@@ -1297,12 +1305,6 @@ a:focus {
 .price {
   position: relative;
   top: -60px;
-}
-
-.price p {
-  text-decoration: underline;
-  -webkit-text-decoration-color: #a9bcb1;
-          text-decoration-color: #a9bcb1;
 }
 
 /*            включение окон         */
@@ -1713,7 +1715,7 @@ a:focus {
 
   border: 0;
   background-color: transparent;
-  background-image: url("../img/cross-big.svg");
+  background-image: url("../img/X.svg");
 
   cursor: pointer;
 }

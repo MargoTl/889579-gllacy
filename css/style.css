@@ -64,6 +64,11 @@ a {
           text-decoration-color: transparent;
 }
 
+a:hover,
+a:focus {
+  color: #ffbc9e;
+}
+
 /*            Кнопки           */
 .button {
   display: inline-block;
@@ -431,10 +436,6 @@ a {
   display: block;
 }
 
-.b_full:active .modal_basket {
-  display: block;
-}
-
 /*                   Главная                */
 .nav_phone {
   position: relative;
@@ -445,9 +446,9 @@ a {
   top: 50px;
   right: 10px;
 
-  text-align: right;
-
   min-width: 170px;
+
+  text-align: right;
 
   z-index: 2;
 }
@@ -890,17 +891,6 @@ a {
   line-height: 18px;
 }
 
-.products span:hover,
-.products span:focus,
-.products p:hover,
-.products p:focus,
-.footer_links a:hover,
-.footer_links a:focus,
-.footer a:last-of-type:hover,
-.footer a:last-of-type:focus {
-  color: #ffbc9e;
-}
-
 /*              стр. Каталог             */
 /*   "Сливочное мороженое"    */
 .ice_cream_h2 {
@@ -1243,7 +1233,7 @@ a {
   position: relative;
 
   width: 268px;
-  height: 322px;
+  min-height: 322px;
   margin-bottom: 40px;
 }
 
@@ -1341,6 +1331,7 @@ a {
 .products_list li:hover .quick_btn,
 .products_list li:focus .quick_btn {
   display: block;
+
   z-index: 6;
 }
 

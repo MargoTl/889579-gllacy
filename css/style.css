@@ -816,7 +816,13 @@ a {
 .contacts {
   position: relative;
 
+  width: 1200px;
+  height: 430px;
   margin: 0 0 0 -27px;
+
+  background-image: url('../img/map.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .contacts .address{
@@ -877,6 +883,11 @@ a {
   margin-top: 24px;
 }
 
+.contacts iframe {
+  position: absolute;
+
+  border: none;
+}
 /*                   Футер                */
 .footer_links {
   color: #ffffff;

@@ -1306,30 +1306,30 @@ a:focus {
 }
 
 /*            включение окон         */
-.products_list li:hover .product_card,
-.products_list li:focus .product_card {
+.product_item:hover .product_card,
+.product_item:focus .product_card {
   display: block;
 }
 
-.products_list li:hover a,
-.products_list li:focus a {
+.product_item:hover a,
+.product_item:focus a {
   position: relative;
 
   z-index: 4;
 }
 
-.products_list li:hover p,
-.products_list li:focus p {
+.product_item:hover p,
+.product_item:focus p {
   color: #ffffff;
 }
 
-.products_list li:hover span,
-.products_list li:focus span {
+.product_item:hover span,
+.product_item:focus span {
   color: #ffffff;
 }
 
-.products_list li:hover .quick_btn,
-.products_list li:focus .quick_btn {
+.product_item:hover .quick_btn,
+.product_item:focus .quick_btn {
   display: block;
 
   z-index: 6;

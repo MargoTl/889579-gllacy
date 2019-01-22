@@ -68,11 +68,6 @@ a {
           text-decoration-color: transparent;
 }
 
-a:hover,
-a:focus {
-  color: #ffbc9e;
-}
-
 /*            Кнопки           */
 .button {
   display: inline-block;
@@ -1364,6 +1359,18 @@ a:focus {
   margin: 0;
 }
 
+/*         наведение на ссылки      */
+.products span:hover,
+.products span:focus,
+.products p:hover,
+.products p:focus,
+.footer_links a:hover,
+.footer_links a:focus,
+.footer a:last-of-type:hover,
+.footer a:last-of-type:focus {
+  color: #ffbc9e;
+}
+
 /*         Навигация по страницам       */
 .pagination_list {
   display: -webkit-box;
@@ -1674,7 +1681,7 @@ a:focus {
   margin-bottom: 10px;
 }
 
-.feedback_form input[type="text"] {
+.feedback_form .input {
   font: inherit;
   font-size: 16px;
   font-weight: 400;

@@ -9,6 +9,8 @@
 
 .modal_show {
   display: block;
+
+  animation: bounce 0.4s;
 }
 
 /*        скрытие элементов          */
@@ -1725,6 +1727,25 @@ a {
   background-image: url("../img/X.svg");
 
   cursor: pointer;
+}
+
+/*           Анимация открытия окна          */
+@keyframes bounce {
+  0% {
+  transform: translateX(-2000px);
+  }
+
+  50% {
+  transform: translateX(80px);
+  }
+
+  75% {
+  transform: translateX(-18px);
+  }
+
+  100% {
+  transform: translateX(0);
+  }
 }
 
 /*             Поле Корзины        */
